@@ -1,0 +1,31 @@
+[project]
+name = "genai-tutorials"
+version = "0.1.0"
+description = "MLflow GenAI tutorials"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jupyter>=1.0.0",
+    "jupyterlab>=4.0.0",
+    "databricks-langchain",
+    "langchain-openai",
+    "matplotlib>=3.7.0",
+    "mlflow>=3.8.0",
+    "nest-asyncio>=1.6.0",
+    "numpy>=1.24.0",
+    "openai>=1.0.0",
+    "pandas>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "langchain>=1.2.7",
+    "llama-index>=0.14.13",
+    "ragas>=0.4.3",
+    "gepa>=0.0.18",
+    "litellm>=1.81.5",
+    "openai-agents>=0.8.2",
+    "datasets>=4.5.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.1.0",
+]

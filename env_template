@@ -1,0 +1,17 @@
+# MLflow GenAI Tutorial Configuration
+
+OPENAI_API_KEY=<YOUR_OPENAI_API_KEY>
+OPENAI_BASE_URL=https://api.openai.com/v1
+
+# MLflow Configuration
+MLFLOW_TRACKING_URI=http://localhost:5000
+
+# Databricks Configuration if you using the Databricks AI Gateway from a remote workspace
+# in your local environment with a Jupyter notebook
+DATABRICKS_HOST=<YOUR_DATABRICKS_HOST>
+DATABRICKS_TOKEN=<YOUR_DATABRICKS_TOKEN>
+AI_GATEWAY_BASE_URL=<YOUR_AI_GATEWAY_BASE_URL>
+USE_DATABRICKS_CLIENT=<YOUR_USE_DATABRICKS_CLIENT>
+USE_DATABRICKS_AI_GATEWAY=False
+AI_GATEWAY_MODELS="comma-separated-list-of-models"
+AI_GATEWAY_EMBED_MODEL=<YOUR_AI_GATEWAY_EMBED_MODEL>
