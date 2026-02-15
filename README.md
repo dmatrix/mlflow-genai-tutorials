@@ -214,5 +214,5 @@ This tutorial series is provided as educational content for learning MLflow's Ge
 ---
 
 **Authors**: Jules (Databricks Developer Relations) + Claude Code
-**Date**: January 2025
+**Date**: Feburary 2026
 **MLflow Version**: 3.9.0+
