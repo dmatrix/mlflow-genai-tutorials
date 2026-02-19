@@ -8,63 +8,17 @@ This tutorial series teaches you how to use MLflow's open source platform for bu
 
 ### 📚 Tutorial Structure
 
-#### Notebook 1.1: Setup and Introduction (15-20 min)
-- Understanding MLflow for GenAI
-- Installation and configuration
-- First tracked run
-- MLflow UI basics
-
-#### Notebook 1.2: Experiment Tracking for LLMs (25-30 min)
-- Tracking LLM parameters and metrics
-- Comparing model configurations
-- Cost tracking and optimization
-- Organizing experiments with tags
-- Parent-child runs for workflows
-
-#### Notebook 1.3: Introduction to Tracing (30-35 min)
-- Auto-tracing with MLflow
-- Understanding the trace model
-- Manual instrumentation 
-- Viewing traces in UI
-
-#### Notebook 1.4: Manual Tracing and Advanced Observability (30-35 min)
-- Custom span decorators
-- Tracing complex workflows
-- Debugging with traces
-- Multi-step agentic patterns
-
-#### Notebook 1.5: Prompt Management (15-20 min)
-- Creating prompt templates
-- Versioning prompts
-- Registering in the Prompt Registry
-- Searching Prompt Registry
-- Using prompts from the Prompt Registry
-- Linking prompts to experiments
-
-#### Notebook 1.6: Framework Integrations (15-20 min)
-- OpenAI direct API integration
-- LangChain chains and workflows
-- LlamaIndex document indexing and RAG
-- Framework comparison matrix
-- Best practices for each framework
-
-#### Notebook 1.7: Evaluating Agents (25-30 min)
-- LLM-as-Judge evaluation patterns
-- MLflow built-in scorers (RelevanceToQuery, Correctness, Guidelines)
-- Custom scorers with @scorer decorator
-- DeepEval integration for conversations
-- Session-level multi-turn evaluation
-
-#### Notebook 1.8: Prompt Optimization with GEPA (10-15 min)
-- Automatic prompt optimization with GEPA algorithm
-- MLflow Prompt Registry integration
-- Before/after evaluation comparison
-
-#### Notebook 1.9: Complete RAG Application (25-30 min)
-- Building a full RAG pipeline
-- End-to-end tracing
-- Performance analysis
-- RAG evaluation with RAGAS metrics
+| Notebook | Title | Description |
+|----------|-------|-------------|
+| 1.1 | [Setup and Introduction](01_setup_and_introduction.ipynb) | <ul><li>Understanding MLflow for GenAI</li><li>Installation and configuration</li><li>First tracked run</li><li>MLflow UI basics</li></ul> |
+| 1.2 | [Experiment Tracking for LLMs](02_experiment_tracking.ipynb) | <ul><li>Tracking LLM parameters and metrics</li><li>Comparing model configurations</li><li>Cost tracking and optimization</li><li>Organizing experiments with tags</li><li>Parent-child runs for workflows</li></ul> |
+| 1.3 | [Introduction to Tracing](03_introduction_to_tracing.ipynb) | <ul><li>Auto-tracing with MLflow</li><li>Understanding the trace model</li><li>Manual instrumentation</li><li>Viewing traces in UI</li></ul> |
+| 1.4 | [Manual Tracing and Advanced Observability](04_manual_tracing_advanced.ipynb) | <ul><li>Custom span decorators</li><li>Tracing complex workflows</li><li>Debugging with traces</li><li>Multi-step agentic patterns</li></ul> |
+| 1.5 | [Prompt Management](05_prompt_management.ipynb) | <ul><li>Creating prompt templates</li><li>Versioning prompts</li><li>Registering in the Prompt Registry</li><li>Searching Prompt Registry</li><li>Using prompts from the Prompt Registry</li><li>Linking prompts to experiments</li></ul> |
+| 1.6 | [Framework Integrations](06_framework_integrations.ipynb) | <ul><li>OpenAI direct API integration</li><li>LangChain chains and workflows</li><li>LlamaIndex document indexing and RAG</li><li>Framework comparison matrix</li><li>Best practices for each framework</li></ul> |
+| 1.7 | [Evaluating Agents](07_evaluating_agents.ipynb) | <ul><li>LLM-as-Judge evaluation patterns</li><li>MLflow built-in scorers (RelevanceToQuery, Correctness, Guidelines)</li><li>Custom scorers with @scorer decorator</li><li>DeepEval integration for conversations</li><li>Session-level multi-turn evaluation</li></ul> |
+| 1.8 | [Prompt Optimization with GEPA](08_prompt_optimization.ipynb) | <ul><li>Automatic prompt optimization with GEPA algorithm</li><li>MLflow Prompt Registry integration</li><li>Before/after evaluation comparison</li></ul> |
+| 1.9 | [Complete RAG Application](09_complete_rag_application.ipynb) | <ul><li>Building a full RAG pipeline</li><li>End-to-end tracing</li><li>Performance analysis</li><li>RAG evaluation with RAGAS metrics</li></ul> |
 
 ## 🎓 Learning Outcomes
 
