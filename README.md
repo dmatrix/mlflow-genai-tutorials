@@ -2,6 +2,18 @@
 
 ![MLflow tutorial series](images/1_Mastering-GenAI-with-MLflow.png)
 
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![MLflow](https://img.shields.io/badge/MLflow-3.9.0%2B-orange?logo=mlflow&logoColor=white)](https://mlflow.org/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-API-412991?logo=openai&logoColor=white)](https://platform.openai.com/)
+[![LangChain](https://img.shields.io/badge/LangChain-Integrated-green?logo=langchain&logoColor=white)](https://langchain.com/)
+[![LlamaIndex](https://img.shields.io/badge/LlamaIndex-RAG-blue)](https://www.llamaindex.ai/)
+[![DeepEval](https://img.shields.io/badge/DeepEval-Integrated-blue?logo=python&logoColor=white)](https://docs.confident-ai.com/)
+[![UV](https://img.shields.io/badge/UV-Package%20Manager-purple?logo=python&logoColor=white)](https://github.com/astral-sh/uv)
+[![RAGAS](https://img.shields.io/badge/RAGAS-Evaluation-blueviolet?logo=python&logoColor=white)](https://docs.ragas.io/)
+[![DSPy](https://img.shields.io/badge/DSPy-Integrated-8A2BE2?logo=python&logoColor=white)](https://dspy.ai/)
+[![GEPA](https://img.shields.io/badge/GEPA-Prompt%20Optimization-orange?logo=mlflow&logoColor=white)](https://mlflow.org/docs/latest/genai/prompt-engineering/)
+[![License](https://img.shields.io/badge/License-Educational-blue.svg)](./README.md)
+
 ## Tutorial: Mastering GenAI with MLflow 
 
 This tutorial series teaches you how to use MLflow's open source platform for building, tracking, tracing, prompt registry, and optimization, evaluating, and debugging GenAI applications.
