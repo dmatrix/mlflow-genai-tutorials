@@ -10,19 +10,21 @@ dependencies = [
     "databricks-langchain",
     "langchain-openai",
     "matplotlib>=3.7.0",
-    "mlflow==3.10.0rc0",
+    "mlflow==3.10.1",
     "nest-asyncio>=1.6.0",
     "numpy>=1.24.0",
     "openai>=1.0.0",
     "pandas>=2.0.0",
     "python-dotenv>=1.0.0",
     "langchain>=1.2.7",
+    "langgraph>=0.3",
     "llama-index>=0.14.13",
     "ragas>=0.4.3",
     "gepa>=0.0.18",
     "litellm>=1.81.5",
     "openai-agents>=0.8.2",
     "datasets>=4.5.0",
+    "nbdime>=4.0.0",
 ]
 
 [dependency-groups]
