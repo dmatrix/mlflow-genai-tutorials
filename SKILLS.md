@@ -249,7 +249,6 @@ Use this as a quick map of which skills are most useful at each point in the tut
 | **Evaluating responses** (Notebook 1.7–1.9) | `/agent-evaluation` |
 | **Checking usage/costs** (Notebook 1.2, 1.9) | `/querying-mlflow-metrics` |
 | **After writing new code** (any stage) | `/simplify` |
-
 ---
 
 ## Environment Prerequisites
