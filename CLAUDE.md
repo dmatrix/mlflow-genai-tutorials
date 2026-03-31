@@ -100,6 +100,7 @@ See `SKILLS.md` for the full catalog. Key ones:
 | `/agent-evaluation` | Setting up/running evaluation |
 | `/analyze-mlflow-trace` | Debugging a specific trace by ID |
 | `/searching-mlflow-docs` | Looking up MLflow APIs (fetches live docs) |
+| `/jules-agentic-activities` | Generate & publish weekly activity newsletter |
 
 ## Common Pitfalls
 
