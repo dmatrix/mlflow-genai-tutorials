@@ -149,13 +149,13 @@
   <!-- Sub-items -->
   <g transform="translate(145, 462)">
     <rect x="0" y="0" width="8" height="8" rx="2" fill="#4fc3f7" opacity="0.5"/>
-    <text x="14" y="8" fill="#fff" font-size="11" opacity="0.7">JSON Query Spec</text>
+    <text x="14" y="8" fill="#fff" font-size="11" opacity="0.7">SQLite Text-to-SQL</text>
     <rect x="130" y="0" width="8" height="8" rx="2" fill="#4fc3f7" opacity="0.5"/>
     <text x="144" y="8" fill="#fff" font-size="11" opacity="0.7">Pandas DataFrame</text>
   </g>
   <g transform="translate(145, 480)">
     <rect x="0" y="0" width="8" height="8" rx="2" fill="#4fc3f7" opacity="0.5"/>
-    <text x="14" y="8" fill="#fff" font-size="11" opacity="0.7">Filter / GroupBy / Agg</text>
+    <text x="14" y="8" fill="#fff" font-size="11" opacity="0.7">SQL Execution Engine</text>
   </g>
 
   <!-- ============ KA AGENT (right) ============ -->
