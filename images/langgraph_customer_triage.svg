@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <!-- Kurzgesagt-style subtle grain texture -->
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="gray"/>
+      <feBlend in="SourceGraphic" in2="gray" mode="multiply" result="blend"/>
+      <feComponentTransfer in="blend">
+        <feFuncA type="linear" slope="0.08"/>
+      </feComponentTransfer>
+      <feComposite in="SourceGraphic" operator="over"/>
+    </filter>
+    <!-- Rounded arrow marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 Z" fill="#5C6B7A"/>
+    </marker>
+    <marker id="arrow-billing" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 Z" fill="#E8A735"/>
+    </marker>
+    <marker id="arrow-tech" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 Z" fill="#4DAED1"/>
+    </marker>
+    <marker id="arrow-inquiry" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 Z" fill="#6BBF70"/>
+    </marker>
+    <marker id="arrow-end" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 Z" fill="#8A8FA3"/>
+    </marker>
+    <!-- Drop shadow -->
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#1A1E2E" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="18" fill="#1B2130"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" fill="#CBD2DC" font-size="15" font-weight="600" letter-spacing="1.5">CUSTOMER SERVICE TRIAGE — GRAPH FLOW</text>
+
+  <!-- ═══════════ START node ═══════════ -->
+  <g filter="url(#shadow)">
+    <circle cx="400" cy="82" r="26" fill="#3B4563"/>
+    <circle cx="400" cy="82" r="20" fill="#4E5A78"/>
+  </g>
+  <text x="400" y="87" text-anchor="middle" fill="#CBD2DC" font-size="11" font-weight="700">START</text>
+
+  <!-- Arrow: START → classify -->
+  <line x1="400" y1="108" x2="400" y2="145" stroke="#5C6B7A" stroke-width="2.5" marker-end="url(#arrow)" stroke-linecap="round"/>
+
+  <!-- ═══════════ CLASSIFY node ═══════════ -->
+  <g filter="url(#shadow)">
+    <rect x="295" y="148" width="210" height="56" rx="14" fill="#6C5CE7"/>
+  </g>
+  <!-- Brain / LLM icon -->
+  <circle cx="328" cy="176" r="12" fill="#8B7FF0" opacity="0.6"/>
+  <text x="328" y="180" text-anchor="middle" fill="#F0EDFF" font-size="13">🧠</text>
+  <text x="410" y="172" text-anchor="middle" fill="#F0EDFF" font-size="14" font-weight="700">classify</text>
+  <text x="410" y="189" text-anchor="middle" fill="#C8C0F8" font-size="10">LLM picks a category</text>
+
+  <!-- ═══════════ Branching arrows ═══════════ -->
+  <!-- Left: billing -->
+  <path d="M 345 204 Q 345 235 200 250" stroke="#E8A735" stroke-width="2.5" fill="none" marker-end="url(#arrow-billing)" stroke-linecap="round"/>
+  <text x="240" y="228" fill="#E8A735" font-size="9" font-weight="600" transform="rotate(-18, 240, 228)">"billing"</text>
+
+  <!-- Center: tech_support -->
+  <line x1="400" y1="204" x2="400" y2="258" stroke="#4DAED1" stroke-width="2.5" marker-end="url(#arrow-tech)" stroke-linecap="round"/>
+  <text x="430" y="238" fill="#4DAED1" font-size="9" font-weight="600">"tech_support"</text>
+
+  <!-- Right: customer_inquiry -->
+  <path d="M 455 204 Q 455 235 600 250" stroke="#6BBF70" stroke-width="2.5" fill="none" marker-end="url(#arrow-inquiry)" stroke-linecap="round"/>
+  <text x="530" y="228" fill="#6BBF70" font-size="9" font-weight="600" transform="rotate(18, 540, 228)">"customer_inquiry"</text>
+
+  <!-- ═══════════ HANDLER NODES ═══════════ -->
+
+  <!-- Billing handler -->
+  <g filter="url(#shadow)">
+    <rect x="80" y="260" width="200" height="76" rx="14" fill="#2D2510"/>
+    <rect x="80" y="260" width="200" height="76" rx="14" fill="#E8A735" opacity="0.15"/>
+    <rect x="80" y="260" width="200" height="76" rx="14" stroke="#E8A735" stroke-width="1.5" fill="none"/>
+  </g>
+  <text x="130" y="296" fill="#E8A735" font-size="18">💳</text>
+  <text x="195" y="293" text-anchor="middle" fill="#F5D88A" font-size="13" font-weight="700">handle_billing</text>
+  <text x="180" y="318" text-anchor="middle" fill="#A0936A" font-size="10">Billing specialist agent</text>
+
+  <!-- Tech support handler -->
+  <g filter="url(#shadow)">
+    <rect x="300" y="260" width="200" height="76" rx="14" fill="#0F2530"/>
+    <rect x="300" y="260" width="200" height="76" rx="14" fill="#4DAED1" opacity="0.15"/>
+    <rect x="300" y="260" width="200" height="76" rx="14" stroke="#4DAED1" stroke-width="1.5" fill="none"/>
+  </g>
+  <text x="345" y="296" fill="#4DAED1" font-size="18">🔧</text>
+  <text x="415" y="293" text-anchor="middle" fill="#8DD4EB" font-size="13" font-weight="700">handle_tech_support</text>
+  <text x="400" y="318" text-anchor="middle" fill="#6A9AAD" font-size="10">Tech support engineer agent</text>
+
+  <!-- Customer inquiry handler -->
+  <g filter="url(#shadow)">
+    <rect x="520" y="260" width="210" height="76" rx="14" fill="#0F2A12"/>
+    <rect x="520" y="260" width="210" height="76" rx="14" fill="#6BBF70" opacity="0.15"/>
+    <rect x="520" y="260" width="210" height="76" rx="14" stroke="#6BBF70" stroke-width="1.5" fill="none"/>
+  </g>
+  <text x="565" y="296" fill="#6BBF70" font-size="18">💬</text>
+  <text x="640" y="293" text-anchor="middle" fill="#A8E5AC" font-size="13" font-weight="700">handle_customer_inquiry</text>
+  <text x="625" y="318" text-anchor="middle" fill="#6A9E6D" font-size="10">Customer success agent</text>
+
+  <!-- ═══════════ Converging arrows to END ═══════════ -->
+  <!-- Billing → END -->
+  <path d="M 180 336 Q 180 380 370 405" stroke="#8A8FA3" stroke-width="2" fill="none" marker-end="url(#arrow-end)" stroke-linecap="round" stroke-dasharray="6 3"/>
+
+  <!-- Tech → END -->
+  <line x1="400" y1="336" x2="400" y2="400" stroke="#8A8FA3" stroke-width="2" marker-end="url(#arrow-end)" stroke-linecap="round" stroke-dasharray="6 3"/>
+
+  <!-- Inquiry → END -->
+  <path d="M 625 336 Q 625 380 430 405" stroke="#8A8FA3" stroke-width="2" fill="none" marker-end="url(#arrow-end)" stroke-linecap="round" stroke-dasharray="6 3"/>
+
+  <!-- ═══════════ END node ═══════════ -->
+  <g filter="url(#shadow)">
+    <circle cx="400" cy="424" r="26" fill="#3B4563"/>
+    <circle cx="400" cy="424" r="20" fill="#4E5A78"/>
+    <circle cx="400" cy="424" r="14" fill="#5C6B7A"/>
+  </g>
+  <text x="400" y="429" text-anchor="middle" fill="#CBD2DC" font-size="11" font-weight="700">END</text>
+
+  <!-- ═══════════ Legend ═══════════ -->
+  <g transform="translate(220, 468)">
+    <rect x="0" y="0" width="360" height="36" rx="10" fill="#232A3B" opacity="0.7"/>
+    <circle cx="24" cy="18" r="6" fill="#6C5CE7"/>
+    <text x="38" y="22" fill="#A0A8BC" font-size="9">LLM node</text>
+    <rect x="100" y="12" width="14" height="12" rx="3" stroke="#E8A735" stroke-width="1.2" fill="none"/>
+    <text x="120" y="22" fill="#A0A8BC" font-size="9">Handler</text>
+    <line x1="175" y1="18" x2="200" y2="18" stroke="#5C6B7A" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="208" y="22" fill="#A0A8BC" font-size="9">Flow</text>
+    <line x1="245" y1="18" x2="270" y2="18" stroke="#8A8FA3" stroke-width="2" stroke-dasharray="6 3"/>
+    <text x="278" y="22" fill="#A0A8BC" font-size="9">Converge</text>
+  </g>
+</svg>

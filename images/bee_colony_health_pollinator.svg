@@ -1,0 +1,281 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <!-- Kurzgesagt-style soft gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="supervisorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5a623"/>
+      <stop offset="100%" style="stop-color:#e8961e"/>
+    </linearGradient>
+    <linearGradient id="genieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460"/>
+      <stop offset="100%" style="stop-color:#1a5276"/>
+    </linearGradient>
+    <linearGradient id="kaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d6a4f"/>
+      <stop offset="100%" style="stop-color:#40916c"/>
+    </linearGradient>
+    <linearGradient id="synthGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#c73e54"/>
+    </linearGradient>
+    <linearGradient id="userGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#48c9b0"/>
+      <stop offset="100%" style="stop-color:#1abc9c"/>
+    </linearGradient>
+    <linearGradient id="traceGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:0.15"/>
+      <stop offset="50%" style="stop-color:#2ecc71;stop-opacity:0.05"/>
+      <stop offset="100%" style="stop-color:#2ecc71;stop-opacity:0.15"/>
+    </linearGradient>
+    <linearGradient id="deltaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1565c0"/>
+      <stop offset="100%" style="stop-color:#1976d2"/>
+    </linearGradient>
+    <linearGradient id="docsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6a1b9a"/>
+      <stop offset="100%" style="stop-color:#8e24aa"/>
+    </linearGradient>
+    <!-- Glow effects -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="subtleShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.03">
+    <line x1="0" y1="100" x2="1200" y2="100" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="400" x2="1200" y2="400" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="500" x2="1200" y2="500" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="600" x2="1200" y2="600" stroke="#fff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="750" stroke="#fff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="750" stroke="#fff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="750" stroke="#fff" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="750" stroke="#fff" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="750" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <!-- Decorative circles (Kurzgesagt-style background elements) -->
+  <circle cx="80" cy="120" r="40" fill="#f5a623" opacity="0.06"/>
+  <circle cx="1120" cy="630" r="55" fill="#48c9b0" opacity="0.06"/>
+  <circle cx="150" cy="650" r="30" fill="#e94560" opacity="0.05"/>
+  <circle cx="1050" cy="100" r="35" fill="#2d6a4f" opacity="0.07"/>
+  <circle cx="600" cy="50" r="25" fill="#0f3460" opacity="0.08"/>
+
+  <!-- Small decorative dots -->
+  <circle cx="300" cy="80" r="3" fill="#f5a623" opacity="0.15"/>
+  <circle cx="900" cy="680" r="3" fill="#48c9b0" opacity="0.15"/>
+  <circle cx="100" cy="400" r="2" fill="#e94560" opacity="0.12"/>
+  <circle cx="1100" cy="350" r="2" fill="#2d6a4f" opacity="0.12"/>
+
+  <!-- Bee-themed decorative hexagons -->
+  <g opacity="0.04" fill="#f5a623">
+    <polygon points="60,300 75,290 90,300 90,315 75,325 60,315"/>
+    <polygon points="1110,200 1125,190 1140,200 1140,215 1125,225 1110,215"/>
+    <polygon points="950,80 965,70 980,80 980,95 965,105 950,95"/>
+  </g>
+
+  <!-- MLflow Tracing backdrop strip -->
+  <rect x="30" y="85" width="1140" height="580" rx="18" fill="url(#traceGrad)" stroke="#2ecc71" stroke-width="1" stroke-opacity="0.12"/>
+  <text x="55" y="110" fill="#2ecc71" font-size="11" font-weight="600" opacity="0.5" letter-spacing="2">MLflow TRACING &amp; OBSERVABILITY</text>
+
+  <!-- ============ USER QUERY (top) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="440" y="108" width="320" height="62" rx="31" fill="url(#userGrad)"/>
+  </g>
+  <!-- User icon -->
+  <circle cx="480" cy="139" r="14" fill="none" stroke="#fff" stroke-width="2.5"/>
+  <circle cx="480" cy="133" r="5.5" fill="#fff"/>
+  <path d="M469 148 c0-6 5-10.5 11-10.5 s11 4.5 11 10.5" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="505" y="144" fill="#fff" font-size="17" font-weight="700">User Query</text>
+
+  <!-- Arrow: User -> Supervisor -->
+  <line x1="600" y1="172" x2="600" y2="215" stroke="#48c9b0" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <polygon points="592,213 600,227 608,213" fill="#48c9b0" opacity="0.7"/>
+
+  <!-- ============ SUPERVISOR (center) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="350" y="230" width="500" height="95" rx="18" fill="url(#supervisorGrad)"/>
+  </g>
+  <!-- Bee icon (hexagonal hive routing symbol) -->
+  <g transform="translate(393, 265)">
+    <polygon points="0,-16 14,-8 14,8 0,16 -14,8 -14,-8" fill="none" stroke="#fff" stroke-width="2" opacity="0.9"/>
+    <circle cx="-5" cy="-3" r="2.5" fill="#fff" opacity="0.8"/>
+    <circle cx="5" cy="-3" r="2.5" fill="#fff" opacity="0.8"/>
+    <circle cx="0" cy="5" r="2.5" fill="#fff" opacity="0.8"/>
+    <line x1="-5" y1="-3" x2="5" y2="-3" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+    <line x1="-5" y1="-3" x2="0" y2="5" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+    <line x1="5" y1="-3" x2="0" y2="5" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+  </g>
+  <text x="420" y="262" fill="#1a1a2e" font-size="22" font-weight="700">Bee Colony Health Advisor</text>
+  <text x="420" y="282" fill="#1a1a2e" font-size="14" font-weight="600" opacity="0.8">Supervisor Agent</text>
+  <text x="420" y="305" fill="#1a1a2e" font-size="12" opacity="0.65">LLM Classification  |  Route  |  Delegate  |  Synthesize</text>
+
+  <!-- Route labels on arrows -->
+  <!-- Arrow: Supervisor -> Genie (left) -->
+  <path d="M470 327 Q400 370 300 400" stroke="#4fc3f7" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <polygon points="303,393 294,403 306,405" fill="#4fc3f7" opacity="0.6"/>
+  <rect x="335" y="352" width="90" height="22" rx="11" fill="#4fc3f7" opacity="0.15"/>
+  <text x="348" y="368" fill="#4fc3f7" font-size="11" font-weight="600">"statistical"</text>
+
+  <!-- Arrow: Supervisor -> KA (right) -->
+  <path d="M730 327 Q800 370 900 400" stroke="#66bb6a" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <polygon points="897,393 906,403 894,405" fill="#66bb6a" opacity="0.6"/>
+  <rect x="785" y="352" width="75" height="22" rx="11" fill="#66bb6a" opacity="0.15"/>
+  <text x="797" y="368" fill="#66bb6a" font-size="11" font-weight="600">"guidance"</text>
+
+  <!-- Arrow: Supervisor -> Both (center, splits) -->
+  <line x1="600" y1="327" x2="600" y2="368" stroke="#e94560" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+  <rect x="570" y="348" width="60" height="22" rx="11" fill="#e94560" opacity="0.15"/>
+  <text x="583" y="364" fill="#e94560" font-size="11" font-weight="600">"both"</text>
+  <path d="M600 370 Q530 395 300 415" stroke="#e94560" stroke-width="1.5" fill="none" stroke-dasharray="6,4" stroke-linecap="round" opacity="0.35"/>
+  <path d="M600 370 Q670 395 900 415" stroke="#e94560" stroke-width="1.5" fill="none" stroke-dasharray="6,4" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- ============ GENIE SPACE AGENT (left) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="80" y="405" width="360" height="120" rx="16" fill="url(#genieGrad)"/>
+  </g>
+  <!-- Database icon -->
+  <g transform="translate(120, 442)">
+    <ellipse cx="0" cy="-8" rx="14" ry="6" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+    <path d="M-14 -8 L-14 8" stroke="#4fc3f7" stroke-width="2"/>
+    <path d="M14 -8 L14 8" stroke="#4fc3f7" stroke-width="2"/>
+    <ellipse cx="0" cy="8" rx="14" ry="6" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+    <line x1="-14" y1="0" x2="14" y2="0" stroke="#4fc3f7" stroke-width="1" opacity="0.4"/>
+  </g>
+  <text x="148" y="438" fill="#fff" font-size="18" font-weight="700">Genie Space</text>
+  <text x="148" y="458" fill="#4fc3f7" font-size="12" font-weight="500">Structured Data Agent  |  ~13.5K rows</text>
+  <!-- Sub-items -->
+  <g transform="translate(115, 472)">
+    <rect x="0" y="0" width="8" height="8" rx="2" fill="#4fc3f7" opacity="0.5"/>
+    <text x="14" y="8" fill="#fff" font-size="11" opacity="0.7">Honey Production</text>
+    <rect x="125" y="0" width="8" height="8" rx="2" fill="#4fc3f7" opacity="0.5"/>
+    <text x="139" y="8" fill="#fff" font-size="11" opacity="0.7">Colony Counts</text>
+  </g>
+  <g transform="translate(115, 490)">
+    <rect x="0" y="0" width="8" height="8" rx="2" fill="#4fc3f7" opacity="0.5"/>
+    <text x="14" y="8" fill="#fff" font-size="11" opacity="0.7">Colony Loss Rates</text>
+    <rect x="125" y="0" width="8" height="8" rx="2" fill="#4fc3f7" opacity="0.5"/>
+    <text x="139" y="8" fill="#fff" font-size="11" opacity="0.7">Stressor Analysis</text>
+  </g>
+
+  <!-- ============ KNOWLEDGE ASSISTANT AGENT (right) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="760" y="405" width="360" height="120" rx="16" fill="url(#kaGrad)"/>
+  </g>
+  <!-- Document icon -->
+  <g transform="translate(800, 442)">
+    <rect x="-10" y="-14" width="20" height="26" rx="3" fill="none" stroke="#a5d6a7" stroke-width="2"/>
+    <line x1="-5" y1="-6" x2="5" y2="-6" stroke="#a5d6a7" stroke-width="1.5" opacity="0.6"/>
+    <line x1="-5" y1="-1" x2="5" y2="-1" stroke="#a5d6a7" stroke-width="1.5" opacity="0.6"/>
+    <line x1="-5" y1="4" x2="3" y2="4" stroke="#a5d6a7" stroke-width="1.5" opacity="0.6"/>
+  </g>
+  <text x="828" y="438" fill="#fff" font-size="18" font-weight="700">Knowledge Assistant</text>
+  <text x="828" y="458" fill="#a5d6a7" font-size="12" font-weight="500">Document Retrieval  |  4 PDFs (~140 pages)</text>
+  <!-- Sub-items -->
+  <g transform="translate(795, 472)">
+    <rect x="0" y="0" width="8" height="8" rx="2" fill="#a5d6a7" opacity="0.5"/>
+    <text x="14" y="8" fill="#fff" font-size="11" opacity="0.7">Varroa Mite Mgmt</text>
+    <rect x="130" y="0" width="8" height="8" rx="2" fill="#a5d6a7" opacity="0.5"/>
+    <text x="144" y="8" fill="#fff" font-size="11" opacity="0.7">Conservation</text>
+  </g>
+  <g transform="translate(795, 490)">
+    <rect x="0" y="0" width="8" height="8" rx="2" fill="#a5d6a7" opacity="0.5"/>
+    <text x="14" y="8" fill="#fff" font-size="11" opacity="0.7">Habitat Creation</text>
+    <rect x="130" y="0" width="8" height="8" rx="2" fill="#a5d6a7" opacity="0.5"/>
+    <text x="144" y="8" fill="#fff" font-size="11" opacity="0.7">Native Plants</text>
+  </g>
+
+  <!-- Arrows: Agents -> Synthesizer -->
+  <path d="M260 527 Q320 560 470 580" stroke="#4fc3f7" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <polygon points="467,573 475,583 470,571" fill="#4fc3f7" opacity="0.5"/>
+  <path d="M940 527 Q880 560 730 580" stroke="#66bb6a" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <polygon points="733,573 725,583 730,571" fill="#66bb6a" opacity="0.5"/>
+
+  <!-- ============ SYNTHESIZER (bottom center) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="420" y="568" width="360" height="62" rx="16" fill="url(#synthGrad)"/>
+  </g>
+  <!-- Merge icon -->
+  <g transform="translate(458, 599)">
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#fff" stroke-width="2" opacity="0.8"/>
+    <line x1="-6" y1="0" x2="6" y2="0" stroke="#fff" stroke-width="2" opacity="0.8"/>
+    <line x1="0" y1="-6" x2="0" y2="6" stroke="#fff" stroke-width="2" opacity="0.8"/>
+  </g>
+  <text x="480" y="595" fill="#fff" font-size="18" font-weight="700">Synthesizer</text>
+  <text x="480" y="615" fill="#fff" font-size="12" opacity="0.75">Unified Actionable Recommendations</text>
+
+  <!-- ============ DATA LAYER (bottom left) ============ -->
+  <g filter="url(#subtleShadow)">
+    <rect x="80" y="548" width="170" height="42" rx="12" fill="url(#deltaGrad)" opacity="0.7"/>
+  </g>
+  <text x="100" y="574" fill="#fff" font-size="11" font-weight="600">Delta Tables (Unity Catalog)</text>
+  <!-- Arrow from data to Genie -->
+  <line x1="165" y1="548" x2="200" y2="527" stroke="#4fc3f7" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.4"/>
+
+  <!-- ============ DOCS LAYER (bottom right) ============ -->
+  <g filter="url(#subtleShadow)">
+    <rect x="950" y="548" width="170" height="42" rx="12" fill="url(#docsGrad)" opacity="0.7"/>
+  </g>
+  <text x="968" y="574" fill="#fff" font-size="11" font-weight="600">UC Volume (guidance_docs)</text>
+  <!-- Arrow from docs to KA -->
+  <line x1="1035" y1="548" x2="1000" y2="527" stroke="#a5d6a7" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.4"/>
+
+  <!-- ============ EVALUATION BADGES (bottom strip) ============ -->
+  <g transform="translate(195, 690)">
+    <!-- Layer 1 -->
+    <rect x="0" y="0" width="220" height="38" rx="19" fill="#2ecc71" opacity="0.12" stroke="#2ecc71" stroke-width="1" stroke-opacity="0.3"/>
+    <circle cx="22" cy="19" r="10" fill="#2ecc71" opacity="0.25"/>
+    <text x="22" y="23" fill="#2ecc71" font-size="12" font-weight="700" text-anchor="middle">1</text>
+    <text x="42" y="23" fill="#2ecc71" font-size="12" font-weight="600">Built-in Scorers</text>
+
+    <!-- Layer 2 -->
+    <rect x="240" y="0" width="240" height="38" rx="19" fill="#f39c12" opacity="0.12" stroke="#f39c12" stroke-width="1" stroke-opacity="0.3"/>
+    <circle cx="262" cy="19" r="10" fill="#f39c12" opacity="0.25"/>
+    <text x="262" y="23" fill="#f39c12" font-size="12" font-weight="700" text-anchor="middle">2</text>
+    <text x="282" y="23" fill="#f39c12" font-size="12" font-weight="600">Routing Accuracy</text>
+
+    <!-- Layer 3 -->
+    <rect x="500" y="0" width="260" height="38" rx="19" fill="#e74c3c" opacity="0.12" stroke="#e74c3c" stroke-width="1" stroke-opacity="0.3"/>
+    <circle cx="522" cy="19" r="10" fill="#e74c3c" opacity="0.25"/>
+    <text x="522" y="23" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">3</text>
+    <text x="542" y="23" fill="#e74c3c" font-size="12" font-weight="600">Agent-as-a-Judge</text>
+  </g>
+
+  <!-- Evaluation label -->
+  <text x="55" y="715" fill="#fff" font-size="12" font-weight="600" opacity="0.4" letter-spacing="1.5">EVALUATION</text>
+
+  <!-- Title bar at very top -->
+  <text x="600" y="50" fill="#fff" font-size="13" font-weight="600" text-anchor="middle" opacity="0.35" letter-spacing="3">BEE COLONY HEALTH &amp; POLLINATOR SUPERVISOR PATTERN</text>
+
+  <!-- Technology badges -->
+  <g transform="translate(290, 62)">
+    <rect x="0" y="0" width="110" height="22" rx="11" fill="#f5a623" opacity="0.15"/>
+    <text x="55" y="15" fill="#f5a623" font-size="10" font-weight="600" text-anchor="middle">AgentBricks</text>
+    <rect x="125" y="0" width="90" height="22" rx="11" fill="#2ecc71" opacity="0.15"/>
+    <text x="170" y="15" fill="#2ecc71" font-size="10" font-weight="600" text-anchor="middle">MLflow 3.x</text>
+    <rect x="230" y="0" width="100" height="22" rx="11" fill="#4fc3f7" opacity="0.15"/>
+    <text x="280" y="15" fill="#4fc3f7" font-size="10" font-weight="600" text-anchor="middle">Genie Space</text>
+    <rect x="345" y="0" width="110" height="22" rx="11" fill="#a5d6a7" opacity="0.15"/>
+    <text x="400" y="15" fill="#a5d6a7" font-size="10" font-weight="600" text-anchor="middle">Unity Catalog</text>
+    <rect x="470" y="0" width="115" height="22" rx="11" fill="#bb86fc" opacity="0.15"/>
+    <text x="527" y="15" fill="#bb86fc" font-size="10" font-weight="600" text-anchor="middle">USDA NASS Data</text>
+  </g>
+</svg>
