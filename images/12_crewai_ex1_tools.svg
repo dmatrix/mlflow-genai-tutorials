@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="dataGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460"/>
+      <stop offset="100%" style="stop-color:#1a5276"/>
+    </linearGradient>
+    <linearGradient id="policyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#533483"/>
+      <stop offset="100%" style="stop-color:#6c3d9e"/>
+    </linearGradient>
+    <linearGradient id="toolDarkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1c2833"/>
+      <stop offset="100%" style="stop-color:#2c3e50"/>
+    </linearGradient>
+    <linearGradient id="userGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#48c9b0"/>
+      <stop offset="100%" style="stop-color:#1abc9c"/>
+    </linearGradient>
+    <linearGradient id="traceGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:0.15"/>
+      <stop offset="50%" style="stop-color:#2ecc71;stop-opacity:0.05"/>
+      <stop offset="100%" style="stop-color:#2ecc71;stop-opacity:0.15"/>
+    </linearGradient>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="subtleShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.03">
+    <line x1="0" y1="100" x2="1200" y2="100" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="400" x2="1200" y2="400" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="500" x2="1200" y2="500" stroke="#fff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="600" stroke="#fff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="600" stroke="#fff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="600" stroke="#fff" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="600" stroke="#fff" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="600" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <!-- Decorative circles -->
+  <circle cx="80" cy="100" r="35" fill="#e94560" opacity="0.06"/>
+  <circle cx="1120" cy="510" r="45" fill="#48c9b0" opacity="0.06"/>
+  <circle cx="150" cy="530" r="25" fill="#f5a623" opacity="0.05"/>
+  <circle cx="1050" cy="80" r="30" fill="#533483" opacity="0.07"/>
+  <circle cx="300" cy="60" r="3" fill="#e94560" opacity="0.15"/>
+  <circle cx="900" cy="560" r="3" fill="#48c9b0" opacity="0.15"/>
+
+  <!-- MLflow Tracing backdrop -->
+  <rect x="30" y="80" width="1140" height="440" rx="18" fill="url(#traceGrad)" stroke="#2ecc71" stroke-width="1" stroke-opacity="0.12"/>
+  <text x="55" y="105" fill="#2ecc71" font-size="11" font-weight="600" opacity="0.5" letter-spacing="2">MLflow TRACING  ·  mlflow.crewai.autolog()</text>
+
+  <!-- Title -->
+  <text x="600" y="42" fill="#fff" font-size="13" font-weight="600" text-anchor="middle" opacity="0.35" letter-spacing="3">EXAMPLE 2: SEQUENTIAL CREW WITH CUSTOM TOOLS</text>
+
+  <!-- Tech badges -->
+  <g transform="translate(330, 54)">
+    <rect x="0" y="0" width="85" height="22" rx="11" fill="#e94560" opacity="0.15"/>
+    <text x="42" y="15" fill="#e94560" font-size="10" font-weight="600" text-anchor="middle">CrewAI</text>
+    <rect x="100" y="0" width="90" height="22" rx="11" fill="#2ecc71" opacity="0.15"/>
+    <text x="145" y="15" fill="#2ecc71" font-size="10" font-weight="600" text-anchor="middle">MLflow 3.x</text>
+    <rect x="205" y="0" width="90" height="22" rx="11" fill="#4fc3f7" opacity="0.15"/>
+    <text x="250" y="15" fill="#4fc3f7" font-size="10" font-weight="600" text-anchor="middle">@tool</text>
+    <rect x="310" y="0" width="95" height="22" rx="11" fill="#f5a623" opacity="0.15"/>
+    <text x="357" y="15" fill="#f5a623" font-size="10" font-weight="600" text-anchor="middle">FEMA Data</text>
+    <rect x="420" y="0" width="95" height="22" rx="11" fill="#bb86fc" opacity="0.15"/>
+    <text x="467" y="15" fill="#bb86fc" font-size="10" font-weight="600" text-anchor="middle">SQLite</text>
+  </g>
+
+  <!-- ============ USER QUERY (top center) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="470" y="112" width="260" height="55" rx="28" fill="url(#userGrad)"/>
+  </g>
+  <circle cx="505" cy="140" r="12" fill="none" stroke="#fff" stroke-width="2.5"/>
+  <circle cx="505" cy="135" r="5" fill="#fff"/>
+  <path d="M496 148 c0-5 4-9 9-9 s9 4 9 9" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="525" y="144" fill="#fff" font-size="15" font-weight="700">User Query</text>
+
+  <!-- Arrow: User -> Crew -->
+  <line x1="600" y1="169" x2="600" y2="198" stroke="#48c9b0" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <polygon points="593,196 600,209 607,196" fill="#48c9b0" opacity="0.7"/>
+
+  <!-- ============ CREW BOUNDARY ============ -->
+  <rect x="55" y="208" width="1090" height="245" rx="20" fill="none" stroke="#e94560" stroke-width="2" stroke-dasharray="8,5" stroke-opacity="0.35"/>
+  <text x="80" y="232" fill="#e94560" font-size="12" font-weight="600" opacity="0.5">Crew(process=Process.sequential)</text>
+
+  <!-- ============ DATA ANALYST AGENT (left) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="80" y="248" width="440" height="115" rx="16" fill="url(#dataGrad)"/>
+  </g>
+  <!-- Database icon -->
+  <g transform="translate(120, 283)">
+    <ellipse cx="0" cy="-8" rx="12" ry="5" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+    <path d="M-12 -8 L-12 6" stroke="#4fc3f7" stroke-width="2"/>
+    <path d="M12 -8 L12 6" stroke="#4fc3f7" stroke-width="2"/>
+    <ellipse cx="0" cy="6" rx="12" ry="5" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+  </g>
+  <text x="145" y="280" fill="#fff" font-size="17" font-weight="700">Data Analyst</text>
+  <text x="145" y="299" fill="#4fc3f7" font-size="11" font-weight="500">role: "FEMA Data Analyst"</text>
+
+  <!-- Tool box: query_disaster_database -->
+  <g filter="url(#subtleShadow)">
+    <rect x="110" y="312" width="250" height="40" rx="10" fill="url(#toolDarkGrad)" stroke="#4fc3f7" stroke-width="1" stroke-opacity="0.4"/>
+  </g>
+  <!-- Wrench icon -->
+  <g transform="translate(130, 332)">
+    <circle cx="0" cy="-4" r="4" fill="none" stroke="#4fc3f7" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="0" y2="8" stroke="#4fc3f7" stroke-width="1.5"/>
+  </g>
+  <text x="143" y="336" fill="#4fc3f7" font-size="11" font-weight="600">query_disaster_database</text>
+
+  <!-- SQLite data source -->
+  <g transform="translate(390, 280)">
+    <rect x="0" y="0" width="110" height="30" rx="8" fill="#4fc3f7" opacity="0.1" stroke="#4fc3f7" stroke-width="1" stroke-opacity="0.3"/>
+    <text x="12" y="20" fill="#4fc3f7" font-size="10" font-weight="600">SQLite + 200 rows</text>
+  </g>
+  <!-- Arrow tool -> SQLite -->
+  <line x1="362" y1="332" x2="390" y2="300" stroke="#4fc3f7" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Arrow: Data Analyst -> Policy Expert (horizontal handoff) -->
+  <line x1="522" y1="306" x2="660" y2="306" stroke="#fff" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+  <polygon points="658,298 672,306 658,314" fill="#fff" opacity="0.45"/>
+  <!-- Handoff label -->
+  <rect x="566" y="282" width="60" height="20" rx="10" fill="#fff" opacity="0.08"/>
+  <text x="580" y="296" fill="#fff" font-size="10" font-weight="600" opacity="0.6">output</text>
+
+  <!-- ============ POLICY EXPERT AGENT (right) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="680" y="248" width="440" height="115" rx="16" fill="url(#policyGrad)"/>
+  </g>
+  <!-- Document icon -->
+  <g transform="translate(720, 283)">
+    <rect x="-9" y="-12" width="18" height="24" rx="3" fill="none" stroke="#bb86fc" stroke-width="2"/>
+    <line x1="-4" y1="-5" x2="4" y2="-5" stroke="#bb86fc" stroke-width="1.5" opacity="0.6"/>
+    <line x1="-4" y1="0" x2="4" y2="0" stroke="#bb86fc" stroke-width="1.5" opacity="0.6"/>
+    <line x1="-4" y1="5" x2="2" y2="5" stroke="#bb86fc" stroke-width="1.5" opacity="0.6"/>
+  </g>
+  <text x="745" y="280" fill="#fff" font-size="17" font-weight="700">Policy Expert</text>
+  <text x="745" y="299" fill="#bb86fc" font-size="11" font-weight="500">role: "FEMA Policy Expert"</text>
+
+  <!-- Tool box: search_fema_policies -->
+  <g filter="url(#subtleShadow)">
+    <rect x="710" y="312" width="230" height="40" rx="10" fill="url(#toolDarkGrad)" stroke="#bb86fc" stroke-width="1" stroke-opacity="0.4"/>
+  </g>
+  <g transform="translate(730, 332)">
+    <circle cx="0" cy="-4" r="4" fill="none" stroke="#bb86fc" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="0" y2="8" stroke="#bb86fc" stroke-width="1.5"/>
+  </g>
+  <text x="743" y="336" fill="#bb86fc" font-size="11" font-weight="600">search_fema_policies</text>
+
+  <!-- Policy corpus source -->
+  <g transform="translate(970, 280)">
+    <rect x="0" y="0" width="120" height="30" rx="8" fill="#bb86fc" opacity="0.1" stroke="#bb86fc" stroke-width="1" stroke-opacity="0.3"/>
+    <text x="10" y="20" fill="#bb86fc" font-size="10" font-weight="600">5 FEMA policies</text>
+  </g>
+  <!-- Arrow tool -> corpus -->
+  <line x1="942" y1="332" x2="975" y2="300" stroke="#bb86fc" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- ============ CREW OUTPUT (bottom) ============ -->
+  <!-- Arrow: Crew -> Output -->
+  <line x1="600" y1="455" x2="600" y2="478" stroke="#1abc9c" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <polygon points="593,476 600,489 607,476" fill="#1abc9c" opacity="0.7"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="400" y="488" width="400" height="50" rx="16" fill="#1abc9c" opacity="0.9"/>
+  </g>
+  <g transform="translate(435, 513)">
+    <circle cx="0" cy="0" r="11" fill="none" stroke="#fff" stroke-width="2" opacity="0.8"/>
+    <line x1="-5" y1="0" x2="5" y2="0" stroke="#fff" stroke-width="2" opacity="0.8"/>
+    <line x1="0" y1="-5" x2="0" y2="5" stroke="#fff" stroke-width="2" opacity="0.8"/>
+  </g>
+  <text x="455" y="510" fill="#fff" font-size="16" font-weight="700">Crew Output</text>
+  <text x="455" y="527" fill="#fff" font-size="11" opacity="0.75">Data analysis + policy guidance</text>
+
+  <!-- ============ ANNOTATION (bottom) ============ -->
+  <text x="600" y="565" fill="#fff" font-size="12" font-weight="600" text-anchor="middle" opacity="0.3" letter-spacing="1.5">AGENTS USE @tool FUNCTIONS  ·  LLM REASONS ABOUT TOOL SELECTION  ·  TOOL I/O TRACED AUTOMATICALLY</text>
+</svg>

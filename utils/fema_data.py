@@ -1,5 +1,5 @@
 """
-FEMA Disaster Database — 200 fabricated records for the multi-agent supervisor tutorial.
+FEMA Disaster Database — fabricated set of disaster response records for the multi-agent supervisor tutorial.
 
 Each record represents a federally declared disaster with realistic (but synthetic)
 values for severity, affected population, and federal aid amounts.

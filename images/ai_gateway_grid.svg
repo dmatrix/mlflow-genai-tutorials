@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="112%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E2740"/>
+      <stop offset="100%" stop-color="#161D30"/>
+    </linearGradient>
+    <linearGradient id="accent1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4A9EF5"/>
+      <stop offset="100%" stop-color="#3B7FD9"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5BA8F7"/>
+      <stop offset="100%" stop-color="#4090E8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="620" rx="16" fill="#0D1220"/>
+
+  <!-- Subtle grid dots -->
+  <g fill="#1A2238" opacity="0.5">
+    <circle cx="50" cy="50" r="1.2"/><circle cx="100" cy="50" r="1.2"/><circle cx="150" cy="50" r="1.2"/><circle cx="200" cy="50" r="1.2"/><circle cx="250" cy="50" r="1.2"/><circle cx="300" cy="50" r="1.2"/><circle cx="350" cy="50" r="1.2"/><circle cx="400" cy="50" r="1.2"/><circle cx="450" cy="50" r="1.2"/><circle cx="500" cy="50" r="1.2"/><circle cx="550" cy="50" r="1.2"/><circle cx="600" cy="50" r="1.2"/><circle cx="650" cy="50" r="1.2"/><circle cx="700" cy="50" r="1.2"/><circle cx="750" cy="50" r="1.2"/><circle cx="800" cy="50" r="1.2"/><circle cx="850" cy="50" r="1.2"/>
+    <circle cx="50" cy="100" r="1.2"/><circle cx="100" cy="100" r="1.2"/><circle cx="150" cy="100" r="1.2"/><circle cx="200" cy="100" r="1.2"/><circle cx="250" cy="100" r="1.2"/><circle cx="300" cy="100" r="1.2"/><circle cx="350" cy="100" r="1.2"/><circle cx="400" cy="100" r="1.2"/><circle cx="450" cy="100" r="1.2"/><circle cx="500" cy="100" r="1.2"/><circle cx="550" cy="100" r="1.2"/><circle cx="600" cy="100" r="1.2"/><circle cx="650" cy="100" r="1.2"/><circle cx="700" cy="100" r="1.2"/><circle cx="750" cy="100" r="1.2"/><circle cx="800" cy="100" r="1.2"/><circle cx="850" cy="100" r="1.2"/>
+    <circle cx="50" cy="300" r="1.2"/><circle cx="100" cy="300" r="1.2"/><circle cx="150" cy="300" r="1.2"/><circle cx="200" cy="300" r="1.2"/><circle cx="250" cy="300" r="1.2"/><circle cx="300" cy="300" r="1.2"/><circle cx="350" cy="300" r="1.2"/><circle cx="400" cy="300" r="1.2"/><circle cx="450" cy="300" r="1.2"/><circle cx="500" cy="300" r="1.2"/><circle cx="550" cy="300" r="1.2"/><circle cx="600" cy="300" r="1.2"/><circle cx="650" cy="300" r="1.2"/><circle cx="700" cy="300" r="1.2"/><circle cx="750" cy="300" r="1.2"/><circle cx="800" cy="300" r="1.2"/><circle cx="850" cy="300" r="1.2"/>
+    <circle cx="50" cy="500" r="1.2"/><circle cx="100" cy="500" r="1.2"/><circle cx="150" cy="500" r="1.2"/><circle cx="200" cy="500" r="1.2"/><circle cx="250" cy="500" r="1.2"/><circle cx="300" cy="500" r="1.2"/><circle cx="350" cy="500" r="1.2"/><circle cx="400" cy="500" r="1.2"/><circle cx="450" cy="500" r="1.2"/><circle cx="500" cy="500" r="1.2"/><circle cx="550" cy="500" r="1.2"/><circle cx="600" cy="500" r="1.2"/><circle cx="650" cy="500" r="1.2"/><circle cx="700" cy="500" r="1.2"/><circle cx="750" cy="500" r="1.2"/><circle cx="800" cy="500" r="1.2"/><circle cx="850" cy="500" r="1.2"/>
+  </g>
+
+  <!-- ════════════ ROW 1 ════════════ -->
+
+  <!-- Card 1: Quickstart -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="40" width="260" height="170" rx="14" fill="url(#cardGrad)" stroke="#253050" stroke-width="1"/>
+  </g>
+  <!-- Rocket icon -->
+  <g transform="translate(60, 62)">
+    <circle cx="20" cy="20" r="20" fill="#1A2B4A"/>
+    <path d="M20 8 L20 8 C20 8 28 14 28 22 L24 26 L16 26 L12 22 C12 14 20 8 20 8Z" fill="url(#accent1)" stroke="#6AB8FF" stroke-width="0.5"/>
+    <circle cx="20" cy="18" r="3" fill="#0D1220"/>
+    <path d="M16 26 L14 32 L18 30" fill="#4A9EF5" opacity="0.7"/>
+    <path d="M24 26 L26 32 L22 30" fill="#4A9EF5" opacity="0.7"/>
+    <rect x="18" y="26" width="4" height="5" rx="1" fill="#F4845F" opacity="0.9"/>
+  </g>
+  <text x="60" y="118" fill="#E4E8F0" font-size="16" font-weight="700">Quickstart</text>
+  <text x="60" y="138" fill="#7A8BA8" font-size="11">Set up your AI Gateway running in</text>
+  <text x="60" y="153" fill="#7A8BA8" font-size="11">minutes with a simple walkthrough</text>
+  <text x="60" y="185" fill="#4A9EF5" font-size="12" font-weight="600">Get started &#x2192;</text>
+
+  <!-- Card 2: API Keys -->
+  <g filter="url(#shadow)">
+    <rect x="320" y="40" width="260" height="170" rx="14" fill="url(#cardGrad)" stroke="#253050" stroke-width="1"/>
+  </g>
+  <!-- Key icon -->
+  <g transform="translate(340, 62)">
+    <circle cx="20" cy="20" r="20" fill="#1A2B4A"/>
+    <circle cx="16" cy="16" r="6" fill="none" stroke="url(#accent1)" stroke-width="2.2"/>
+    <line x1="20" y1="20" x2="32" y2="32" stroke="url(#accent1)" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="28" y1="28" x2="32" y2="24" stroke="url(#accent1)" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="25" y1="25" x2="29" y2="21" stroke="url(#accent1)" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+  <text x="340" y="118" fill="#E4E8F0" font-size="16" font-weight="700">API Keys</text>
+  <text x="340" y="138" fill="#7A8BA8" font-size="11">Create and manage API keys for</text>
+  <text x="340" y="153" fill="#7A8BA8" font-size="11">secure endpoint access management</text>
+  <text x="340" y="185" fill="#4A9EF5" font-size="12" font-weight="600">Manage keys &#x2192;</text>
+
+  <!-- Card 3: Endpoints -->
+  <g filter="url(#shadow)">
+    <rect x="600" y="40" width="260" height="170" rx="14" fill="url(#cardGrad)" stroke="#253050" stroke-width="1"/>
+  </g>
+  <!-- Endpoint / nodes icon -->
+  <g transform="translate(620, 62)">
+    <circle cx="20" cy="20" r="20" fill="#1A2B4A"/>
+    <circle cx="12" cy="14" r="4" fill="none" stroke="url(#accent1)" stroke-width="2"/>
+    <circle cx="28" cy="14" r="4" fill="none" stroke="url(#accent1)" stroke-width="2"/>
+    <circle cx="20" cy="28" r="4" fill="none" stroke="url(#accent1)" stroke-width="2"/>
+    <line x1="14" y1="17" x2="18" y2="25" stroke="url(#accent1)" stroke-width="1.5"/>
+    <line x1="26" y1="17" x2="22" y2="25" stroke="url(#accent1)" stroke-width="1.5"/>
+    <line x1="16" y1="14" x2="24" y2="14" stroke="url(#accent1)" stroke-width="1.5"/>
+  </g>
+  <text x="620" y="118" fill="#E4E8F0" font-size="16" font-weight="700">Endpoints</text>
+  <text x="620" y="138" fill="#7A8BA8" font-size="11">Create, configure, and query AI</text>
+  <text x="620" y="153" fill="#7A8BA8" font-size="11">Gateway model serving endpoints</text>
+  <text x="620" y="185" fill="#4A9EF5" font-size="12" font-weight="600">Configure endpoints &#x2192;</text>
+
+  <!-- ════════════ ROW 2 ════════════ -->
+
+  <!-- Card 4: Traffic Routing -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="230" width="260" height="170" rx="14" fill="url(#cardGrad)" stroke="#253050" stroke-width="1"/>
+  </g>
+  <!-- Routing / split arrows icon -->
+  <g transform="translate(60, 252)">
+    <circle cx="20" cy="20" r="20" fill="#1A2B4A"/>
+    <path d="M10 20 L18 20" stroke="url(#accent1)" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M18 20 L30 12" stroke="url(#accent1)" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M18 20 L30 20" stroke="url(#accent1)" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M18 20 L30 28" stroke="url(#accent1)" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="30" cy="12" r="2.5" fill="url(#accent1)"/>
+    <circle cx="30" cy="20" r="2.5" fill="url(#accent1)"/>
+    <circle cx="30" cy="28" r="2.5" fill="url(#accent1)"/>
+  </g>
+  <text x="60" y="308" fill="#E4E8F0" font-size="16" font-weight="700">Traffic Routing</text>
+  <text x="60" y="328" fill="#7A8BA8" font-size="11">Configure load balancing and</text>
+  <text x="60" y="343" fill="#7A8BA8" font-size="11">failovers for high availability</text>
+  <text x="60" y="375" fill="#4A9EF5" font-size="12" font-weight="600">Learn routing &#x2192;</text>
+
+  <!-- Card 5: Usage Tracking -->
+  <g filter="url(#shadow)">
+    <rect x="320" y="230" width="260" height="170" rx="14" fill="url(#cardGrad)" stroke="#253050" stroke-width="1"/>
+  </g>
+  <!-- Chart icon -->
+  <g transform="translate(340, 252)">
+    <circle cx="20" cy="20" r="20" fill="#1A2B4A"/>
+    <rect x="9" y="22" width="5" height="10" rx="1" fill="url(#accent1)" opacity="0.6"/>
+    <rect x="17" y="16" width="5" height="16" rx="1" fill="url(#accent1)" opacity="0.8"/>
+    <rect x="25" y="10" width="5" height="22" rx="1" fill="url(#accent1)"/>
+  </g>
+  <text x="340" y="308" fill="#E4E8F0" font-size="16" font-weight="700">Usage Tracking</text>
+  <text x="340" y="328" fill="#7A8BA8" font-size="11">Monitor requests, latency,</text>
+  <text x="340" y="343" fill="#7A8BA8" font-size="11">performance, token consumption</text>
+  <text x="340" y="375" fill="#4A9EF5" font-size="12" font-weight="600">View statistics &#x2192;</text>
+
+  <!-- Card 6: Budget Alerts & Limits -->
+  <g filter="url(#shadow)">
+    <rect x="600" y="230" width="260" height="170" rx="14" fill="url(#cardGrad)" stroke="#253050" stroke-width="1"/>
+  </g>
+  <!-- Dollar / shield icon -->
+  <g transform="translate(620, 252)">
+    <circle cx="20" cy="20" r="20" fill="#1A2B4A"/>
+    <text x="20" y="26" text-anchor="middle" fill="url(#accent1)" font-size="22" font-weight="700">$</text>
+  </g>
+  <text x="620" y="308" fill="#E4E8F0" font-size="16" font-weight="700">Budget Alerts &amp; Limits</text>
+  <text x="620" y="328" fill="#7A8BA8" font-size="11">Set spending thresholds and</text>
+  <text x="620" y="343" fill="#7A8BA8" font-size="11">alerts for cost management</text>
+  <text x="620" y="375" fill="#4A9EF5" font-size="12" font-weight="600">Manage budgets &#x2192;</text>
+
+  <!-- ════════════ ROW 3 ════════════ -->
+
+  <!-- Card 7: Authentication -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="420" width="260" height="170" rx="14" fill="url(#cardGrad)" stroke="#253050" stroke-width="1"/>
+  </g>
+  <!-- Lock icon -->
+  <g transform="translate(60, 442)">
+    <circle cx="20" cy="20" r="20" fill="#1A2B4A"/>
+    <rect x="12" y="18" width="16" height="13" rx="3" fill="none" stroke="url(#accent1)" stroke-width="2"/>
+    <path d="M15 18 L15 13 C15 9 25 9 25 13 L25 18" fill="none" stroke="url(#accent1)" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="20" cy="25" r="2" fill="url(#accent1)"/>
+    <line x1="20" y1="27" x2="20" y2="29" stroke="url(#accent1)" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+  <text x="60" y="498" fill="#E4E8F0" font-size="16" font-weight="700">Authentication</text>
+  <text x="60" y="518" fill="#7A8BA8" font-size="11">Configure OAuth and token</text>
+  <text x="60" y="533" fill="#7A8BA8" font-size="11">authentication for AI Gateway</text>
+  <text x="60" y="565" fill="#4A9EF5" font-size="12" font-weight="600">Learn more &#x2192;</text>
+
+  <!-- Official MLflow logo + AI Gateway — centered in row 3 empty space -->
+  <g transform="translate(500, 468) scale(2.0)">
+    <path d="M0 31.0316V15.5024H3.54258V17.4699C4.43636 15.8756 6.38278 15.045 8.13589 15.045C10.178 15.045 11.9636 15.9713 12.7943 17.7895C14.0096 15.7474 15.8278 15.045 17.8373 15.045C20.6469 15.045 23.3263 16.8325 23.3263 20.9493V31.0316H19.7531V21.5541C19.7531 19.7359 18.8268 18.3636 16.7522 18.3636C14.8057 18.3636 13.5292 19.8947 13.5292 21.8086V31.0297H9.89282V21.5541C9.89282 19.7684 8.99522 18.3732 6.88995 18.3732C4.91292 18.3732 3.66699 19.8412 3.66699 21.8182V31.0392Z" fill="#E4E8F0"/>
+    <path d="M27.8546 31.0316V7.92917H31.5579V31.0316Z" fill="#E4E8F0"/>
+    <path d="M30.0708 39.4871C30.9033 39.7187 31.6517 39.8699 33.2402 39.8699C36.1933 39.8699 39.6765 38.2048 40.5933 33.5311L44.3789 14.7923H50.0076L50.6947 11.6746H45.0086L45.7741 7.95023C46.3598 5.05837 47.9598 3.59234 50.5282 3.59234C51.1962 3.59234 51.0086 3.64975 51.6038 3.76267L52.4268 0.570327C51.6344 0.333006 50.9244 0.191379 49.378 0.191379C47.7454 0.166831 46.1514 0.688934 44.8497 1.67463C43.4086 2.78851 42.4574 4.42487 42.023 6.53779L40.9569 11.6746H35.9234L35.5119 14.7943H40.3349L36.8593 32.1206C36.4765 34.0861 35.3588 36.4364 32.1512 36.4364C31.4239 36.4364 31.688 36.3809 31.0297 36.2737Z" fill="#0194E2"/>
+    <path d="M53.3416 30.9053H49.6402L54.7139 7.59616H58.4153Z" fill="#0194E2"/>
+    <path d="M71.8067 16.4766C68.5762 14.2161 64.1778 14.6606 61.4649 17.5216C58.7519 20.3826 58.5416 24.7984 60.9703 27.9043L63.3952 26.1244C62.1915 24.6312 61.9471 22.5815 62.7658 20.8471C63.5845 19.1127 65.3224 17.9987 67.2402 17.979V19.8737Z" fill="#43C9ED"/>
+    <path d="M62.6179 29.4717C65.8484 31.7322 70.2468 31.2877 72.9597 28.4267C75.6727 25.5657 75.883 21.1499 73.4543 18.044L71.0294 19.8239C72.2331 21.3171 72.4775 23.3668 71.6588 25.1012C70.8401 26.8356 69.1022 27.9496 67.1844 27.9693V26.0746Z" fill="#0194E2"/>
+    <path d="M78.0919 15.4928H82.1359L82.9588 26.1053L88.7177 15.4928L92.5569 15.5483L94.0651 26.1053L99.1387 15.4928L102.84 15.5483L95.1617 31.0412H91.4603L89.6765 19.9349L83.7818 31.0412H79.9426Z" fill="#0194E2"/>
+    <path d="M105.072 15.7684H104.306V15.5024H106.151V15.7741H105.386V18.0172H105.072Z" fill="#0194E2"/>
+    <path d="M106.614 15.5024H106.997L107.479 16.8421C107.541 17.0143 107.598 17.1904 107.657 17.3665H107.675C107.734 17.1904 107.788 17.0143 107.847 16.8421L108.325 15.5024H108.708V18.0172H108.41V16.6297C108.41 16.4096 108.434 16.1072 108.45 15.8832H108.434L108.243 16.4574L107.768 17.7608H107.56L107.079 16.4593L106.888 15.8852H106.873C106.89 16.1091 106.915 16.4115 106.915 16.6316V18.0191H106.624Z" fill="#0194E2"/>
+    <!-- AI GATEWAY subtitle centered under the logo -->
+    <text x="54" y="52" text-anchor="middle" fill="#4A9EF5" font-size="10" font-weight="600" letter-spacing="3">AI GATEWAY</text>
+  </g>
+
+</svg>
