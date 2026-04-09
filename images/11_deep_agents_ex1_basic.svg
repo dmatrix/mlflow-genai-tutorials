@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 550" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="agentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#c73e54"/>
+    </linearGradient>
+    <linearGradient id="planGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460"/>
+      <stop offset="100%" style="stop-color:#1a5276"/>
+    </linearGradient>
+    <linearGradient id="toolGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#533483"/>
+      <stop offset="100%" style="stop-color:#6c3d9e"/>
+    </linearGradient>
+    <linearGradient id="userGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#48c9b0"/>
+      <stop offset="100%" style="stop-color:#1abc9c"/>
+    </linearGradient>
+    <linearGradient id="toolDarkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1c2833"/>
+      <stop offset="100%" style="stop-color:#2c3e50"/>
+    </linearGradient>
+    <linearGradient id="traceGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:0.15"/>
+      <stop offset="50%" style="stop-color:#2ecc71;stop-opacity:0.05"/>
+      <stop offset="100%" style="stop-color:#2ecc71;stop-opacity:0.15"/>
+    </linearGradient>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="subtleShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="550" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.03">
+    <line x1="0" y1="100" x2="1200" y2="100" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="400" x2="1200" y2="400" stroke="#fff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="550" stroke="#fff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="550" stroke="#fff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="550" stroke="#fff" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="550" stroke="#fff" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="550" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <!-- Decorative circles -->
+  <circle cx="80" cy="100" r="35" fill="#e94560" opacity="0.06"/>
+  <circle cx="1120" cy="470" r="45" fill="#48c9b0" opacity="0.06"/>
+  <circle cx="150" cy="480" r="25" fill="#533483" opacity="0.05"/>
+  <circle cx="1050" cy="80" r="30" fill="#0f3460" opacity="0.07"/>
+  <circle cx="300" cy="65" r="3" fill="#e94560" opacity="0.15"/>
+  <circle cx="900" cy="510" r="3" fill="#48c9b0" opacity="0.15"/>
+
+  <!-- MLflow Tracing backdrop -->
+  <rect x="30" y="82" width="1140" height="385" rx="18" fill="url(#traceGrad)" stroke="#2ecc71" stroke-width="1" stroke-opacity="0.12"/>
+  <text x="55" y="107" fill="#2ecc71" font-size="11" font-weight="600" opacity="0.5" letter-spacing="2">MLflow TRACING  ·  mlflow.langchain.autolog()</text>
+
+  <!-- Title -->
+  <text x="600" y="42" fill="#fff" font-size="13" font-weight="600" text-anchor="middle" opacity="0.35" letter-spacing="3">EXAMPLE 1: BASIC DEEP AGENT WITH PLANNING &amp; TOOLS</text>
+
+  <!-- Tech badges -->
+  <g transform="translate(350, 54)">
+    <rect x="0" y="0" width="110" height="22" rx="11" fill="#e94560" opacity="0.15"/>
+    <text x="55" y="15" fill="#e94560" font-size="10" font-weight="600" text-anchor="middle">Deep Agents</text>
+    <rect x="125" y="0" width="90" height="22" rx="11" fill="#2ecc71" opacity="0.15"/>
+    <text x="170" y="15" fill="#2ecc71" font-size="10" font-weight="600" text-anchor="middle">MLflow 3.x</text>
+    <rect x="230" y="0" width="100" height="22" rx="11" fill="#4fc3f7" opacity="0.15"/>
+    <text x="280" y="15" fill="#4fc3f7" font-size="10" font-weight="600" text-anchor="middle">LangGraph</text>
+    <rect x="345" y="0" width="80" height="22" rx="11" fill="#f5a623" opacity="0.15"/>
+    <text x="385" y="15" fill="#f5a623" font-size="10" font-weight="600" text-anchor="middle">OpenAI</text>
+  </g>
+
+  <!-- ============ USER TASK (top) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="460" y="108" width="280" height="55" rx="28" fill="url(#userGrad)"/>
+  </g>
+  <circle cx="495" cy="136" r="13" fill="none" stroke="#fff" stroke-width="2.5"/>
+  <circle cx="495" cy="131" r="5" fill="#fff"/>
+  <path d="M485 144 c0-5 4.5-9 10-9 s10 4 10 9" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="517" y="140" fill="#fff" font-size="15" font-weight="700">User Task</text>
+
+  <!-- Arrow: User -> Deep Agent -->
+  <line x1="600" y1="165" x2="600" y2="198" stroke="#48c9b0" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <polygon points="593,196 600,210 607,196" fill="#48c9b0" opacity="0.7"/>
+
+  <!-- ============ DEEP AGENT (center) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="340" y="212" width="520" height="85" rx="18" fill="url(#agentGrad)"/>
+  </g>
+  <!-- Brain icon -->
+  <g transform="translate(382, 245)">
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#fff" stroke-width="2" opacity="0.9"/>
+    <circle cx="-5" cy="-3" r="3" fill="#fff" opacity="0.8"/>
+    <circle cx="5" cy="-3" r="3" fill="#fff" opacity="0.8"/>
+    <circle cx="0" cy="5" r="3" fill="#fff" opacity="0.8"/>
+    <line x1="-5" y1="-3" x2="5" y2="-3" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+    <line x1="-5" y1="-3" x2="0" y2="5" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+    <line x1="5" y1="-3" x2="0" y2="5" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+  </g>
+  <text x="410" y="248" fill="#fff" font-size="20" font-weight="700">Deep Agent</text>
+  <text x="410" y="272" fill="#fff" font-size="12" opacity="0.75">create_deep_agent(model, tools, system_prompt)</text>
+
+  <!-- Arrow: Agent -> Planning (left) -->
+  <path d="M460 299 Q380 330 310 355" stroke="#4fc3f7" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <polygon points="313,348 304,358 316,360" fill="#4fc3f7" opacity="0.6"/>
+  <rect x="345" y="316" width="65" height="20" rx="10" fill="#4fc3f7" opacity="0.15"/>
+  <text x="358" y="330" fill="#4fc3f7" font-size="10" font-weight="600">plan</text>
+
+  <!-- Arrow: Agent -> Custom Tools (right) -->
+  <path d="M740 299 Q820 330 890 355" stroke="#bb86fc" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <polygon points="887,348 896,358 884,360" fill="#bb86fc" opacity="0.6"/>
+  <rect x="790" y="316" width="65" height="20" rx="10" fill="#bb86fc" opacity="0.15"/>
+  <text x="803" y="330" fill="#bb86fc" font-size="10" font-weight="600">tools</text>
+
+  <!-- Loop arrow back from tools/planning to agent -->
+  <path d="M600 299 Q600 340 600 360" stroke="#f5a623" stroke-width="2" fill="none" stroke-dasharray="6,4" stroke-linecap="round" opacity="0.4"/>
+  <path d="M600 360 Q600 380 560 380 Q520 380 520 340 Q520 310 540 299" stroke="#f5a623" stroke-width="2" fill="none" stroke-dasharray="6,4" stroke-linecap="round" opacity="0.4"/>
+  <polygon points="537,303 545,293 548,306" fill="#f5a623" opacity="0.4"/>
+  <rect x="557" y="372" width="86" height="20" rx="10" fill="#f5a623" opacity="0.1"/>
+  <text x="567" y="386" fill="#f5a623" font-size="10" font-weight="600" opacity="0.7">reason loop</text>
+
+  <!-- ============ PLANNING (left) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="80" y="360" width="310" height="95" rx="16" fill="url(#planGrad)"/>
+  </g>
+  <!-- Checklist icon -->
+  <g transform="translate(118, 393)">
+    <rect x="-11" y="-12" width="22" height="24" rx="3" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+    <line x1="-5" y1="-5" x2="5" y2="-5" stroke="#4fc3f7" stroke-width="1.5" opacity="0.6"/>
+    <line x1="-5" y1="1" x2="5" y2="1" stroke="#4fc3f7" stroke-width="1.5" opacity="0.6"/>
+    <line x1="-5" y1="7" x2="3" y2="7" stroke="#4fc3f7" stroke-width="1.5" opacity="0.6"/>
+  </g>
+  <text x="145" y="392" fill="#fff" font-size="16" font-weight="700">Built-in Planning</text>
+  <text x="145" y="411" fill="#4fc3f7" font-size="11" font-weight="500">write_todos() / read_todos()</text>
+  <g transform="translate(115, 425)">
+    <rect x="0" y="0" width="8" height="8" rx="2" fill="#4fc3f7" opacity="0.5"/>
+    <text x="14" y="8" fill="#fff" font-size="10" opacity="0.7">Decompose task into steps</text>
+  </g>
+  <g transform="translate(115, 440)">
+    <rect x="0" y="0" width="8" height="8" rx="2" fill="#4fc3f7" opacity="0.5"/>
+    <text x="14" y="8" fill="#fff" font-size="10" opacity="0.7">Track progress &amp; adapt plan</text>
+  </g>
+
+  <!-- ============ CUSTOM TOOLS (right) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="810" y="360" width="310" height="95" rx="16" fill="url(#toolGrad)"/>
+  </g>
+  <!-- Wrench icon -->
+  <g transform="translate(848, 393)">
+    <circle cx="0" cy="-5" r="5" fill="none" stroke="#bb86fc" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0" y2="10" stroke="#bb86fc" stroke-width="2"/>
+  </g>
+  <text x="868" y="392" fill="#fff" font-size="16" font-weight="700">Custom Tools</text>
+  <text x="868" y="411" fill="#bb86fc" font-size="11" font-weight="500">Provided via tools=[...]</text>
+  <!-- Tool items -->
+  <g filter="url(#subtleShadow)">
+    <rect x="840" y="422" width="245" height="24" rx="8" fill="url(#toolDarkGrad)" stroke="#bb86fc" stroke-width="1" stroke-opacity="0.3"/>
+  </g>
+  <text x="855" y="439" fill="#bb86fc" font-size="10" font-weight="600">search_knowledge_base  ·  get_latest_stats</text>
+
+  <!-- ============ OUTPUT ============ -->
+  <!-- Arrows converge to output -->
+  <path d="M235 457 Q320 485 450 495" stroke="#4fc3f7" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.4"/>
+  <path d="M965 457 Q880 485 750 495" stroke="#bb86fc" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.4"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="410" y="485" width="380" height="45" rx="14" fill="#1abc9c" opacity="0.9"/>
+  </g>
+  <g transform="translate(445, 508)">
+    <circle cx="0" cy="0" r="10" fill="none" stroke="#fff" stroke-width="2" opacity="0.8"/>
+    <line x1="-4" y1="0" x2="4" y2="0" stroke="#fff" stroke-width="2" opacity="0.8"/>
+    <line x1="0" y1="-4" x2="0" y2="4" stroke="#fff" stroke-width="2" opacity="0.8"/>
+  </g>
+  <text x="465" y="504" fill="#fff" font-size="15" font-weight="700">Structured Summary</text>
+  <text x="465" y="520" fill="#fff" font-size="11" opacity="0.75">Overview  |  Key Findings  |  Statistics  |  Conclusion</text>
+</svg>

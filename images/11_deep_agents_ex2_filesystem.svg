@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="agentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#c73e54"/>
+    </linearGradient>
+    <linearGradient id="fileGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e97c00"/>
+      <stop offset="100%" style="stop-color:#f5a623"/>
+    </linearGradient>
+    <linearGradient id="userGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#48c9b0"/>
+      <stop offset="100%" style="stop-color:#1abc9c"/>
+    </linearGradient>
+    <linearGradient id="toolDarkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1c2833"/>
+      <stop offset="100%" style="stop-color:#2c3e50"/>
+    </linearGradient>
+    <linearGradient id="traceGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:0.15"/>
+      <stop offset="50%" style="stop-color:#2ecc71;stop-opacity:0.05"/>
+      <stop offset="100%" style="stop-color:#2ecc71;stop-opacity:0.15"/>
+    </linearGradient>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="subtleShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="580" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.03">
+    <line x1="0" y1="100" x2="1200" y2="100" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="400" x2="1200" y2="400" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="500" x2="1200" y2="500" stroke="#fff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="580" stroke="#fff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="580" stroke="#fff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="580" stroke="#fff" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="580" stroke="#fff" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="580" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <!-- Decorative circles -->
+  <circle cx="80" cy="100" r="35" fill="#e94560" opacity="0.06"/>
+  <circle cx="1120" cy="490" r="45" fill="#48c9b0" opacity="0.06"/>
+  <circle cx="150" cy="510" r="25" fill="#f5a623" opacity="0.05"/>
+  <circle cx="1050" cy="80" r="30" fill="#e97c00" opacity="0.07"/>
+  <circle cx="300" cy="65" r="3" fill="#e94560" opacity="0.15"/>
+  <circle cx="900" cy="540" r="3" fill="#48c9b0" opacity="0.15"/>
+
+  <!-- MLflow Tracing backdrop -->
+  <rect x="30" y="82" width="1140" height="415" rx="18" fill="url(#traceGrad)" stroke="#2ecc71" stroke-width="1" stroke-opacity="0.12"/>
+  <text x="55" y="107" fill="#2ecc71" font-size="11" font-weight="600" opacity="0.5" letter-spacing="2">MLflow TRACING  ·  mlflow.langchain.autolog()</text>
+
+  <!-- Title -->
+  <text x="600" y="42" fill="#fff" font-size="13" font-weight="600" text-anchor="middle" opacity="0.35" letter-spacing="3">EXAMPLE 2: FILE SYSTEM CONTEXT MANAGEMENT</text>
+
+  <!-- Tech badges -->
+  <g transform="translate(310, 54)">
+    <rect x="0" y="0" width="110" height="22" rx="11" fill="#e94560" opacity="0.15"/>
+    <text x="55" y="15" fill="#e94560" font-size="10" font-weight="600" text-anchor="middle">Deep Agents</text>
+    <rect x="125" y="0" width="90" height="22" rx="11" fill="#2ecc71" opacity="0.15"/>
+    <text x="170" y="15" fill="#2ecc71" font-size="10" font-weight="600" text-anchor="middle">MLflow 3.x</text>
+    <rect x="230" y="0" width="140" height="22" rx="11" fill="#f5a623" opacity="0.15"/>
+    <text x="300" y="15" fill="#f5a623" font-size="10" font-weight="600" text-anchor="middle">FilesystemBackend</text>
+    <rect x="385" y="0" width="110" height="22" rx="11" fill="#4fc3f7" opacity="0.15"/>
+    <text x="440" y="15" fill="#4fc3f7" font-size="10" font-weight="600" text-anchor="middle">virtual_mode</text>
+  </g>
+
+  <!-- ============ USER TASK (top) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="430" y="108" width="340" height="55" rx="28" fill="url(#userGrad)"/>
+  </g>
+  <circle cx="468" cy="136" r="13" fill="none" stroke="#fff" stroke-width="2.5"/>
+  <circle cx="468" cy="131" r="5" fill="#fff"/>
+  <path d="M458 144 c0-5 4.5-9 10-9 s10 4 10 9" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="490" y="140" fill="#fff" font-size="15" font-weight="700">"Review and improve /draft.md"</text>
+
+  <!-- Arrow: User -> Agent -->
+  <line x1="600" y1="165" x2="600" y2="198" stroke="#48c9b0" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <polygon points="593,196 600,210 607,196" fill="#48c9b0" opacity="0.7"/>
+
+  <!-- ============ EDITOR AGENT (center) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="345" y="212" width="510" height="80" rx="18" fill="url(#agentGrad)"/>
+  </g>
+  <g transform="translate(387, 243)">
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#fff" stroke-width="2" opacity="0.9"/>
+    <circle cx="-5" cy="-3" r="3" fill="#fff" opacity="0.8"/>
+    <circle cx="5" cy="-3" r="3" fill="#fff" opacity="0.8"/>
+    <circle cx="0" cy="5" r="3" fill="#fff" opacity="0.8"/>
+    <line x1="-5" y1="-3" x2="5" y2="-3" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+    <line x1="-5" y1="-3" x2="0" y2="5" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+    <line x1="5" y1="-3" x2="0" y2="5" stroke="#fff" stroke-width="1.5" opacity="0.5"/>
+  </g>
+  <text x="415" y="246" fill="#fff" font-size="20" font-weight="700">Editor Agent</text>
+  <text x="415" y="270" fill="#fff" font-size="12" opacity="0.75">create_deep_agent(model, system_prompt, backend=FilesystemBackend(...))</text>
+
+  <!-- Bidirectional arrows: Agent <-> File System -->
+  <line x1="600" y1="294" x2="600" y2="340" stroke="#f5a623" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <polygon points="593,338 600,352 607,338" fill="#f5a623" opacity="0.6"/>
+  <!-- Up arrow -->
+  <line x1="625" y1="340" x2="625" y2="294" stroke="#f5a623" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <polygon points="618,298 625,285 632,298" fill="#f5a623" opacity="0.4"/>
+  <!-- Labels -->
+  <rect x="634" y="305" width="65" height="18" rx="9" fill="#f5a623" opacity="0.12"/>
+  <text x="645" y="318" fill="#f5a623" font-size="9" font-weight="600">read / write</text>
+
+  <!-- ============ FILE SYSTEM BACKEND (bottom center) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="260" y="355" width="680" height="130" rx="18" fill="url(#fileGrad)"/>
+  </g>
+  <!-- Folder icon -->
+  <g transform="translate(305, 390)">
+    <path d="M-14 -8 L-14 12 L14 12 L14 -4 L2 -4 L-2 -8 Z" fill="none" stroke="#fff" stroke-width="2" opacity="0.9"/>
+  </g>
+  <text x="330" y="388" fill="#fff" font-size="18" font-weight="700">FilesystemBackend</text>
+  <text x="330" y="407" fill="#fff" font-size="11" opacity="0.75">root_dir="./agent_workspace"  |  virtual_mode=True</text>
+
+  <!-- File cards row -->
+  <g transform="translate(290, 420)">
+    <!-- File 1: draft.md (input) -->
+    <g filter="url(#subtleShadow)">
+      <rect x="0" y="0" width="150" height="52" rx="10" fill="url(#toolDarkGrad)" stroke="#4fc3f7" stroke-width="1" stroke-opacity="0.5"/>
+    </g>
+    <rect x="10" y="8" width="14" height="18" rx="2" fill="none" stroke="#4fc3f7" stroke-width="1.5" opacity="0.7"/>
+    <line x1="14" y1="13" x2="20" y2="13" stroke="#4fc3f7" stroke-width="1" opacity="0.5"/>
+    <line x1="14" y1="17" x2="20" y2="17" stroke="#4fc3f7" stroke-width="1" opacity="0.5"/>
+    <text x="30" y="20" fill="#4fc3f7" font-size="11" font-weight="700">/draft.md</text>
+    <text x="12" y="42" fill="#fff" font-size="9" opacity="0.6">Input document (read)</text>
+
+    <!-- File 2: edit_plan.md -->
+    <g filter="url(#subtleShadow)">
+      <rect x="170" y="0" width="170" height="52" rx="10" fill="url(#toolDarkGrad)" stroke="#f5a623" stroke-width="1" stroke-opacity="0.5"/>
+    </g>
+    <rect x="180" y="8" width="14" height="18" rx="2" fill="none" stroke="#f5a623" stroke-width="1.5" opacity="0.7"/>
+    <line x1="184" y1="13" x2="190" y2="13" stroke="#f5a623" stroke-width="1" opacity="0.5"/>
+    <line x1="184" y1="17" x2="190" y2="17" stroke="#f5a623" stroke-width="1" opacity="0.5"/>
+    <text x="200" y="20" fill="#f5a623" font-size="11" font-weight="700">/edit_plan.md</text>
+    <text x="182" y="42" fill="#fff" font-size="9" opacity="0.6">Intermediate (write)</text>
+
+    <!-- File 3: final.md (output) -->
+    <g filter="url(#subtleShadow)">
+      <rect x="360" y="0" width="150" height="52" rx="10" fill="url(#toolDarkGrad)" stroke="#2ecc71" stroke-width="1" stroke-opacity="0.5"/>
+    </g>
+    <rect x="370" y="8" width="14" height="18" rx="2" fill="none" stroke="#2ecc71" stroke-width="1.5" opacity="0.7"/>
+    <line x1="374" y1="13" x2="380" y2="13" stroke="#2ecc71" stroke-width="1" opacity="0.5"/>
+    <line x1="374" y1="17" x2="380" y2="17" stroke="#2ecc71" stroke-width="1" opacity="0.5"/>
+    <text x="390" y="20" fill="#2ecc71" font-size="11" font-weight="700">/final.md</text>
+    <text x="372" y="42" fill="#fff" font-size="9" opacity="0.6">Output document (write)</text>
+  </g>
+
+  <!-- Built-in file tools label -->
+  <g transform="translate(710, 425)">
+    <text x="0" y="0" fill="#fff" font-size="11" font-weight="600" opacity="0.5">Built-in tools:</text>
+    <text x="0" y="16" fill="#fff" font-size="10" opacity="0.6">read_file</text>
+    <text x="60" y="16" fill="#fff" font-size="10" opacity="0.6">write_file</text>
+    <text x="120" y="16" fill="#fff" font-size="10" opacity="0.6">edit_file</text>
+    <text x="0" y="32" fill="#fff" font-size="10" opacity="0.6">ls</text>
+    <text x="30" y="32" fill="#fff" font-size="10" opacity="0.6">glob</text>
+    <text x="65" y="32" fill="#fff" font-size="10" opacity="0.6">grep</text>
+  </g>
+
+  <!-- ============ ANNOTATION ============ -->
+  <text x="600" y="540" fill="#fff" font-size="12" font-weight="600" text-anchor="middle" opacity="0.3" letter-spacing="1.5">CONTEXT OFFLOADED TO FILES  ·  AGENT READS, PLANS, EDITS, AND WRITES IN THE WORKSPACE</text>
+</svg>

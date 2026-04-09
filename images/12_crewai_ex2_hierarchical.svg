@@ -1,0 +1,246 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="managerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#c73e54"/>
+    </linearGradient>
+    <linearGradient id="dataGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460"/>
+      <stop offset="100%" style="stop-color:#1a5276"/>
+    </linearGradient>
+    <linearGradient id="policyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#533483"/>
+      <stop offset="100%" style="stop-color:#6c3d9e"/>
+    </linearGradient>
+    <linearGradient id="writerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e97c00"/>
+      <stop offset="100%" style="stop-color:#f5a623"/>
+    </linearGradient>
+    <linearGradient id="userGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#48c9b0"/>
+      <stop offset="100%" style="stop-color:#1abc9c"/>
+    </linearGradient>
+    <linearGradient id="toolDarkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1c2833"/>
+      <stop offset="100%" style="stop-color:#2c3e50"/>
+    </linearGradient>
+    <linearGradient id="traceGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:0.15"/>
+      <stop offset="50%" style="stop-color:#2ecc71;stop-opacity:0.05"/>
+      <stop offset="100%" style="stop-color:#2ecc71;stop-opacity:0.15"/>
+    </linearGradient>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="subtleShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.03">
+    <line x1="0" y1="100" x2="1200" y2="100" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="400" x2="1200" y2="400" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="500" x2="1200" y2="500" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="600" x2="1200" y2="600" stroke="#fff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="700" stroke="#fff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="700" stroke="#fff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="700" stroke="#fff" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="700" stroke="#fff" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="700" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <!-- Decorative circles -->
+  <circle cx="80" cy="110" r="40" fill="#e94560" opacity="0.06"/>
+  <circle cx="1120" cy="590" r="55" fill="#48c9b0" opacity="0.06"/>
+  <circle cx="150" cy="610" r="30" fill="#f5a623" opacity="0.05"/>
+  <circle cx="1050" cy="90" r="35" fill="#533483" opacity="0.07"/>
+  <circle cx="600" cy="45" r="25" fill="#0f3460" opacity="0.08"/>
+  <circle cx="300" cy="70" r="3" fill="#e94560" opacity="0.15"/>
+  <circle cx="900" cy="650" r="3" fill="#48c9b0" opacity="0.15"/>
+  <circle cx="100" cy="380" r="2" fill="#f5a623" opacity="0.12"/>
+  <circle cx="1100" cy="330" r="2" fill="#533483" opacity="0.12"/>
+
+  <!-- MLflow Tracing backdrop -->
+  <rect x="30" y="85" width="1140" height="520" rx="18" fill="url(#traceGrad)" stroke="#2ecc71" stroke-width="1" stroke-opacity="0.12"/>
+  <text x="55" y="110" fill="#2ecc71" font-size="11" font-weight="600" opacity="0.5" letter-spacing="2">MLflow TRACING  ·  mlflow.crewai.autolog()</text>
+
+  <!-- Title -->
+  <text x="600" y="42" fill="#fff" font-size="13" font-weight="600" text-anchor="middle" opacity="0.35" letter-spacing="3">EXAMPLE 3: HIERARCHICAL CREW</text>
+
+  <!-- Tech badges -->
+  <g transform="translate(300, 54)">
+    <rect x="0" y="0" width="85" height="22" rx="11" fill="#e94560" opacity="0.15"/>
+    <text x="42" y="15" fill="#e94560" font-size="10" font-weight="600" text-anchor="middle">CrewAI</text>
+    <rect x="100" y="0" width="90" height="22" rx="11" fill="#2ecc71" opacity="0.15"/>
+    <text x="145" y="15" fill="#2ecc71" font-size="10" font-weight="600" text-anchor="middle">MLflow 3.x</text>
+    <rect x="205" y="0" width="135" height="22" rx="11" fill="#4fc3f7" opacity="0.15"/>
+    <text x="272" y="15" fill="#4fc3f7" font-size="10" font-weight="600" text-anchor="middle">Process.hierarchical</text>
+    <rect x="355" y="0" width="95" height="22" rx="11" fill="#f5a623" opacity="0.15"/>
+    <text x="402" y="15" fill="#f5a623" font-size="10" font-weight="600" text-anchor="middle">FEMA Data</text>
+    <rect x="465" y="0" width="100" height="22" rx="11" fill="#bb86fc" opacity="0.15"/>
+    <text x="515" y="15" fill="#bb86fc" font-size="10" font-weight="600" text-anchor="middle">manager_llm</text>
+  </g>
+
+  <!-- ============ USER QUERY (top) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="440" y="108" width="320" height="58" rx="29" fill="url(#userGrad)"/>
+  </g>
+  <circle cx="478" cy="137" r="13" fill="none" stroke="#fff" stroke-width="2.5"/>
+  <circle cx="478" cy="132" r="5" fill="#fff"/>
+  <path d="M468 145 c0-5 4.5-9 10-9 s10 4 10 9" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="500" y="142" fill="#fff" font-size="16" font-weight="700">User Query</text>
+
+  <!-- Arrow: User -> Manager -->
+  <line x1="600" y1="168" x2="600" y2="200" stroke="#48c9b0" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <polygon points="593,198 600,212 607,198" fill="#48c9b0" opacity="0.7"/>
+
+  <!-- ============ CREW MANAGER (auto-created by hierarchical process) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="330" y="215" width="540" height="90" rx="18" fill="url(#managerGrad)"/>
+  </g>
+  <!-- Crown/manager icon -->
+  <g transform="translate(373, 250)">
+    <path d="M-14 6 L-10 -6 L-4 0 L0 -10 L4 0 L10 -6 L14 6 Z" fill="none" stroke="#fff" stroke-width="2" opacity="0.9"/>
+    <line x1="-14" y1="10" x2="14" y2="10" stroke="#fff" stroke-width="2" opacity="0.7"/>
+  </g>
+  <text x="400" y="252" fill="#fff" font-size="21" font-weight="700">Crew Manager</text>
+  <text x="400" y="277" fill="#fff" font-size="12" opacity="0.75">Auto-created by Process.hierarchical  |  manager_llm delegates tasks to agents</text>
+
+  <!-- Delegation arrows -->
+  <!-- Arrow: Manager -> Data Analyst (left) -->
+  <path d="M440 307 Q340 350 230 388" stroke="#4fc3f7" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <polygon points="233,381 224,391 236,393" fill="#4fc3f7" opacity="0.6"/>
+  <rect x="290" y="338" width="90" height="22" rx="11" fill="#4fc3f7" opacity="0.15"/>
+  <text x="303" y="354" fill="#4fc3f7" font-size="11" font-weight="600">delegate</text>
+
+  <!-- Arrow: Manager -> Report Writer (center) -->
+  <line x1="600" y1="307" x2="600" y2="370" stroke="#f5a623" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+  <rect x="560" y="335" width="80" height="22" rx="11" fill="#f5a623" opacity="0.15"/>
+  <text x="573" y="351" fill="#f5a623" font-size="11" font-weight="600">delegate</text>
+  <polygon points="593,368 600,382 607,368" fill="#f5a623" opacity="0.5"/>
+
+  <!-- Arrow: Manager -> Policy Expert (right) -->
+  <path d="M760 307 Q860 350 970 388" stroke="#bb86fc" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <polygon points="967,381 976,391 964,393" fill="#bb86fc" opacity="0.6"/>
+  <rect x="815" y="338" width="90" height="22" rx="11" fill="#bb86fc" opacity="0.15"/>
+  <text x="828" y="354" fill="#bb86fc" font-size="11" font-weight="600">delegate</text>
+
+  <!-- ============ DATA ANALYST AGENT (left) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="55" y="395" width="300" height="140" rx="16" fill="url(#dataGrad)"/>
+  </g>
+  <!-- Database icon -->
+  <g transform="translate(93, 430)">
+    <ellipse cx="0" cy="-8" rx="13" ry="5.5" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+    <path d="M-13 -8 L-13 7" stroke="#4fc3f7" stroke-width="2"/>
+    <path d="M13 -8 L13 7" stroke="#4fc3f7" stroke-width="2"/>
+    <ellipse cx="0" cy="7" rx="13" ry="5.5" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+  </g>
+  <text x="118" y="428" fill="#fff" font-size="17" font-weight="700">Data Analyst</text>
+  <text x="118" y="447" fill="#4fc3f7" font-size="11" font-weight="500">role: "Disaster Data Analyst"</text>
+
+  <!-- Tool -->
+  <g filter="url(#subtleShadow)">
+    <rect x="85" y="460" width="245" height="35" rx="10" fill="url(#toolDarkGrad)" stroke="#4fc3f7" stroke-width="1" stroke-opacity="0.4"/>
+  </g>
+  <g transform="translate(103, 478)">
+    <circle cx="0" cy="0" r="4" fill="none" stroke="#4fc3f7" stroke-width="1.5"/>
+    <line x1="3" y1="3" x2="7" y2="7" stroke="#4fc3f7" stroke-width="1.5"/>
+  </g>
+  <text x="115" y="482" fill="#4fc3f7" font-size="11" font-weight="600">query_disaster_database</text>
+
+  <g transform="translate(85, 505)">
+    <rect x="0" y="0" width="8" height="8" rx="2" fill="#4fc3f7" opacity="0.5"/>
+    <text x="14" y="8" fill="#fff" font-size="10" opacity="0.6">SQLite text-to-SQL  ·  200 FEMA records</text>
+  </g>
+
+  <!-- ============ REPORT WRITER AGENT (center) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="420" y="385" width="360" height="140" rx="16" fill="url(#writerGrad)"/>
+  </g>
+  <!-- Pen icon -->
+  <g transform="translate(460, 420)">
+    <path d="M-8 8 L-4 -8 L0 -8 L4 8" fill="none" stroke="#fff" stroke-width="2" opacity="0.9"/>
+    <line x1="-6" y1="2" x2="2" y2="2" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
+  </g>
+  <text x="482" y="418" fill="#fff" font-size="17" font-weight="700">Report Writer</text>
+  <text x="482" y="437" fill="#fff" font-size="11" opacity="0.75">role: "FEMA Report Writer"</text>
+  <g transform="translate(455, 455)">
+    <rect x="0" y="0" width="8" height="8" rx="2" fill="#fff" opacity="0.5"/>
+    <text x="14" y="8" fill="#fff" font-size="11" opacity="0.7">Situation Summary</text>
+  </g>
+  <g transform="translate(455, 473)">
+    <rect x="0" y="0" width="8" height="8" rx="2" fill="#fff" opacity="0.5"/>
+    <text x="14" y="8" fill="#fff" font-size="11" opacity="0.7">Response Assessment</text>
+  </g>
+  <g transform="translate(455, 491)">
+    <rect x="0" y="0" width="8" height="8" rx="2" fill="#fff" opacity="0.5"/>
+    <text x="14" y="8" fill="#fff" font-size="11" opacity="0.7">3 Recommendations</text>
+  </g>
+
+  <!-- ============ POLICY EXPERT AGENT (right) ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="845" y="395" width="300" height="140" rx="16" fill="url(#policyGrad)"/>
+  </g>
+  <!-- Document icon -->
+  <g transform="translate(883, 430)">
+    <rect x="-9" y="-13" width="18" height="24" rx="3" fill="none" stroke="#bb86fc" stroke-width="2"/>
+    <line x1="-4" y1="-5" x2="4" y2="-5" stroke="#bb86fc" stroke-width="1.5" opacity="0.6"/>
+    <line x1="-4" y1="0" x2="4" y2="0" stroke="#bb86fc" stroke-width="1.5" opacity="0.6"/>
+    <line x1="-4" y1="5" x2="2" y2="5" stroke="#bb86fc" stroke-width="1.5" opacity="0.6"/>
+  </g>
+  <text x="908" y="428" fill="#fff" font-size="17" font-weight="700">Policy Expert</text>
+  <text x="908" y="447" fill="#bb86fc" font-size="11" font-weight="500">role: "Policy Advisor"</text>
+
+  <!-- Tool -->
+  <g filter="url(#subtleShadow)">
+    <rect x="875" y="460" width="240" height="35" rx="10" fill="url(#toolDarkGrad)" stroke="#bb86fc" stroke-width="1" stroke-opacity="0.4"/>
+  </g>
+  <g transform="translate(893, 478)">
+    <circle cx="0" cy="0" r="4" fill="none" stroke="#bb86fc" stroke-width="1.5"/>
+    <line x1="3" y1="3" x2="7" y2="7" stroke="#bb86fc" stroke-width="1.5"/>
+  </g>
+  <text x="905" y="482" fill="#bb86fc" font-size="11" font-weight="600">search_fema_policies</text>
+
+  <g transform="translate(875, 505)">
+    <rect x="0" y="0" width="8" height="8" rx="2" fill="#bb86fc" opacity="0.5"/>
+    <text x="14" y="8" fill="#fff" font-size="10" opacity="0.6">5 FEMA policy documents</text>
+  </g>
+
+  <!-- Arrows: Agents -> Output -->
+  <path d="M205 537 Q280 568 440 582" stroke="#4fc3f7" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <polygon points="437,576 445,585 440,574" fill="#4fc3f7" opacity="0.5"/>
+  <path d="M600 527 Q600 555 595 576" stroke="#f5a623" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <polygon points="588,573 595,586 602,573" fill="#f5a623" opacity="0.5"/>
+  <path d="M995 537 Q920 568 760 582" stroke="#bb86fc" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <polygon points="763,576 755,585 760,574" fill="#bb86fc" opacity="0.5"/>
+
+  <!-- ============ CREW OUTPUT ============ -->
+  <g filter="url(#softShadow)">
+    <rect x="395" y="576" width="410" height="50" rx="16" fill="#1abc9c" opacity="0.9"/>
+  </g>
+  <g transform="translate(432, 601)">
+    <circle cx="0" cy="0" r="11" fill="none" stroke="#fff" stroke-width="2" opacity="0.8"/>
+    <line x1="-5" y1="0" x2="5" y2="0" stroke="#fff" stroke-width="2" opacity="0.8"/>
+    <line x1="0" y1="-5" x2="0" y2="5" stroke="#fff" stroke-width="2" opacity="0.8"/>
+  </g>
+  <text x="453" y="597" fill="#fff" font-size="16" font-weight="700">Crew Output</text>
+  <text x="453" y="614" fill="#fff" font-size="11" opacity="0.75">crew.kickoff()  |  Briefing report with data, policy, recommendations</text>
+
+  <!-- ============ KEY DIFFERENCE ANNOTATION ============ -->
+  <g transform="translate(110, 650)">
+    <rect x="0" y="0" width="980" height="36" rx="18" fill="#e94560" opacity="0.08" stroke="#e94560" stroke-width="1" stroke-opacity="0.2"/>
+    <text x="25" y="23" fill="#e94560" font-size="12" font-weight="700" opacity="0.7">KEY DIFFERENCE:</text>
+    <text x="175" y="23" fill="#fff" font-size="12" opacity="0.5">Manager decides at runtime which agent handles which task — tasks are NOT pre-assigned to agents</text>
+  </g>
+</svg>
