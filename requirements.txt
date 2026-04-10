@@ -6,3 +6,17 @@ jupyterlab>=4.0.0
 pandas>=2.0.0
 numpy>=1.24.0
 matplotlib>=3.7.0
+langchain>=1.2.7
+langgraph>=0.3
+langchain-openai
+databricks-langchain
+llama-index>=0.14.13
+ragas>=0.4.3
+gepa>=0.0.18
+litellm>=1.81.5
+deepeval>=3.9.5
+deepagents>=0.1.0
+crewai>=0.108.0
+crewai-tools>=0.38.1
+nest-asyncio>=1.6.0
+anthropic>=0.49.0

@@ -106,7 +106,7 @@ Type the command in the Claude Code chat, and the agent takes over — reading y
 > "Getting started with MLflow tracing"
 > "Trace my TypeScript app"
 
-**Relevant notebooks:** [03_introduction_to_tracing.ipynb](03_introduction_to_tracing.ipynb), [04_manual_tracing_advanced.ipynb](04_manual_tracing_advanced.ipynb)
+**Relevant notebooks:** [03_introduction_to_tracing.ipynb](03_introduction_to_tracing.ipynb), [04_manual_tracing_advanced.ipynb](04_manual_tracing_advanced.ipynb), [10_multi_agent_supervisor.ipynb](10_multi_agent_supervisor.ipynb), [11_deep_agents_langgraph.ipynb](11_deep_agents_langgraph.ipynb), [12_crewai_multi_agent.ipynb](12_crewai_multi_agent.ipynb)
 
 ---
 
@@ -205,7 +205,7 @@ Type the command in the Claude Code chat, and the agent takes over — reading y
 > "Set up evaluation for my RAG pipeline"
 > "I want to measure tool selection accuracy"
 
-**Relevant notebooks:** [07_evaluating_agents.ipynb](07_evaluating_agents.ipynb), [08_prompt_optimization.ipynb](08_prompt_optimization.ipynb), [09_complete_rag_application.ipynb](09_complete_rag_application.ipynb)
+**Relevant notebooks:** [07_evaluating_agents.ipynb](07_evaluating_agents.ipynb), [08_prompt_optimization.ipynb](08_prompt_optimization.ipynb), [09_complete_rag_application.ipynb](09_complete_rag_application.ipynb), [10_multi_agent_supervisor.ipynb](10_multi_agent_supervisor.ipynb), [11_deep_agents_langgraph.ipynb](11_deep_agents_langgraph.ipynb), [12_crewai_multi_agent.ipynb](12_crewai_multi_agent.ipynb)
 
 **Also see:** [MLflow_Offline_Evaluation_SKILL.md](MLflow_Offline_Evaluation_SKILL.md) for a standalone offline evaluation reference.
 
@@ -247,6 +247,9 @@ Use this as a quick map of which skills are most useful at each point in the tut
 | **Debugging a chat session** (Notebook 1.4+) | `/analyze-mlflow-chat-session` |
 | **Looking up docs** (any stage) | `/searching-mlflow-docs` |
 | **Evaluating responses** (Notebook 1.7–1.9) | `/agent-evaluation` |
+| **Multi-agent supervisor** (Notebook 1.10) | `/instrumenting-with-mlflow-tracing`, `/agent-evaluation` |
+| **Deep Agents with LangGraph** (Notebook 1.11) | `/instrumenting-with-mlflow-tracing`, `/analyze-mlflow-trace` |
+| **CrewAI multi-agent** (Notebook 1.12) | `/instrumenting-with-mlflow-tracing`, `/agent-evaluation` |
 | **Checking usage/costs** (Notebook 1.2, 1.9) | `/querying-mlflow-metrics` |
 | **After writing new code** (any stage) | `/simplify` |
 ---

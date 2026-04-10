@@ -11,6 +11,7 @@
 [![UV](https://img.shields.io/badge/UV-Package%20Manager-purple?logo=python&logoColor=white)](https://github.com/astral-sh/uv)
 [![RAGAS](https://img.shields.io/badge/RAGAS-Evaluation-blueviolet?logo=python&logoColor=white)](https://docs.ragas.io/)
 [![DSPy](https://img.shields.io/badge/DSPy-Integrated-8A2BE2?logo=python&logoColor=white)](https://dspy.ai/)
+[![CrewAI](https://img.shields.io/badge/CrewAI-Multi--Agent-ff6b6b?logo=python&logoColor=white)](https://www.crewai.com/)
 [![GEPA](https://img.shields.io/badge/GEPA-Prompt%20Optimization-orange?logo=mlflow&logoColor=white)](https://mlflow.org/docs/latest/genai/prompt-engineering/)
 [![License](https://img.shields.io/badge/License-Educational-blue.svg)](./README.md)
 
@@ -31,6 +32,9 @@ This tutorial series teaches you, in a step-by-step manner, how to use MLflow's 
 | 1.7 | [Evaluating Agents](07_evaluating_agents.ipynb) | <ul><li>LLM-as-Judge evaluation patterns</li><li>MLflow built-in scorers (RelevanceToQuery, Correctness, Guidelines)</li><li>Custom scorers with @scorer decorator</li><li>DeepEval integration for conversations</li><li>Session-level multi-turn evaluation</li></ul> |
 | 1.8 | [Prompt Optimization with GEPA](08_prompt_optimization.ipynb) | <ul><li>Automatic prompt optimization with GEPA algorithm</li><li>MLflow Prompt Registry integration</li><li>Before/after evaluation comparison</li></ul> |
 | 1.9 | [Complete RAG Application](09_complete_rag_application.ipynb) | <ul><li>Building a full RAG pipeline</li><li>End-to-end tracing</li><li>Performance analysis</li><li>RAG evaluation with RAGAS metrics</li></ul> |
+| 1.10 | [Multi-Agent Supervisor Pattern](10_multi_agent_supervisor.ipynb) | <ul><li>Supervisor agent that routes queries to specialized subagents</li><li>Genie agent for structured data queries (SQL over pandas DataFrame)</li><li>Knowledge Assistant for document retrieval and policy Q&A</li><li>Full supervisor-subagent trace hierarchy with MLflow</li><li>3-layer evaluation: routing accuracy, response quality, orchestration</li></ul> |
+| 1.11 | [LangGraph Deep Agents](11_deep_agents_langgraph.ipynb) | <ul><li>Deep Agents with built-in planning (write_todos / read_todos)</li><li>File system context management (read, write, edit files)</li><li>Sub-agent delegation via task() tool</li><li>Evaluating Deep Agent outputs with mlflow.genai.evaluate()</li><li>Auto-tracing with mlflow.langchain.autolog()</li></ul> |
+| 1.12 | [CrewAI Multi-Agent Orchestration](12_crewai_multi_agent.ipynb) | <ul><li>Role-based agents with CrewAI (role, goal, backstory)</li><li>Custom tools: query_disaster_database and search_fema_policies</li><li>Hierarchical crew with manager agent delegating to specialists</li><li>Evaluating crew outputs with mlflow.genai.evaluate()</li><li>Auto-tracing with mlflow.crewai.autolog()</li></ul> |
 
 ## 🎓 Learning Outcomes
 
@@ -120,6 +124,9 @@ mlflow-genai-tutorial-1/
 ├── 07_evaluating_agents.ipynb
 ├── 08_prompt_optimization.ipynb
 ├── 09_complete_rag_application.ipynb
+├── 10_multi_agent_supervisor.ipynb
+├── 11_deep_agents_langgraph.ipynb
+├── 12_crewai_multi_agent.ipynb
 ├── .env                                 (create this yourself and use the template env_template)
 └── README.md
 ```
