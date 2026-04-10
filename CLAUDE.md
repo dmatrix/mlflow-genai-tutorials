@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-A tutorial series teaching MLflow's GenAI platform (tracing, experiment tracking, prompt management, evaluation, RAG). Nine sequential Jupyter notebooks plus a bonus multi-agent notebook. MLflow version: **3.10.0rc0** (pinned in `pyproject.toml`). Uses the **MLflow 3.x API** — specifically `mlflow.genai.evaluate()` not the old `mlflow.evaluate()`.
+A tutorial series teaching MLflow's GenAI platform (tracing, experiment tracking, prompt management, evaluation, RAG, multi-agent orchestration). Twelve sequential Jupyter notebooks covering core GenAI workflows through advanced multi-agent patterns. MLflow version: **3.10.0rc0** (pinned in `pyproject.toml`). Uses the **MLflow 3.x API** — specifically `mlflow.genai.evaluate()` not the old `mlflow.evaluate()`.
 
 ## Environment Setup
 
@@ -53,13 +53,17 @@ Both scripts load `.env` from the project root using `python-dotenv`.
 | `07` | Evaluation: built-in scorers, custom `@scorer`, DeepEval |
 | `08` | Prompt optimization with GEPA algorithm |
 | `09` | Complete RAG app with RAGAS evaluation |
-| `multiagent_orchestration` | AutoGen v0.4 multi-agent + Agent-as-a-Judge |
+| `10` | Multi-agent supervisor pattern with LangGraph (Genie + Knowledge Assistant) |
+| `11` | LangGraph Deep Agents: planning, file system tools, sub-agent delegation |
+| `12` | CrewAI multi-agent: role-based agents, hierarchical crews |
 
 ### Key MLflow 3.x Patterns Used
 
 **Tracing:**
 ```python
 mlflow.openai.autolog()              # Auto-trace OpenAI calls
+mlflow.langchain.autolog()           # Auto-trace LangChain/LangGraph agents
+mlflow.crewai.autolog()              # Auto-trace CrewAI crews
 @mlflow.trace                        # Trace a function
 with mlflow.start_span("name"):      # Manual span
 ```
