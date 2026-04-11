@@ -19,22 +19,28 @@
 
 This tutorial series teaches you, in a step-by-step manner, how to use MLflow's open source platform for building, tracking, tracing, prompt registry and optimization, evaluating, and debugging GenAI applications.
 
+### 🎬 Series Overview Video
+
+[![Mastering GenAI Development with MLflow](https://img.youtube.com/vi/2XAa6zuyU6w/maxresdefault.jpg)](https://www.youtube.com/watch?v=2XAa6zuyU6w)
+
+[Watch the full overview: Mastering GenAI Development with MLflow](https://www.youtube.com/watch?v=2XAa6zuyU6w)
+
 ### 📚 Tutorial Structure
 
-| Notebook | Title | Description |
-|----------|-------|-------------|
-| 1.1 | [Setup and Introduction](01_setup_and_introduction.ipynb) | <ul><li>Understanding MLflow for GenAI</li><li>Installation and configuration</li><li>First tracked run</li><li>MLflow UI basics</li></ul> |
-| 1.2 | [Experiment Tracking for LLMs](02_experiment_tracking.ipynb) | <ul><li>Tracking LLM parameters and metrics</li><li>Comparing model configurations</li><li>Cost tracking and optimization</li><li>Organizing experiments with tags</li><li>Parent-child runs for workflows</li></ul> |
-| 1.3 | [Introduction to Tracing](03_introduction_to_tracing.ipynb) | <ul><li>Auto-tracing with MLflow</li><li>Understanding the trace model</li><li>Manual instrumentation</li><li>Viewing traces in UI</li></ul> |
-| 1.4 | [Manual Tracing and Advanced Observability](04_manual_tracing_advanced.ipynb) | <ul><li>Custom span decorators</li><li>Tracing complex workflows</li><li>Debugging with traces</li><li>Multi-step agentic patterns</li></ul> |
-| 1.5 | [Prompt Management](05_prompt_management.ipynb) | <ul><li>Creating prompt templates</li><li>Versioning prompts</li><li>Registering in the Prompt Registry</li><li>Searching Prompt Registry</li><li>Using prompts from the Prompt Registry</li><li>Linking prompts to experiments</li></ul> |
-| 1.6 | [Framework Integrations](06_framework_integrations.ipynb) | <ul><li>OpenAI direct API integration</li><li>LangChain chains and workflows</li><li>LlamaIndex document indexing and RAG</li><li>Framework comparison matrix</li><li>Best practices for each framework</li></ul> |
-| 1.7 | [Evaluating Agents](07_evaluating_agents.ipynb) | <ul><li>LLM-as-Judge evaluation patterns</li><li>MLflow built-in scorers (RelevanceToQuery, Correctness, Guidelines)</li><li>Custom scorers with @scorer decorator</li><li>DeepEval integration for conversations</li><li>Session-level multi-turn evaluation</li></ul> |
-| 1.8 | [Prompt Optimization with GEPA](08_prompt_optimization.ipynb) | <ul><li>Automatic prompt optimization with GEPA algorithm</li><li>MLflow Prompt Registry integration</li><li>Before/after evaluation comparison</li></ul> |
-| 1.9 | [Complete RAG Application](09_complete_rag_application.ipynb) | <ul><li>Building a full RAG pipeline</li><li>End-to-end tracing</li><li>Performance analysis</li><li>RAG evaluation with RAGAS metrics</li></ul> |
-| 1.10 | [Multi-Agent Supervisor Pattern](10_multi_agent_supervisor.ipynb) | <ul><li>Supervisor agent that routes queries to specialized subagents</li><li>Genie agent for structured data queries (SQL over pandas DataFrame)</li><li>Knowledge Assistant for document retrieval and policy Q&A</li><li>Full supervisor-subagent trace hierarchy with MLflow</li><li>3-layer evaluation: routing accuracy, response quality, orchestration</li></ul> |
-| 1.11 | [LangGraph Deep Agents](11_deep_agents_langgraph.ipynb) | <ul><li>Deep Agents with built-in planning (write_todos / read_todos)</li><li>File system context management (read, write, edit files)</li><li>Sub-agent delegation via task() tool</li><li>Evaluating Deep Agent outputs with mlflow.genai.evaluate()</li><li>Auto-tracing with mlflow.langchain.autolog()</li></ul> |
-| 1.12 | [CrewAI Multi-Agent Orchestration](12_crewai_multi_agent.ipynb) | <ul><li>Role-based agents with CrewAI (role, goal, backstory)</li><li>Custom tools: query_disaster_database and search_fema_policies</li><li>Hierarchical crew with manager agent delegating to specialists</li><li>Evaluating crew outputs with mlflow.genai.evaluate()</li><li>Auto-tracing with mlflow.crewai.autolog()</li></ul> |
+| Notebook | Title | Description | Video Tutorial |
+|----------|-------|-------------|----------------|
+| 1.1 | [Setup and Introduction](01_setup_and_introduction.ipynb) | <ul><li>Understanding MLflow for GenAI</li><li>Installation and configuration</li><li>First tracked run</li><li>MLflow UI basics</li></ul> | [Watch Tutorial](https://www.youtube.com/watch?v=IzUDKJlDo7Q) |
+| 1.2 | [Experiment Tracking for LLMs](02_experiment_tracking.ipynb) | <ul><li>Tracking LLM parameters and metrics</li><li>Comparing model configurations</li><li>Cost tracking and optimization</li><li>Organizing experiments with tags</li><li>Parent-child runs for workflows</li></ul> | [Watch Tutorial](https://www.youtube.com/watch?v=ykjYM3r0X8o) |
+| 1.3 | [Introduction to Tracing](03_introduction_to_tracing.ipynb) | <ul><li>Auto-tracing with MLflow</li><li>Understanding the trace model</li><li>Manual instrumentation</li><li>Viewing traces in UI</li></ul> | [Watch Tutorial](https://www.youtube.com/watch?v=npiKufwkyoo) |
+| 1.4 | [Manual Tracing and Advanced Observability](04_manual_tracing_advanced.ipynb) | <ul><li>Custom span decorators</li><li>Tracing complex workflows</li><li>Debugging with traces</li><li>Multi-step agentic patterns</li></ul> | [Watch Tutorial](https://www.youtube.com/watch?v=SND52zOVQRs) |
+| 1.5 | [Prompt Management](05_prompt_management.ipynb) | <ul><li>Creating prompt templates</li><li>Versioning prompts</li><li>Registering in the Prompt Registry</li><li>Searching Prompt Registry</li><li>Using prompts from the Prompt Registry</li><li>Linking prompts to experiments</li></ul> | Coming Soon... |
+| 1.6 | [Framework Integrations](06_framework_integrations.ipynb) | <ul><li>OpenAI direct API integration</li><li>LangChain chains and workflows</li><li>LlamaIndex document indexing and RAG</li><li>Framework comparison matrix</li><li>Best practices for each framework</li></ul> | Coming Soon... |
+| 1.7 | [Evaluating Agents](07_evaluating_agents.ipynb) | <ul><li>LLM-as-Judge evaluation patterns</li><li>MLflow built-in scorers (RelevanceToQuery, Correctness, Guidelines)</li><li>Custom scorers with @scorer decorator</li><li>DeepEval integration for conversations</li><li>Session-level multi-turn evaluation</li></ul> | Coming Soon... |
+| 1.8 | [Prompt Optimization with GEPA](08_prompt_optimization.ipynb) | <ul><li>Automatic prompt optimization with GEPA algorithm</li><li>MLflow Prompt Registry integration</li><li>Before/after evaluation comparison</li></ul> | Coming Soon... |
+| 1.9 | [Complete RAG Application](09_complete_rag_application.ipynb) | <ul><li>Building a full RAG pipeline</li><li>End-to-end tracing</li><li>Performance analysis</li><li>RAG evaluation with RAGAS metrics</li></ul> | Coming Soon... |
+| 1.10 | [Multi-Agent Supervisor Pattern](10_multi_agent_supervisor.ipynb) | <ul><li>Supervisor agent that routes queries to specialized subagents</li><li>Genie agent for structured data queries (SQL over pandas DataFrame)</li><li>Knowledge Assistant for document retrieval and policy Q&A</li><li>Full supervisor-subagent trace hierarchy with MLflow</li><li>3-layer evaluation: routing accuracy, response quality, orchestration</li></ul> | Coming Soon... |
+| 1.11 | [LangGraph Deep Agents](11_deep_agents_langgraph.ipynb) | <ul><li>Deep Agents with built-in planning (write_todos / read_todos)</li><li>File system context management (read, write, edit files)</li><li>Sub-agent delegation via task() tool</li><li>Evaluating Deep Agent outputs with mlflow.genai.evaluate()</li><li>Auto-tracing with mlflow.langchain.autolog()</li></ul> | Coming Soon... |
+| 1.12 | [CrewAI Multi-Agent Orchestration](12_crewai_multi_agent.ipynb) | <ul><li>Role-based agents with CrewAI (role, goal, backstory)</li><li>Custom tools: query_disaster_database and search_fema_policies</li><li>Hierarchical crew with manager agent delegating to specialists</li><li>Evaluating crew outputs with mlflow.genai.evaluate()</li><li>Auto-tracing with mlflow.crewai.autolog()</li></ul> | Coming Soon... |
 
 ## 🎓 Learning Outcomes
 
