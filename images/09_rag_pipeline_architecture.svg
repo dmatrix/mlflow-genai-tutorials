@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 660" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="userG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#48c9b0"/>
+      <stop offset="100%" stop-color="#1abc9c"/>
+    </linearGradient>
+    <linearGradient id="validateG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e67e22"/>
+      <stop offset="100%" stop-color="#d35400"/>
+    </linearGradient>
+    <linearGradient id="embedG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8e44ad"/>
+      <stop offset="100%" stop-color="#6c3483"/>
+    </linearGradient>
+    <linearGradient id="searchG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2980b9"/>
+      <stop offset="100%" stop-color="#1a5276"/>
+    </linearGradient>
+    <linearGradient id="contextG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#16a085"/>
+      <stop offset="100%" stop-color="#0e6655"/>
+    </linearGradient>
+    <linearGradient id="llmG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e74c3c"/>
+      <stop offset="100%" stop-color="#c0392b"/>
+    </linearGradient>
+    <linearGradient id="postvalG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e67e22"/>
+      <stop offset="100%" stop-color="#d35400"/>
+    </linearGradient>
+    <linearGradient id="responseG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#48c9b0"/>
+      <stop offset="100%" stop-color="#1abc9c"/>
+    </linearGradient>
+    <linearGradient id="docstoreG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b4f72"/>
+      <stop offset="100%" stop-color="#154360"/>
+    </linearGradient>
+    <linearGradient id="cacheG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7d6608"/>
+      <stop offset="100%" stop-color="#6e5b08"/>
+    </linearGradient>
+    <linearGradient id="mlflowG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d7377"/>
+      <stop offset="100%" stop-color="#0a5c5f"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="920" height="660" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.03" stroke="#fff" stroke-width="0.5">
+    <line x1="0" y1="100" x2="920" y2="100"/><line x1="0" y1="200" x2="920" y2="200"/>
+    <line x1="0" y1="300" x2="920" y2="300"/><line x1="0" y1="400" x2="920" y2="400"/>
+    <line x1="0" y1="500" x2="920" y2="500"/>
+    <line x1="150" y1="0" x2="150" y2="620"/><line x1="300" y1="0" x2="300" y2="620"/>
+    <line x1="460" y1="0" x2="460" y2="620"/><line x1="620" y1="0" x2="620" y2="620"/>
+    <line x1="770" y1="0" x2="770" y2="620"/>
+  </g>
+
+  <!-- Decorative circles -->
+  <circle cx="80" cy="120" r="40" fill="#4fc3f7" opacity="0.04"/>
+  <circle cx="840" cy="480" r="55" fill="#bb86fc" opacity="0.04"/>
+  <circle cx="60" cy="500" r="30" fill="#f5a623" opacity="0.03"/>
+
+  <!-- Title -->
+  <text x="460" y="38" text-anchor="middle" fill="#fff" font-size="18" font-weight="700" letter-spacing="1">RAG Pipeline Architecture — Tutorial 1.9</text>
+  <text x="460" y="58" text-anchor="middle" fill="#8899aa" font-size="11">Complete RAG System with MLflow Tracing &amp; RAGAS Evaluation</text>
+
+  <!-- ============ User Query ============ -->
+  <rect x="340" y="78" width="240" height="44" rx="22" fill="url(#userG)" filter="url(#shadow)"/>
+  <text x="420" y="105" fill="#fff" font-size="14" font-weight="600">User Query</text>
+  <text x="540" y="103" fill="#fff" font-size="16">&#x1F464;</text>
+
+  <!-- Arrow: User -> Validate -->
+  <line x1="460" y1="122" x2="460" y2="148" stroke="#48c9b0" stroke-width="2" opacity="0.8"/>
+  <polygon points="455,146 465,146 460,156" fill="#48c9b0" opacity="0.8"/>
+
+  <!-- ============ Step 1: Validate Query (PARSER) ============ -->
+  <rect x="320" y="156" width="280" height="50" rx="10" fill="url(#validateG)" filter="url(#shadow)"/>
+  <text x="460" y="178" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">1. validate_query</text>
+  <text x="460" y="196" text-anchor="middle" fill="#fdebd0" font-size="9">PARSER span  |  Length &amp; content checks</text>
+
+  <!-- Arrow: Validate -> Embed -->
+  <line x1="460" y1="206" x2="460" y2="228" stroke="#e67e22" stroke-width="2" opacity="0.7"/>
+  <polygon points="455,226 465,226 460,236" fill="#e67e22" opacity="0.7"/>
+
+  <!-- ============ Step 2: Embed Text (EMBEDDING) ============ -->
+  <rect x="320" y="236" width="280" height="50" rx="10" fill="url(#embedG)" filter="url(#shadow)"/>
+  <text x="460" y="258" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">2. embed_text</text>
+  <text x="460" y="276" text-anchor="middle" fill="#e8daef" font-size="9">EMBEDDING span  |  text-embedding-3-small</text>
+
+  <!-- Arrow: Embed -> Search -->
+  <line x1="460" y1="286" x2="460" y2="308" stroke="#8e44ad" stroke-width="2" opacity="0.7"/>
+  <polygon points="455,306 465,306 460,316" fill="#8e44ad" opacity="0.7"/>
+
+  <!-- ============ Step 3: Semantic Search (RETRIEVER) ============ -->
+  <rect x="320" y="316" width="280" height="50" rx="10" fill="url(#searchG)" filter="url(#shadow)"/>
+  <text x="460" y="338" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">3. semantic_search</text>
+  <text x="460" y="356" text-anchor="middle" fill="#aed6f1" font-size="9">RETRIEVER span  |  Cosine similarity  |  top_k</text>
+
+  <!-- Arrow: Search -> Context -->
+  <line x1="460" y1="366" x2="460" y2="388" stroke="#2980b9" stroke-width="2" opacity="0.7"/>
+  <polygon points="455,386 465,386 460,396" fill="#2980b9" opacity="0.7"/>
+
+  <!-- ============ Step 4: Assemble Context (PARSER) ============ -->
+  <rect x="320" y="396" width="280" height="50" rx="10" fill="url(#contextG)" filter="url(#shadow)"/>
+  <text x="460" y="418" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">4. assemble_context</text>
+  <text x="460" y="436" text-anchor="middle" fill="#a3e4d7" font-size="9">PARSER span  |  Prompt construction</text>
+
+  <!-- Arrow: Context -> LLM -->
+  <line x1="460" y1="446" x2="460" y2="468" stroke="#16a085" stroke-width="2" opacity="0.7"/>
+  <polygon points="455,466 465,466 460,476" fill="#16a085" opacity="0.7"/>
+
+  <!-- ============ Step 5: Generate Answer (LLM) ============ -->
+  <rect x="320" y="476" width="280" height="50" rx="10" fill="url(#llmG)" filter="url(#shadow)"/>
+  <text x="460" y="498" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">5. generate_response</text>
+  <text x="460" y="516" text-anchor="middle" fill="#f5b7b1" font-size="9">LLM span  |  OpenAI API  |  Token tracking</text>
+
+  <!-- Arrow: LLM -> Post-validate -->
+  <line x1="460" y1="526" x2="460" y2="543" stroke="#e74c3c" stroke-width="2" opacity="0.7"/>
+  <polygon points="455,541 465,541 460,551" fill="#e74c3c" opacity="0.7"/>
+
+  <!-- ============ Step 6: Validate Response (PARSER) ============ -->
+  <rect x="320" y="551" width="280" height="44" rx="10" fill="url(#postvalG)" filter="url(#shadow)"/>
+  <text x="460" y="571" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">6. validate_response</text>
+  <text x="460" y="587" text-anchor="middle" fill="#fdebd0" font-size="9">PARSER span  |  Quality checks</text>
+
+  <!-- ============ Outer CHAIN wrapper (dashed border) ============ -->
+  <rect x="305" y="145" width="310" height="462" rx="14" fill="none" stroke="#f39c12" stroke-width="1.5" stroke-dasharray="8 4" opacity="0.4"/>
+  <text x="310" y="620" fill="#f39c12" font-size="9" font-weight="600" opacity="0.6">rag_pipeline  (CHAIN span)</text>
+
+  <!-- ============ Document Store (right side) ============ -->
+  <rect x="690" y="280" width="190" height="90" rx="10" fill="url(#docstoreG)" filter="url(#shadow)"/>
+  <text x="785" y="310" text-anchor="middle" fill="#4fc3f7" font-size="13" font-weight="700">Document Store</text>
+  <text x="785" y="328" text-anchor="middle" fill="#85c1e9" font-size="9">12 MLflow docs</text>
+  <text x="785" y="344" text-anchor="middle" fill="#7f8c8d" font-size="8">In-memory  |  Pre-embedded</text>
+  <text x="785" y="358" text-anchor="middle" fill="#5d6d7e" font-size="8" font-style="italic">Production: Vector DB</text>
+
+  <!-- Arrow: DocStore -> Search -->
+  <line x1="690" y1="340" x2="605" y2="340" stroke="#4fc3f7" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="607,336 607,344 600,340" fill="#4fc3f7" opacity="0.5"/>
+
+  <!-- ============ Embedding Cache (right side) ============ -->
+  <rect x="690" y="186" width="190" height="60" rx="10" fill="url(#cacheG)" filter="url(#shadow)"/>
+  <text x="785" y="212" text-anchor="middle" fill="#f9e79f" font-size="12" font-weight="700">Embedding Cache</text>
+  <text x="785" y="230" text-anchor="middle" fill="#d4ac0d" font-size="9">MD5-keyed  |  In-memory dict</text>
+
+  <!-- Arrow: Cache <-> Embed -->
+  <line x1="690" y1="225" x2="605" y2="260" stroke="#f1c40f" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.5"/>
+  <polygon points="608,256 608,264 600,260" fill="#f1c40f" opacity="0.5"/>
+
+  <!-- ============ MLflow Tracing (left side) ============ -->
+  <rect x="40" y="230" width="190" height="200" rx="10" fill="url(#mlflowG)" filter="url(#shadow)"/>
+  <text x="135" y="258" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">MLflow Tracking</text>
+  <text x="135" y="278" text-anchor="middle" fill="#76d7c4" font-size="9">http://localhost:5000</text>
+
+  <text x="60" y="305" fill="#a3e4d7" font-size="9">&#x2022; Experiment tracking</text>
+  <text x="60" y="322" fill="#a3e4d7" font-size="9">&#x2022; Span-level tracing</text>
+  <text x="60" y="339" fill="#a3e4d7" font-size="9">&#x2022; Token &amp; cost metrics</text>
+  <text x="60" y="356" fill="#a3e4d7" font-size="9">&#x2022; Latency per step</text>
+  <text x="60" y="373" fill="#a3e4d7" font-size="9">&#x2022; Cache hit tracking</text>
+
+  <rect x="58" y="390" width="154" height="28" rx="6" fill="#0a5c5f" stroke="#76d7c4" stroke-width="0.5"/>
+  <text x="135" y="408" text-anchor="middle" fill="#76d7c4" font-size="9" font-weight="600">RAGAS Evaluation</text>
+  <text x="135" y="420" text-anchor="middle" fill="#5dade2" font-size="7">Faithfulness | ContextRelevance</text>
+
+  <!-- Arrow: Pipeline dashed box -> MLflow (traces from entire pipeline) -->
+  <line x1="305" y1="376" x2="235" y2="376" stroke="#76d7c4" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.4"/>
+  <polygon points="237,372 237,380 230,376" fill="#76d7c4" opacity="0.4"/>
+  <text x="270" y="369" text-anchor="middle" fill="#76d7c4" font-size="7" opacity="0.6">traces</text>
+
+  <!-- ============ Footer Badges ============ -->
+  <g transform="translate(0, 638)">
+    <rect x="100" y="0" width="110" height="20" rx="10" fill="#e74c3c" opacity="0.2"/>
+    <text x="155" y="14" text-anchor="middle" fill="#e74c3c" font-size="9" font-weight="600">OpenAI LLM</text>
+
+    <rect x="225" y="0" width="120" height="20" rx="10" fill="#8e44ad" opacity="0.2"/>
+    <text x="285" y="14" text-anchor="middle" fill="#8e44ad" font-size="9" font-weight="600">Embeddings</text>
+
+    <rect x="360" y="0" width="120" height="20" rx="10" fill="#2980b9" opacity="0.2"/>
+    <text x="420" y="14" text-anchor="middle" fill="#2980b9" font-size="9" font-weight="600">Cosine Search</text>
+
+    <rect x="495" y="0" width="110" height="20" rx="10" fill="#0d7377" opacity="0.2"/>
+    <text x="550" y="14" text-anchor="middle" fill="#0d7377" font-size="9" font-weight="600">MLflow Tracing</text>
+
+    <rect x="620" y="0" width="100" height="20" rx="10" fill="#16a085" opacity="0.2"/>
+    <text x="670" y="14" text-anchor="middle" fill="#16a085" font-size="9" font-weight="600">RAGAS Eval</text>
+  </g>
+</svg>
