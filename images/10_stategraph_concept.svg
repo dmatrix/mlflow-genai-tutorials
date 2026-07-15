@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 580" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#c73e54"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460"/>
+      <stop offset="100%" style="stop-color:#1a5276"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#533483"/>
+      <stop offset="100%" style="stop-color:#6c3d9e"/>
+    </linearGradient>
+    <linearGradient id="stateGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:0.18"/>
+      <stop offset="100%" style="stop-color:#2ecc71;stop-opacity:0.06"/>
+    </linearGradient>
+    <linearGradient id="endGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#48c9b0"/>
+      <stop offset="100%" style="stop-color:#1abc9c"/>
+    </linearGradient>
+    <linearGradient id="classGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4fc3f7;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#4fc3f7;stop-opacity:0.02"/>
+    </linearGradient>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="subtleShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+    <marker id="arrowWhite" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#fff" opacity="0.5"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2ecc71" opacity="0.6"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="580" fill="url(#bgGrad)" rx="14"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.03">
+    <line x1="0" y1="100" x2="1100" y2="100" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1100" y2="200" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1100" y2="300" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="400" x2="1100" y2="400" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="500" x2="1100" y2="500" stroke="#fff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="580" stroke="#fff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="580" stroke="#fff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="580" stroke="#fff" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="580" stroke="#fff" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="580" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <!-- Decorative circles -->
+  <circle cx="60" cy="80" r="30" fill="#e94560" opacity="0.05"/>
+  <circle cx="1050" cy="500" r="35" fill="#48c9b0" opacity="0.05"/>
+  <circle cx="120" cy="520" r="22" fill="#f5a623" opacity="0.04"/>
+  <circle cx="990" cy="70" r="25" fill="#533483" opacity="0.06"/>
+  <circle cx="200" cy="50" r="3" fill="#e94560" opacity="0.12"/>
+  <circle cx="900" cy="540" r="3" fill="#48c9b0" opacity="0.12"/>
+
+  <!-- Title -->
+  <text x="550" y="35" fill="#fff" font-size="12" font-weight="600" text-anchor="middle" opacity="0.35" letter-spacing="3">LANGGRAPH STATEGRAPH — HOW IT WORKS</text>
+
+  <!-- ============ StateGraph CLASS CONTAINER ============ -->
+  <rect x="35" y="52" width="1030" height="340" rx="16" fill="url(#classGrad)" stroke="#4fc3f7" stroke-width="1.5" stroke-opacity="0.25"/>
+
+  <!-- Class header bar -->
+  <rect x="35" y="52" width="1030" height="36" rx="16" fill="#4fc3f7" opacity="0.08"/>
+  <rect x="35" y="72" width="1030" height="16" fill="#4fc3f7" opacity="0.08"/>
+  <!-- Class icon -->
+  <g transform="translate(58, 64)">
+    <rect x="0" y="0" width="16" height="16" rx="3" fill="#4fc3f7" opacity="0.3"/>
+    <text x="8" y="13" fill="#4fc3f7" font-size="11" font-weight="700" text-anchor="middle">C</text>
+  </g>
+  <text x="82" y="75" fill="#4fc3f7" font-size="14" font-weight="700" font-style="italic">StateGraph</text>
+  <text x="178" y="75" fill="#4fc3f7" font-size="14" font-weight="400" opacity="0.7">(SupervisorState)</text>
+
+  <!-- Builder API methods along right side -->
+  <g transform="translate(870, 58)">
+    <rect x="0" y="0" width="180" height="24" rx="12" fill="#1a1a2e" opacity="0.6" stroke="#4fc3f7" stroke-width="0.8" stroke-opacity="0.3"/>
+    <text x="12" y="16" fill="#4fc3f7" font-size="10" font-family="monospace" opacity="0.8">.set_entry_point()</text>
+  </g>
+
+  <!-- API labels inside the container (left margin) -->
+  <g transform="translate(48, 105)">
+    <rect x="0" y="0" width="112" height="20" rx="10" fill="#1a1a2e" opacity="0.7" stroke="#4fc3f7" stroke-width="0.8" stroke-opacity="0.3"/>
+    <text x="10" y="14" fill="#4fc3f7" font-size="10" font-family="monospace" opacity="0.8">.add_node()</text>
+  </g>
+  <g transform="translate(48, 130)">
+    <rect x="0" y="0" width="112" height="20" rx="10" fill="#1a1a2e" opacity="0.7" stroke="#4fc3f7" stroke-width="0.8" stroke-opacity="0.3"/>
+    <text x="10" y="14" fill="#4fc3f7" font-size="10" font-family="monospace" opacity="0.8">.add_edge()</text>
+  </g>
+  <g transform="translate(48, 155)">
+    <rect x="0" y="0" width="112" height="20" rx="10" fill="#1a1a2e" opacity="0.7" stroke="#4fc3f7" stroke-width="0.8" stroke-opacity="0.3"/>
+    <text x="10" y="14" fill="#4fc3f7" font-size="10" font-family="monospace" opacity="0.8">.compile()</text>
+  </g>
+  <!-- Arrow from .compile() pointing to the graph -->
+  <path d="M160 166 Q180 166 195 185" stroke="#4fc3f7" stroke-width="1" stroke-dasharray="3,3" opacity="0.3" fill="none" marker-end="url(#arrowGreen)"/>
+
+  <!-- ============ STATE DICT (inside container, top) ============ -->
+  <rect x="55" y="185" width="990" height="48" rx="10" fill="url(#stateGrad)" stroke="#2ecc71" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="72" y="202" fill="#2ecc71" font-size="9" font-weight="600" opacity="0.6" letter-spacing="1.5">SHARED STATE (TypedDict) — flows through every node</text>
+  <g transform="translate(72, 210)">
+    <rect x="0" y="0" width="90" height="16" rx="8" fill="#2ecc71" opacity="0.12"/>
+    <text x="45" y="12" fill="#2ecc71" font-size="8.5" font-weight="500" text-anchor="middle">query: str</text>
+    <rect x="100" y="0" width="115" height="16" rx="8" fill="#2ecc71" opacity="0.12"/>
+    <text x="157" y="12" fill="#2ecc71" font-size="8.5" font-weight="500" text-anchor="middle">route: Optional[str]</text>
+    <rect x="225" y="0" width="152" height="16" rx="8" fill="#2ecc71" opacity="0.12"/>
+    <text x="301" y="12" fill="#2ecc71" font-size="8.5" font-weight="500" text-anchor="middle">genie_response: Optional[str]</text>
+    <rect x="387" y="0" width="140" height="16" rx="8" fill="#2ecc71" opacity="0.12"/>
+    <text x="457" y="12" fill="#2ecc71" font-size="8.5" font-weight="500" text-anchor="middle">ka_response: Optional[str]</text>
+    <rect x="537" y="0" width="158" height="16" rx="8" fill="#2ecc71" opacity="0.12"/>
+    <text x="616" y="12" fill="#2ecc71" font-size="8.5" font-weight="500" text-anchor="middle">final_response: Optional[str]</text>
+  </g>
+
+  <!-- State flow arrows (state feeds into each node) -->
+  <path d="M240 233 L240 253" stroke="#2ecc71" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.25" marker-end="url(#arrowGreen)"/>
+  <path d="M500 233 L500 253" stroke="#2ecc71" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.25" marker-end="url(#arrowGreen)"/>
+  <path d="M770 233 L770 253" stroke="#2ecc71" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.25" marker-end="url(#arrowGreen)"/>
+
+  <!-- ============ GRAPH NODES ROW (inside container) ============ -->
+
+  <!-- ENTRY POINT marker -->
+  <g filter="url(#subtleShadow)">
+    <circle cx="105" cy="300" r="16" fill="none" stroke="#48c9b0" stroke-width="2.5" opacity="0.7"/>
+    <circle cx="105" cy="300" r="7" fill="#48c9b0" opacity="0.6"/>
+  </g>
+  <text x="105" y="332" fill="#48c9b0" font-size="9" font-weight="600" text-anchor="middle" opacity="0.7">ENTRY</text>
+
+  <!-- Edge: Entry -> route_query -->
+  <line x1="121" y1="300" x2="155" y2="300" stroke="#fff" stroke-width="2" opacity="0.4" marker-end="url(#arrowWhite)"/>
+
+  <!-- Node 1: route_query -->
+  <g filter="url(#softShadow)">
+    <rect x="157" y="263" width="170" height="80" rx="12" fill="url(#nodeGrad1)"/>
+  </g>
+  <g transform="translate(175, 286)">
+    <text x="0" y="0" fill="#fff" font-size="14" font-weight="700" opacity="0.6" font-family="monospace">fn</text>
+  </g>
+  <text x="200" y="287" fill="#fff" font-size="14" font-weight="700">route_query</text>
+  <line x1="172" y1="295" x2="312" y2="295" stroke="#fff" stroke-width="0.5" opacity="0.15"/>
+  <text x="175" y="310" fill="#fff" font-size="10" opacity="0.6">LLM classifies query</text>
+  <text x="175" y="324" fill="#fff" font-size="10" opacity="0.6">Returns {route, reasoning}</text>
+  <rect x="175" y="328" width="120" height="12" rx="6" fill="#fff" opacity="0.07"/>
+  <text x="180" y="337" fill="#ffd5dc" font-size="8" font-weight="500" opacity="0.75">partial update merges ↑</text>
+
+  <!-- Edge: route_query -> execute_agents -->
+  <line x1="327" y1="300" x2="387" y2="300" stroke="#fff" stroke-width="2.5" opacity="0.4" marker-end="url(#arrowWhite)"/>
+  <text x="357" y="293" fill="#fff" font-size="8" opacity="0.3" text-anchor="middle">edge</text>
+
+  <!-- Node 2: execute_agents -->
+  <g filter="url(#softShadow)">
+    <rect x="389" y="263" width="200" height="80" rx="12" fill="url(#nodeGrad2)"/>
+  </g>
+  <g transform="translate(407, 286)">
+    <text x="0" y="0" fill="#4fc3f7" font-size="14" font-weight="700" opacity="0.6" font-family="monospace">fn</text>
+  </g>
+  <text x="430" y="287" fill="#fff" font-size="14" font-weight="700">execute_agents</text>
+  <line x1="404" y1="295" x2="574" y2="295" stroke="#fff" stroke-width="0.5" opacity="0.15"/>
+  <text x="407" y="310" fill="#fff" font-size="10" opacity="0.6">Reads state.route</text>
+  <text x="407" y="324" fill="#fff" font-size="10" opacity="0.6">Calls Genie and/or KA</text>
+  <rect x="407" y="328" width="120" height="12" rx="6" fill="#fff" opacity="0.07"/>
+  <text x="412" y="337" fill="#b3e5fc" font-size="8" font-weight="500" opacity="0.75">partial update merges ↑</text>
+
+  <!-- Edge: execute_agents -> synthesize -->
+  <line x1="589" y1="300" x2="652" y2="300" stroke="#fff" stroke-width="2.5" opacity="0.4" marker-end="url(#arrowWhite)"/>
+  <text x="621" y="293" fill="#fff" font-size="8" opacity="0.3" text-anchor="middle">edge</text>
+
+  <!-- Node 3: synthesize -->
+  <g filter="url(#softShadow)">
+    <rect x="654" y="263" width="200" height="80" rx="12" fill="url(#nodeGrad3)"/>
+  </g>
+  <g transform="translate(672, 286)">
+    <text x="0" y="0" fill="#bb86fc" font-size="14" font-weight="700" opacity="0.6" font-family="monospace">fn</text>
+  </g>
+  <text x="695" y="287" fill="#fff" font-size="14" font-weight="700">synthesize</text>
+  <line x1="669" y1="295" x2="839" y2="295" stroke="#fff" stroke-width="0.5" opacity="0.15"/>
+  <text x="672" y="310" fill="#fff" font-size="10" opacity="0.6">Combines agent outputs</text>
+  <text x="672" y="324" fill="#fff" font-size="10" opacity="0.6">Returns {final_response}</text>
+  <rect x="672" y="328" width="120" height="12" rx="6" fill="#fff" opacity="0.07"/>
+  <text x="677" y="337" fill="#e1bee7" font-size="8" font-weight="500" opacity="0.75">partial update merges ↑</text>
+
+  <!-- Edge: synthesize -> END -->
+  <line x1="854" y1="300" x2="920" y2="300" stroke="#fff" stroke-width="2.5" opacity="0.4" marker-end="url(#arrowWhite)"/>
+  <text x="887" y="293" fill="#fff" font-size="8" opacity="0.3" text-anchor="middle">edge</text>
+
+  <!-- END node -->
+  <g filter="url(#subtleShadow)">
+    <rect x="922" y="283" width="65" height="35" rx="17" fill="url(#endGrad)"/>
+  </g>
+  <text x="954" y="305" fill="#fff" font-size="13" font-weight="700" text-anchor="middle">END</text>
+
+  <!-- compiled label -->
+  <text x="550" y="373" fill="#4fc3f7" font-size="10" font-weight="500" text-anchor="middle" opacity="0.4">supervisor = builder.compile()  →  CompiledStateGraph (Runnable)</text>
+
+  <!-- ============ KEY CONCEPTS (below container) ============ -->
+
+  <!-- Concept 1: Nodes = Functions -->
+  <g transform="translate(55, 408)">
+    <rect x="0" y="0" width="310" height="100" rx="12" fill="#fff" opacity="0.04" stroke="#fff" stroke-width="0.5" stroke-opacity="0.08"/>
+    <g transform="translate(16, 20)">
+      <rect x="0" y="0" width="26" height="26" rx="7" fill="#e94560" opacity="0.2"/>
+      <text x="13" y="19" fill="#e94560" font-size="13" font-weight="700" text-anchor="middle">N</text>
+    </g>
+    <text x="52" y="38" fill="#fff" font-size="13" font-weight="700">Nodes = Python Functions</text>
+    <text x="16" y="60" fill="#fff" font-size="10.5" opacity="0.55">Each node is a regular function registered</text>
+    <text x="16" y="74" fill="#fff" font-size="10.5" opacity="0.55">via .add_node(). It receives the full state</text>
+    <text x="16" y="88" fill="#fff" font-size="10.5" opacity="0.55">dict, returns a partial dict that gets merged.</text>
+  </g>
+
+  <!-- Concept 2: Edges = Flow -->
+  <g transform="translate(395, 408)">
+    <rect x="0" y="0" width="310" height="100" rx="12" fill="#fff" opacity="0.04" stroke="#fff" stroke-width="0.5" stroke-opacity="0.08"/>
+    <g transform="translate(16, 20)">
+      <rect x="0" y="0" width="26" height="26" rx="7" fill="#4fc3f7" opacity="0.2"/>
+      <text x="13" y="19" fill="#4fc3f7" font-size="13" font-weight="700" text-anchor="middle">E</text>
+    </g>
+    <text x="52" y="38" fill="#fff" font-size="13" font-weight="700">Edges = Execution Flow</text>
+    <text x="16" y="60" fill="#fff" font-size="10.5" opacity="0.55">Wired via .add_edge() or conditional</text>
+    <text x="16" y="74" fill="#fff" font-size="10.5" opacity="0.55">edges. Supports linear, branching, and</text>
+    <text x="16" y="88" fill="#fff" font-size="10.5" opacity="0.55">cyclic flows for agent orchestration.</text>
+  </g>
+
+  <!-- Concept 3: State = Shared Context -->
+  <g transform="translate(735, 408)">
+    <rect x="0" y="0" width="310" height="100" rx="12" fill="#fff" opacity="0.04" stroke="#fff" stroke-width="0.5" stroke-opacity="0.08"/>
+    <g transform="translate(16, 20)">
+      <rect x="0" y="0" width="26" height="26" rx="7" fill="#2ecc71" opacity="0.2"/>
+      <text x="13" y="19" fill="#2ecc71" font-size="13" font-weight="700" text-anchor="middle">S</text>
+    </g>
+    <text x="52" y="38" fill="#fff" font-size="13" font-weight="700">State = Shared TypedDict</text>
+    <text x="16" y="60" fill="#fff" font-size="10.5" opacity="0.55">Passed to StateGraph(schema) at init.</text>
+    <text x="16" y="74" fill="#fff" font-size="10.5" opacity="0.55">Accumulates context as it flows — every</text>
+    <text x="16" y="88" fill="#fff" font-size="10.5" opacity="0.55">node sees prior results and adds its own.</text>
+  </g>
+
+  <!-- Bottom label -->
+  <text x="550" y="548" fill="#fff" font-size="10" font-weight="500" text-anchor="middle" opacity="0.25">StateGraph compiles into a CompiledStateGraph — supports invoke(), stream(), and batch() — with full MLflow tracing</text>
+</svg>
