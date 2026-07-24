@@ -3,7 +3,7 @@
 ![MLflow tutorial series](images/1_Mastering-GenAI-with-MLflow.png)
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![MLflow](https://img.shields.io/badge/MLflow-3.9.0%2B-orange?logo=mlflow&logoColor=white)](https://mlflow.org/)
+[![MLflow](https://img.shields.io/badge/MLflow-3.14.0-orange?logo=mlflow&logoColor=white)](https://mlflow.org/)
 [![OpenAI](https://img.shields.io/badge/OpenAI-API-412991?logo=openai&logoColor=white)](https://platform.openai.com/)
 [![LangChain](https://img.shields.io/badge/LangChain-Integrated-green?logo=langchain&logoColor=white)](https://langchain.com/)
 [![LlamaIndex](https://img.shields.io/badge/LlamaIndex-RAG-blue)](https://www.llamaindex.ai/)
@@ -17,7 +17,7 @@
 
 ## Tutorial: Mastering GenAI with MLflow 
 
-This tutorial series teaches you, in a step-by-step manner, how to use MLflow's open source platform for building, tracking, tracing, prompt registry and optimization, evaluating, and debugging GenAI applications.
+A step-by-step series on using MLflow's open source platform to build, track, trace, evaluate, and debug GenAI applications, including managing and optimizing prompts along the way.
 
 ### 🎬 Series Overview Video
 
@@ -37,31 +37,23 @@ This tutorial series teaches you, in a step-by-step manner, how to use MLflow's 
 | 1.6 | [Framework Integrations](06_framework_integrations.ipynb) | <ul><li>OpenAI direct API integration</li><li>LangChain chains and workflows</li><li>LlamaIndex document indexing and RAG</li><li>Framework comparison matrix</li><li>Best practices for each framework</li></ul> | [Watch Tutorial](https://youtu.be/VgSRCG0bPAs?si=-N0Mn4-YWjWTDEum) |
 | 1.7 | [Evaluating Agents](07_evaluating_agents.ipynb) | <ul><li>LLM-as-Judge evaluation patterns</li><li>MLflow built-in scorers (RelevanceToQuery, Correctness, Guidelines)</li><li>Custom scorers with @scorer decorator</li><li>DeepEval integration for conversations</li><li>Session-level multi-turn evaluation</li></ul> | [Watch Tutorial](https://www.youtube.com/watch?v=WvTqW6grGmY&list=PLaoPu6xpLk9EI99TuOjSgy-UuDWowJ_mR&index=2) |
 | 1.8 | [Prompt Optimization with GEPA](08_prompt_optimization.ipynb) | <ul><li>Automatic prompt optimization with GEPA algorithm</li><li>MLflow Prompt Registry integration</li><li>Before/after evaluation comparison</li></ul> | [Watch tutorial](https://www.youtube.com/watch?v=P8umxQ9Be1k&t=308s) |
-| 1.9 | [Complete RAG Application](09_complete_rag_application.ipynb) | <ul><li>Building a full RAG pipeline</li><li>End-to-end tracing</li><li>Performance analysis</li><li>RAG evaluation with RAGAS metrics</li></ul> | Coming Soon... |
+| 1.9 | [Complete RAG Application](09_complete_rag_application.ipynb) | <ul><li>Building a full RAG pipeline</li><li>End-to-end tracing</li><li>Performance analysis</li><li>RAG evaluation with RAGAS metrics</li></ul> | [Watch tutorial](https://youtu.be/_fKBGr5_Gdw?si=IX5tAzeNe1KHK0Am) |
 | 1.10 | [Multi-Agent Supervisor Pattern](10_multi_agent_supervisor.ipynb) | <ul><li>Supervisor agent that routes queries to specialized subagents</li><li>Genie agent for structured data queries (SQL over pandas DataFrame)</li><li>Knowledge Assistant for document retrieval and policy Q&A</li><li>Full supervisor-subagent trace hierarchy with MLflow</li><li>3-layer evaluation: routing accuracy, response quality, orchestration</li></ul> | Coming Soon... |
-| 1.11 | [LangGraph Deep Agents](11_deep_agents_langgraph.ipynb) | <ul><li>Deep Agents with built-in planning (write_todos / read_todos)</li><li>File system context management (read, write, edit files)</li><li>Sub-agent delegation via task() tool</li><li>Evaluating Deep Agent outputs with mlflow.genai.evaluate()</li><li>Auto-tracing with mlflow.langchain.autolog()</li></ul> | Coming Soon... |
-| 1.12 | [CrewAI Multi-Agent Orchestration](12_crewai_multi_agent.ipynb) | <ul><li>Role-based agents with CrewAI (role, goal, backstory)</li><li>Custom tools: query_disaster_database and search_fema_policies</li><li>Hierarchical crew with manager agent delegating to specialists</li><li>Evaluating crew outputs with mlflow.genai.evaluate()</li><li>Auto-tracing with mlflow.crewai.autolog()</li></ul> | Coming Soon... |
+| 1.11 | [LangGraph Deep Agents](11_deep_agents_langgraph.ipynb) | <ul><li>Deep Agents with built-in planning (write_todos / read_todos)</li><li>File system context management (read, write, edit files)</li><li>Sub-agent delegation via task() tool</li><li>Evaluating Deep Agent outputs with mlflow.genai.evaluate()</li><li>Auto-tracing with mlflow.langchain.autolog()</li></ul> | N/A |
+| 1.12 | [CrewAI Multi-Agent Orchestration](12_crewai_multi_agent.ipynb) | <ul><li>Role-based agents with CrewAI (role, goal, backstory)</li><li>Custom tools: query_disaster_database and search_fema_policies</li><li>Hierarchical crew with manager agent delegating to specialists</li><li>Evaluating crew outputs with mlflow.genai.evaluate()</li><li>Auto-tracing with mlflow.crewai.autolog()</li></ul> | N/A |
 
-## 🎓 Learning Outcomes
+## 🎓 What You'll Learn
 
-After completing this tutorial, you will be able to:
+By the end of the series you'll be able to:
 
-### Core Skills
-- ✅ Set up MLflow for GenAI development
-- ✅ Track LLM experiments systematically
-- ✅ Implement comprehensive tracing
-- ✅ Debug GenAI applications effectively
-- ✅ Manage prompts with version control
-- ✅ Build RAG systems
-
-### Advanced Capabilities
-- ✅ Cost tracking and optimization
-- ✅ Performance analysis and debugging
-- ✅ Multi-framework integration
-- ✅ Hierarchical trace creation
-- ✅ Custom span instrumentation
-- ✅ Agent workflow tracing
-
+- Set up MLflow for GenAI development and track LLM experiments
+- Instrument code with tracing, then use traces to debug and analyze performance
+- Track and optimize the cost of LLM calls
+- Manage prompts with version control and the Prompt Registry, and optimize them with GEPA
+- Integrate MLflow across OpenAI, LangChain, LlamaIndex, and CrewAI
+- Evaluate agents with MLflow's built-in judges plus custom, DeepEval, and RAGAS scorers
+- Build end-to-end RAG applications
+- Build, trace, and evaluate multi-agent orchestration systems
 
 ### 🚀 Getting Started
 
@@ -103,19 +95,6 @@ Navigate to http://localhost:5000
 - [UV](https://docs.astral.sh/uv/) package manager
 - OpenAI API key (or Databricks Workspace)
 - Basic understanding of Python and LLMs
-
-### 🎯 Learning Objectives
-
-By the end of all tutorials, you will:
-
-- ✅ Understand MLflow's core GenAI components
-- ✅ Track and trace LLM experiments systematically
-- ✅ Implement comprehensive tracing for observability
-- ✅ Debug GenAI applications using trace visualizations and MLflow Assistant
-- ✅ Manage prompts with version control and Prompt Registery
-- ✅ Evaluate an agent using MLflow predefined judges, custom and integrated judges from DeepEval and RAGAS
-- ✅ Build end-to-end RAG applications
-- ✅ Build and evaluate multi-agent orchestration systems
 
 ### 📂 Directory Structure
 
@@ -193,5 +172,5 @@ This tutorial series is provided as educational content for learning MLflow's Ge
 ---
 
 **Authors**: Jules (Databricks Developer Relations) + Claude Code
-**Date**: Feburary 2026
-**MLflow Version**: 3.9.0+
+**Date**: February 2026
+**MLflow Version**: 3.14.0

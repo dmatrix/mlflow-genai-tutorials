@@ -215,12 +215,6 @@
     <circle cx="262" cy="19" r="10" fill="#f39c12" opacity="0.25"/>
     <text x="262" y="23" fill="#f39c12" font-size="12" font-weight="700" text-anchor="middle">2</text>
     <text x="282" y="23" fill="#f39c12" font-size="12" font-weight="600">Routing Accuracy</text>
-
-    <!-- Layer 3 -->
-    <rect x="500" y="0" width="260" height="38" rx="19" fill="#e74c3c" opacity="0.12" stroke="#e74c3c" stroke-width="1" stroke-opacity="0.3"/>
-    <circle cx="522" cy="19" r="10" fill="#e74c3c" opacity="0.25"/>
-    <text x="522" y="23" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">3</text>
-    <text x="542" y="23" fill="#e74c3c" font-size="12" font-weight="600">Agent-as-a-Judge</text>
   </g>
 
   <!-- Evaluation label -->
