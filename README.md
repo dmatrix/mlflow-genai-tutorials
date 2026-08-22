@@ -3,7 +3,8 @@
 ![MLflow tutorial series](images/1_Mastering-GenAI-with-MLflow.png)
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![MLflow](https://img.shields.io/badge/MLflow-3.14.0-orange?logo=mlflow&logoColor=white)](https://mlflow.org/)
+[![MLflow](https://img.shields.io/badge/MLflow-3.15.1-orange?logo=mlflow&logoColor=white)](https://mlflow.org/)
+[![MCP](https://img.shields.io/badge/MCP-Server%20%26%20Registry-teal?logo=modelcontextprotocol&logoColor=white)](https://modelcontextprotocol.io/)
 [![OpenAI](https://img.shields.io/badge/OpenAI-API-412991?logo=openai&logoColor=white)](https://platform.openai.com/)
 [![LangChain](https://img.shields.io/badge/LangChain-Integrated-green?logo=langchain&logoColor=white)](https://langchain.com/)
 [![LlamaIndex](https://img.shields.io/badge/LlamaIndex-RAG-blue)](https://www.llamaindex.ai/)
@@ -41,6 +42,8 @@ A step-by-step series on using MLflow's open source platform to build, track, tr
 | 1.10 | [Multi-Agent Supervisor Pattern](10_multi_agent_supervisor.ipynb) | <ul><li>Supervisor agent that routes queries to specialized subagents</li><li>Genie agent for structured data queries (SQL over pandas DataFrame)</li><li>Knowledge Assistant for document retrieval and policy Q&A</li><li>Full supervisor-subagent trace hierarchy with MLflow</li><li>3-layer evaluation: routing accuracy, response quality, orchestration</li></ul> | [Watch tutorial](https://youtu.be/_qMwucBc-B4?si=QJ9i7g-q8PTYin58)|
 | 1.11 | [LangGraph Deep Agents](11_deep_agents_langgraph.ipynb) | <ul><li>Deep Agents with built-in planning (write_todos / read_todos)</li><li>File system context management (read, write, edit files)</li><li>Sub-agent delegation via task() tool</li><li>Evaluating Deep Agent outputs with mlflow.genai.evaluate()</li><li>Auto-tracing with mlflow.langchain.autolog()</li></ul> | N/A |
 | 1.12 | [CrewAI Multi-Agent Orchestration](12_crewai_multi_agent.ipynb) | <ul><li>Role-based agents with CrewAI (role, goal, backstory)</li><li>Custom tools: query_disaster_database and search_fema_policies</li><li>Hierarchical crew with manager agent delegating to specialists</li><li>Evaluating crew outputs with mlflow.genai.evaluate()</li><li>Auto-tracing with mlflow.crewai.autolog()</li></ul> | N/A |
+| MCP | [The MLflow MCP Server](mlflow_mcp_server.ipynb) | <ul><li>Running `mlflow mcp run` and connecting a programmatic MCP client</li><li>Scoping tools with `MLFLOW_MCP_TOOLS` (genai / ml / all)</li><li>Four workflows: debug failures, analyze latency, log feedback, clean up data</li><li>`extract_fields` for compact responses</li><li>Wiring the server into Claude, VS Code, and Cursor</li></ul> | N/A |
+| MCP | [The MLflow MCP Registry](mlflow_mcp_registry.ipynb) | <ul><li>Registering a custom MCP server with live tool auto-discovery</li><li>Registering an external MCP server (DeepWiki)</li><li>Register → discover → use via a recorded access endpoint</li><li>Versions, aliases (`production`), tags, and re-discovery</li><li>Browsing the registry in the MLflow UI</li></ul> | N/A |
 
 ## 🎓 What You'll Learn
 
@@ -54,6 +57,7 @@ By the end of the series you'll be able to:
 - Evaluate agents with MLflow's built-in judges plus custom, DeepEval, and RAGAS scorers
 - Build end-to-end RAG applications
 - Build, trace, and evaluate multi-agent orchestration systems
+- Expose MLflow to AI assistants as MCP tools, and govern MCP servers in the MLflow MCP Registry
 
 ### 🚀 Getting Started
 
@@ -112,6 +116,8 @@ mlflow-genai-tutorial-1/
 ├── 10_multi_agent_supervisor.ipynb
 ├── 11_deep_agents_langgraph.ipynb
 ├── 12_crewai_multi_agent.ipynb
+├── mlflow_mcp_server.ipynb
+├── mlflow_mcp_registry.ipynb
 ├── .env                                 (create this yourself and use the template env_template)
 └── README.md
 ```
@@ -173,4 +179,4 @@ This tutorial series is provided as educational content for learning MLflow's Ge
 
 **Authors**: Jules (Databricks Developer Relations) + Claude Code
 **Date**: February 2026
-**MLflow Version**: 3.14.0
+**MLflow Version**: 3.15.1
