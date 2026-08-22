@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-A tutorial series teaching MLflow's GenAI platform (tracing, experiment tracking, prompt management, evaluation, RAG, multi-agent orchestration). Twelve sequential Jupyter notebooks covering core GenAI workflows through advanced multi-agent patterns. MLflow version: **3.14.0** (pinned in `pyproject.toml`). Uses the **MLflow 3.x API** — specifically `mlflow.genai.evaluate()` not the old `mlflow.evaluate()`.
+A tutorial series teaching MLflow's GenAI platform (tracing, experiment tracking, prompt management, evaluation, RAG, multi-agent orchestration). Twelve sequential numbered Jupyter notebooks covering core GenAI workflows through advanced multi-agent patterns, plus two standalone MCP tutorials (`mlflow_mcp_server`, `mlflow_mcp_registry`). MLflow version: **3.15.1** (pinned in `pyproject.toml`; the MCP Registry requires 3.15+). Uses the **MLflow 3.x API** — specifically `mlflow.genai.evaluate()` not the old `mlflow.evaluate()`.
 
 ## Environment Setup
 
@@ -56,6 +56,8 @@ Both scripts load `.env` from the project root using `python-dotenv`.
 | `10` | Multi-agent supervisor pattern with LangGraph (Genie + Knowledge Assistant) |
 | `11` | LangGraph Deep Agents: planning, file system tools, sub-agent delegation |
 | `12` | CrewAI multi-agent: role-based agents, hierarchical crews |
+| `mlflow_mcp_server` | MLflow MCP Server: `mlflow mcp run`, built-in trace/experiment tools, `MLFLOW_MCP_TOOLS`, wiring into Claude/VS Code/Cursor |
+| `mlflow_mcp_registry` | MLflow MCP Registry: register custom + external MCP servers with auto-discovery, versions, aliases, access endpoints |
 
 ### Key MLflow 3.x Patterns Used
 

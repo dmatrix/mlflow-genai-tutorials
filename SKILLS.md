@@ -250,6 +250,8 @@ Use this as a quick map of which skills are most useful at each point in the tut
 | **Multi-agent supervisor** (Notebook 1.10) | `/instrumenting-with-mlflow-tracing`, `/agent-evaluation` |
 | **Deep Agents with LangGraph** (Notebook 1.11) | `/instrumenting-with-mlflow-tracing`, `/analyze-mlflow-trace` |
 | **CrewAI multi-agent** (Notebook 1.12) | `/instrumenting-with-mlflow-tracing`, `/agent-evaluation` |
+| **MLflow MCP Server** (`mlflow_mcp_server`) | `/retrieving-mlflow-traces`, `/searching-mlflow-docs` |
+| **MLflow MCP Registry** (`mlflow_mcp_registry`) | `/searching-mlflow-docs` |
 | **Checking usage/costs** (Notebook 1.2, 1.9) | `/querying-mlflow-metrics` |
 | **After writing new code** (any stage) | `/simplify` |
 ---
