@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a0f1c"/><stop offset="1" stop-color="#0e1a2e"/></linearGradient>
+<marker id="ah-gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e0a43b"/></marker>
+<marker id="ah-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#34d399"/></marker>
+<marker id="ah-coral" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e5836b"/></marker>
+<marker id="ah-gem" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c9bf5"/></marker>
+<marker id="ah-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5aa9e6"/></marker>
+<marker id="ah-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#a78bfa"/></marker>
+<marker id="ah-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a97ab"/></marker>
+</defs>
+<rect width="1600" height="1040" fill="url(#bg)"/>
+<circle cx="150" cy="200" r="3" fill="#8a97ab" opacity="0.18"/>
+<circle cx="1450" cy="260" r="3" fill="#8a97ab" opacity="0.18"/>
+<circle cx="120" cy="760" r="3" fill="#8a97ab" opacity="0.18"/>
+<circle cx="1500" cy="820" r="3" fill="#8a97ab" opacity="0.18"/>
+<circle cx="800" cy="60" r="3" fill="#8a97ab" opacity="0.18"/>
+<text x="800.0" y="62" font-family="Helvetica Neue, Arial, sans-serif" font-size="40" font-weight="700" fill="#f3f6fb" text-anchor="middle">Governing Coding-Agent Sprawl with the MLflow AI Gateway</text>
+<text x="800.0" y="96" font-family="Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="400" fill="#8a97ab" text-anchor="middle">Open source · one gateway URL · named model endpoints per provider · policy enforced per endpoint</text>
+<line x1="360" y1="118" x2="1240" y2="118" stroke="#e0a43b" stroke-width="2" opacity="0.55"/>
+<text x="60" y="160" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#6f7f96" letter-spacing="2.5">CODING AGENTS</text>
+<rect x="48" y="182" width="252" height="96" rx="16" ry="16" fill="#15233a" stroke="#e5836b" stroke-width="1.6" opacity="0.95"/>
+<rect x="48" y="182" width="6" height="96" rx="3" fill="#e5836b" opacity="0.9"/>
+<rect x="80" y="219.0" width="28" height="22" rx="3" fill="none" stroke="#e5836b" stroke-width="2"/>
+<line x1="80" y1="226.0" x2="108" y2="226.0" stroke="#e5836b" stroke-width="2"/>
+<text x="126" y="224" font-family="Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="700" fill="#f3f6fb">Cursor</text>
+<text x="126" y="250" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#8a97ab">IDE Agent</text>
+<text x="216.8" y="250" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" fill="#e5836b">· Anthropic</text>
+<rect x="48" y="298" width="252" height="96" rx="16" ry="16" fill="#15233a" stroke="#e5836b" stroke-width="1.6" opacity="0.95"/>
+<rect x="48" y="298" width="6" height="96" rx="3" fill="#e5836b" opacity="0.9"/>
+<rect x="80" y="335.0" width="28" height="22" rx="3" fill="none" stroke="#e5836b" stroke-width="2"/>
+<path d="M85,343.0 L91,348.0 L85,353.0" fill="none" stroke="#e5836b" stroke-width="2"/>
+<text x="126" y="340" font-family="Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="700" fill="#f3f6fb">Claude Code</text>
+<text x="126" y="366" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#8a97ab">CLI Agent</text>
+<text x="216.8" y="366" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" fill="#e5836b">· Anthropic</text>
+<rect x="48" y="414" width="252" height="96" rx="16" ry="16" fill="#15233a" stroke="#34d399" stroke-width="1.6" opacity="0.95"/>
+<rect x="48" y="414" width="6" height="96" rx="3" fill="#34d399" opacity="0.9"/>
+<path d="M81,462.0 L89,454.0 M81,462.0 L89,470.0 M107,462.0 L99,454.0 M107,462.0 L99,470.0" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round"/>
+<text x="126" y="456" font-family="Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="700" fill="#f3f6fb">Codex CLI</text>
+<text x="126" y="482" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#8a97ab">CLI Agent</text>
+<text x="216.8" y="482" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" fill="#34d399">· OpenAI</text>
+<rect x="48" y="530" width="252" height="96" rx="16" ry="16" fill="#15233a" stroke="#7c9bf5" stroke-width="1.6" opacity="0.95"/>
+<rect x="48" y="530" width="6" height="96" rx="3" fill="#7c9bf5" opacity="0.9"/>
+<path d="M94,565.0 L107,578.0 L94,591.0 L81,578.0 z" fill="none" stroke="#7c9bf5" stroke-width="2"/>
+<text x="126" y="572" font-family="Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="700" fill="#f3f6fb">Gemini CLI</text>
+<text x="126" y="598" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#8a97ab">CLI Agent</text>
+<text x="216.8" y="598" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" fill="#7c9bf5">· Gemini</text>
+<rect x="48" y="646" width="252" height="96" rx="16" ry="16" fill="#15233a" stroke="#7c9bf5" stroke-width="1.6" opacity="0.95"/>
+<rect x="48" y="646" width="6" height="96" rx="3" fill="#7c9bf5" opacity="0.9"/>
+<text x="94" y="702.0" font-family="Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="700" fill="#7c9bf5" text-anchor="middle">&#960;</text>
+<text x="126" y="688" font-family="Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="700" fill="#f3f6fb">Pi</text>
+<text x="126" y="714" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#8a97ab">Coding Agent</text>
+<text x="244.39999999999998" y="714" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" fill="#7c9bf5">· Gemini</text>
+<rect x="430" y="250" width="312" height="452" rx="20" ry="20" fill="#0f1c30" stroke="#e0a43b" stroke-width="2" opacity="1.0"/>
+<rect x="430" y="250" width="312" height="70" rx="20" fill="#e0a43b" opacity="0.14"/>
+<rect x="430" y="285" width="312" height="35" fill="#e0a43b" opacity="0.14"/>
+<path d="M464,269 L479,276 L479,288 Q479,299 464,303 Q449,299 449,288 L449,276 z" fill="none" stroke="#e0a43b" stroke-width="2"/>
+<path d="M458,285 L463,290 L471,280" fill="none" stroke="#e0a43b" stroke-width="2.4" stroke-linecap="round"/>
+<text x="492" y="280" font-family="Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="700" fill="#f3f6fb">MLflow AI Gateway</text>
+<text x="492" y="302" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#8a97ab">A single entry point</text>
+<rect x="450" y="336" width="272" height="52" rx="10" ry="10" fill="#0a1424" stroke="#26364f" stroke-width="1" opacity="1.0"/>
+<text x="464" y="358" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13.5" font-weight="400" fill="#9fb2cc">POST localhost:5000/gateway/</text>
+<text x="464" y="377" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13.5" font-weight="400" fill="#9fb2cc">mlflow/v1/chat/completions</text>
+<text x="452" y="412" font-family="Helvetica Neue, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#6f7f96" letter-spacing="1.6">ROUTES ON</text>
+<rect x="450" y="422" width="272" height="40" rx="10" ry="10" fill="#141d33" stroke="#2b3a55" stroke-width="1" opacity="1.0"/>
+<text x="464" y="447" font-family="SF Mono, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#34d399">"model": "Codex"</text>
+<text x="452" y="490" font-family="Helvetica Neue, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#6f7f96" letter-spacing="1.6">ENFORCED PER ENDPOINT</text>
+<rect x="450" y="502" width="272" height="38" rx="9" ry="9" fill="#16233c" stroke="#b0525e" stroke-width="1.2" opacity="0.9"/>
+<circle cx="470" cy="521" r="6" fill="none" stroke="#b0525e" stroke-width="2"/>
+<text x="488" y="526" font-family="Helvetica Neue, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#f3f6fb">Guardrail policies  ·  PII · Safety</text>
+<rect x="450" y="548" width="272" height="38" rx="9" ry="9" fill="#16233c" stroke="#34d399" stroke-width="1.2" opacity="0.9"/>
+<circle cx="470" cy="567" r="6" fill="none" stroke="#34d399" stroke-width="2"/>
+<text x="488" y="572" font-family="Helvetica Neue, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#f3f6fb">Usage tracking</text>
+<rect x="450" y="594" width="272" height="38" rx="9" ry="9" fill="#16233c" stroke="#e0a43b" stroke-width="1.2" opacity="0.9"/>
+<circle cx="470" cy="613" r="6" fill="none" stroke="#e0a43b" stroke-width="2"/>
+<text x="488" y="618" font-family="Helvetica Neue, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#f3f6fb">Budget policies  ·  USD cap</text>
+<rect x="436" y="724" width="210" height="34" rx="17" ry="17" fill="#2a1417" stroke="#e5836b" stroke-width="1.4" opacity="1.0"/>
+<text x="541" y="746" font-family="Helvetica Neue, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#e5836b" text-anchor="middle">HTTP 400 · guardrail blocked</text>
+<rect x="436" y="768" width="210" height="34" rx="17" ry="17" fill="#2a2410" stroke="#e0a43b" stroke-width="1.4" opacity="1.0"/>
+<text x="541" y="790" font-family="Helvetica Neue, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#e0a43b" text-anchor="middle">HTTP 429 · budget exceeded</text>
+<text x="436" y="820" font-family="Helvetica Neue, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8a97ab">denied before the model — reason returned in the response body</text>
+<text x="812" y="160" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#6f7f96" letter-spacing="2.5">GOVERNED MODEL ENDPOINTS</text>
+<text x="812" y="184" font-family="Helvetica Neue, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#8a97ab">each a named gateway endpoint with its own guardrails, usage tracking &amp; budget</text>
+<rect x="800" y="200" width="372" height="190" rx="18" ry="18" fill="#15233a" stroke="#34d399" stroke-width="1.8" opacity="0.97"/>
+<rect x="800" y="200" width="372" height="46" rx="18" fill="#34d399" opacity="0.10"/>
+<rect x="800" y="223" width="372" height="23" fill="#34d399" opacity="0.10"/>
+<text x="824" y="238" font-family="Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="700" fill="#34d399">Codex</text>
+<text x="1152" y="236" font-family="Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="600" fill="#6f7f96" text-anchor="end" letter-spacing="1.4">MODEL ENDPOINT</text>
+<text x="824" y="274" font-family="SF Mono, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#b9c6d8">routes  →  databricks-gpt-5-5</text>
+<rect x="824" y="288" width="90" height="32" rx="8" ry="8" fill="#3a2230" stroke="#b0525e" stroke-width="1.3" opacity="1.0"/>
+<text x="869.0" y="309" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" fill="#e7d4dc" text-anchor="middle">PII</text>
+<rect x="928" y="288" width="90" height="32" rx="8" ry="8" fill="#2c2440" stroke="#7b5ea7" stroke-width="1.3" opacity="1.0"/>
+<text x="973.0" y="309" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" fill="#d8cdf0" text-anchor="middle">Safety</text>
+<text x="824" y="342" font-family="Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="400" fill="#8a97ab">guardrails run pre-LLM / post-LLM · block or sanitize</text>
+<rect x="822" y="352" width="328" height="30" rx="9" ry="9" fill="#0e1b2e" stroke="#28374f" stroke-width="1" opacity="1.0"/>
+<text x="838" y="372" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#9fd8c4">usage tracking  ·  budget policy</text>
+<rect x="800" y="406" width="372" height="190" rx="18" ry="18" fill="#15233a" stroke="#e5836b" stroke-width="1.8" opacity="0.97"/>
+<rect x="800" y="406" width="372" height="46" rx="18" fill="#e5836b" opacity="0.10"/>
+<rect x="800" y="429" width="372" height="23" fill="#e5836b" opacity="0.10"/>
+<text x="824" y="444" font-family="Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="700" fill="#e5836b">Claude</text>
+<text x="1152" y="442" font-family="Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="600" fill="#6f7f96" text-anchor="end" letter-spacing="1.4">MODEL ENDPOINT</text>
+<text x="824" y="480" font-family="SF Mono, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#b9c6d8">routes  →  databricks-claude-haiku-4-5</text>
+<rect x="824" y="494" width="90" height="32" rx="8" ry="8" fill="#3a2230" stroke="#b0525e" stroke-width="1.3" opacity="1.0"/>
+<text x="869.0" y="515" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" fill="#e7d4dc" text-anchor="middle">PII</text>
+<rect x="928" y="494" width="90" height="32" rx="8" ry="8" fill="#2c2440" stroke="#7b5ea7" stroke-width="1.3" opacity="1.0"/>
+<text x="973.0" y="515" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" fill="#d8cdf0" text-anchor="middle">Safety</text>
+<text x="824" y="548" font-family="Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="400" fill="#8a97ab">guardrails run pre-LLM / post-LLM · block or sanitize</text>
+<rect x="822" y="558" width="328" height="30" rx="9" ry="9" fill="#0e1b2e" stroke="#28374f" stroke-width="1" opacity="1.0"/>
+<text x="838" y="578" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#9fd8c4">usage tracking  ·  budget policy</text>
+<rect x="800" y="612" width="372" height="190" rx="18" ry="18" fill="#15233a" stroke="#7c9bf5" stroke-width="1.8" opacity="0.97"/>
+<rect x="800" y="612" width="372" height="46" rx="18" fill="#7c9bf5" opacity="0.10"/>
+<rect x="800" y="635" width="372" height="23" fill="#7c9bf5" opacity="0.10"/>
+<text x="824" y="650" font-family="Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="700" fill="#7c9bf5">Gemini</text>
+<text x="1152" y="648" font-family="Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="600" fill="#6f7f96" text-anchor="end" letter-spacing="1.4">MODEL ENDPOINT</text>
+<text x="824" y="686" font-family="SF Mono, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#b9c6d8">routes  →  databricks-gemini-3-5-flash</text>
+<rect x="824" y="700" width="90" height="32" rx="8" ry="8" fill="#3a2230" stroke="#b0525e" stroke-width="1.3" opacity="1.0"/>
+<text x="869.0" y="721" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" fill="#e7d4dc" text-anchor="middle">PII</text>
+<rect x="928" y="700" width="90" height="32" rx="8" ry="8" fill="#2c2440" stroke="#7b5ea7" stroke-width="1.3" opacity="1.0"/>
+<text x="973.0" y="721" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" fill="#d8cdf0" text-anchor="middle">Safety</text>
+<text x="824" y="754" font-family="Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="400" fill="#8a97ab">guardrails run pre-LLM / post-LLM · block or sanitize</text>
+<rect x="822" y="764" width="328" height="30" rx="9" ry="9" fill="#0e1b2e" stroke="#28374f" stroke-width="1" opacity="1.0"/>
+<text x="838" y="784" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#9fd8c4">usage tracking  ·  budget policy</text>
+<text x="1236" y="226" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="600" fill="#6f7f96" letter-spacing="2">ALSO AVAILABLE</text>
+<rect x="1236" y="242" width="330" height="40" rx="10" ry="10" fill="#14202f" stroke="#26364f" stroke-width="1" opacity="1.0"/>
+<rect x="1236" y="242" width="5" height="40" rx="2.5" fill="#a78bfa"/>
+<text x="1258" y="267" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#c7d3e2">Custom guardrails</text>
+<rect x="1236" y="292" width="330" height="40" rx="10" ry="10" fill="#14202f" stroke="#26364f" stroke-width="1" opacity="1.0"/>
+<rect x="1236" y="292" width="5" height="40" rx="2.5" fill="#e5836b"/>
+<text x="1258" y="317" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#c7d3e2">Sanitize / redact mode</text>
+<rect x="1236" y="342" width="330" height="40" rx="10" ry="10" fill="#14202f" stroke="#26364f" stroke-width="1" opacity="1.0"/>
+<rect x="1236" y="342" width="5" height="40" rx="2.5" fill="#34d399"/>
+<text x="1258" y="367" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#c7d3e2">Traffic split &amp; fallbacks</text>
+<rect x="1236" y="392" width="330" height="40" rx="10" ry="10" fill="#14202f" stroke="#26364f" stroke-width="1" opacity="1.0"/>
+<rect x="1236" y="392" width="5" height="40" rx="2.5" fill="#e0a43b"/>
+<text x="1258" y="417" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#c7d3e2">Redis budget tracker</text>
+<text x="1236" y="486" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="600" fill="#6f7f96" letter-spacing="2">DATA FLOW</text>
+<line x1="1236" y1="512" x2="1288" y2="512" stroke="#e0a43b" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#ah-gold)"/>
+<text x="1302" y="517" font-family="Helvetica Neue, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#c7d3e2">Agent → Gateway (one URL)</text>
+<line x1="1236" y1="552" x2="1288" y2="552" stroke="#34d399" stroke-width="3" marker-end="url(#ah-green)"/>
+<text x="1302" y="557" font-family="Helvetica Neue, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#c7d3e2">Routed by model → endpoint</text>
+<line x1="1236" y1="592" x2="1288" y2="592" stroke="#a78bfa" stroke-width="3" stroke-dasharray="4 5" marker-end="url(#ah-purple)"/>
+<text x="1302" y="597" font-family="Helvetica Neue, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#c7d3e2">Model response</text>
+<line x1="1236" y1="632" x2="1288" y2="632" stroke="#e5836b" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#ah-coral)"/>
+<text x="1302" y="637" font-family="Helvetica Neue, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#c7d3e2">Blocked (HTTP 400 · guardrail)</text>
+<line x1="1236" y1="672" x2="1288" y2="672" stroke="#e0a43b" stroke-width="3" stroke-dasharray="2 6" marker-end="url(#ah-gold)"/>
+<text x="1302" y="677" font-family="Helvetica Neue, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#c7d3e2">Budget reject (HTTP 429)</text>
+<line x1="1236" y1="712" x2="1288" y2="712" stroke="#5aa9e6" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#ah-blue)"/>
+<text x="1302" y="717" font-family="Helvetica Neue, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#c7d3e2">Traced to MLflow</text>
+<path d="M306,230.0 C370,230.0 360,460 424,460" fill="none" stroke="#e0a43b" stroke-width="2.4" stroke-dasharray="8 6" opacity="0.9" marker-end="url(#ah-gold)"/>
+<path d="M306,346.0 C370,346.0 360,460 424,460" fill="none" stroke="#e0a43b" stroke-width="2.4" stroke-dasharray="8 6" opacity="0.9" marker-end="url(#ah-gold)"/>
+<path d="M306,462.0 C370,462.0 360,460 424,460" fill="none" stroke="#e0a43b" stroke-width="2.4" stroke-dasharray="8 6" opacity="0.9" marker-end="url(#ah-gold)"/>
+<path d="M306,578.0 C370,578.0 360,460 424,460" fill="none" stroke="#e0a43b" stroke-width="2.4" stroke-dasharray="8 6" opacity="0.9" marker-end="url(#ah-gold)"/>
+<path d="M306,694.0 C370,694.0 360,460 424,460" fill="none" stroke="#e0a43b" stroke-width="2.4" stroke-dasharray="8 6" opacity="0.9" marker-end="url(#ah-gold)"/>
+<path d="M746,360 C797,360 745,295.0 794,295.0" fill="none" stroke="#34d399" stroke-width="3.2" marker-end="url(#ah-green)"/>
+<path d="M746,476 C797,476 745,501.0 794,501.0" fill="none" stroke="#e5836b" stroke-width="3.2" marker-end="url(#ah-coral)"/>
+<path d="M746,592 C797,592 745,707.0 794,707.0" fill="none" stroke="#7c9bf5" stroke-width="3.2" marker-end="url(#ah-gem)"/>
+<path d="M794,319.0 C740,319.0 792,390 746,390" fill="none" stroke="#a78bfa" stroke-width="2" stroke-dasharray="4 5" opacity="0.6" marker-end="url(#ah-purple)"/>
+<rect x="44" y="846" width="1522" height="178" rx="18" ry="18" fill="#111d31" stroke="#20304a" stroke-width="1.2" opacity="0.95"/>
+<text x="68" y="880" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#6f7f96" letter-spacing="2.5">OBSERVABILITY &amp; AUDIT</text>
+<text x="1542" y="880" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#8a97ab" text-anchor="end">no Delta tables · no Genie · all in the MLflow UI</text>
+<rect x="70" y="896" width="720" height="108" rx="14" ry="14" fill="#14263b" stroke="#2a3f5c" stroke-width="1.2" opacity="1.0"/>
+<rect x="100" y="920" width="20" height="6" rx="3" fill="#e0a43b" opacity="0.85"/>
+<rect x="100" y="929" width="30" height="6" rx="3" fill="#34d399" opacity="0.85"/>
+<rect x="100" y="938" width="40" height="6" rx="3" fill="#5aa9e6" opacity="0.85"/>
+<text x="140" y="928" font-family="Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#f3f6fb">MLflow Tracing</text>
+<text x="140" y="950" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#8a97ab">Per-agent, per-provider trace spans</text>
+<text x="94" y="978" font-family="SF Mono, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#c7d3e2">Every trace tagged  agent · provider · endpoint</text>
+<text x="94" y="996" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#8a97ab">→ token usage on every individual trace · latency · guardrail verdicts</text>
+<rect x="820" y="896" width="720" height="108" rx="14" ry="14" fill="#14263b" stroke="#2a3f5c" stroke-width="1.2" opacity="1.0"/>
+<rect x="844" y="922" width="8" height="16" rx="2" fill="#34d399" opacity="0.8"/>
+<rect x="856" y="912" width="8" height="26" rx="2" fill="#34d399" opacity="0.8"/>
+<rect x="868" y="918" width="8" height="20" rx="2" fill="#34d399" opacity="0.8"/>
+<rect x="880" y="906" width="8" height="32" rx="2" fill="#34d399" opacity="0.8"/>
+<text x="902" y="928" font-family="Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#f3f6fb">MLflow Usage Dashboard</text>
+<text x="902" y="950" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#8a97ab">Built-in aggregate view</text>
+<text x="844" y="978" font-family="SF Mono, Menlo, Consolas, monospace" font-size="14" font-weight="400" fill="#c7d3e2">Requests · latency · token usage · cost over time</text>
+<text x="844" y="996" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#8a97ab">→ filter by endpoint · the chargeback view</text>
+<path d="M1176,295.0 L1200,295.0 L1200,810" fill="none" stroke="#5aa9e6" stroke-width="2.0" stroke-dasharray="8 6" opacity="0.75"/>
+<path d="M1176,501.0 L1200,501.0 L1200,810" fill="none" stroke="#5aa9e6" stroke-width="2.0" stroke-dasharray="8 6" opacity="0.75"/>
+<path d="M1176,707.0 L1200,707.0 L1200,810" fill="none" stroke="#5aa9e6" stroke-width="2.0" stroke-dasharray="8 6" opacity="0.75"/>
+<rect x="1166" y="812" width="68" height="30" rx="15" fill="#0e1b2e" stroke="#5aa9e6" stroke-width="1.2"/>
+<text x="1200" y="832" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#5aa9e6" text-anchor="middle">TRACE</text>
+<path d="M1200,842 C1200,864 430.0,838 430.0,894" fill="none" stroke="#5aa9e6" stroke-width="2.4" stroke-dasharray="8 6" marker-end="url(#ah-blue)"/>
+<path d="M1200,842 C1200,864 1180.0,838 1180.0,894" fill="none" stroke="#5aa9e6" stroke-width="2.4" stroke-dasharray="8 6" marker-end="url(#ah-blue)"/>
+</svg>
