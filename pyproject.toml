@@ -11,6 +11,11 @@ dependencies = [
     "langchain-openai",
     "matplotlib>=3.7.0",
     "mlflow==3.15.1",
+    # `mcp` extra powers the MCP Server / Registry cookbooks (pulls fastmcp).
+    # NOTE: uv.lock is not regenerated for this yet -- a full re-resolve currently
+    # fails on a pre-existing deepeval/crewai (chromadb) upstream conflict. Until
+    # that is resolved, install the extra directly: uv pip install "mlflow[mcp]==3.15.1".
+    "mlflow[mcp]==3.15.1",
     "nest-asyncio>=1.6.0",
     "numpy>=1.24.0",
     "openai>=1.0.0",

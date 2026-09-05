@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="registryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#533483"/>
+      <stop offset="100%" style="stop-color:#6c3d9e"/>
+    </linearGradient>
+    <linearGradient id="customGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460"/>
+      <stop offset="100%" style="stop-color:#2471a3"/>
+    </linearGradient>
+    <linearGradient id="externalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e97c00"/>
+      <stop offset="100%" style="stop-color:#f5a623"/>
+    </linearGradient>
+    <linearGradient id="registryStrip" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#bb86fc;stop-opacity:0.15"/>
+      <stop offset="50%" style="stop-color:#bb86fc;stop-opacity:0.05"/>
+      <stop offset="100%" style="stop-color:#bb86fc;stop-opacity:0.15"/>
+    </linearGradient>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="680" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.03">
+    <line x1="0" y1="120" x2="1200" y2="120" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="240" x2="1200" y2="240" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="360" x2="1200" y2="360" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="480" x2="1200" y2="480" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="600" x2="1200" y2="600" stroke="#fff" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="680" stroke="#fff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="680" stroke="#fff" stroke-width="1"/>
+    <line x1="900" y1="0" x2="900" y2="680" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <!-- Decorative -->
+  <circle cx="80" cy="140" r="40" fill="#533483" opacity="0.08"/>
+  <circle cx="1120" cy="560" r="55" fill="#f5a623" opacity="0.06"/>
+  <circle cx="150" cy="600" r="30" fill="#2471a3" opacity="0.06"/>
+  <circle cx="1050" cy="120" r="35" fill="#bb86fc" opacity="0.07"/>
+  <circle cx="920" cy="620" r="3" fill="#f5a623" opacity="0.15"/>
+  <circle cx="300" cy="100" r="3" fill="#bb86fc" opacity="0.15"/>
+
+  <!-- Title -->
+  <text x="600" y="44" fill="#fff" font-size="13" font-weight="600" text-anchor="middle" opacity="0.35" letter-spacing="3">THE MLflow MCP REGISTRY</text>
+  <g transform="translate(390, 60)">
+    <rect x="0" y="0" width="100" height="22" rx="11" fill="#2ecc71" opacity="0.15"/>
+    <text x="50" y="15" fill="#2ecc71" font-size="10" font-weight="600" text-anchor="middle">MLflow 3.15</text>
+    <rect x="115" y="0" width="110" height="22" rx="11" fill="#bb86fc" opacity="0.15"/>
+    <text x="170" y="15" fill="#bb86fc" font-size="10" font-weight="600" text-anchor="middle">MCP Registry</text>
+    <rect x="240" y="0" width="130" height="22" rx="11" fill="#4fc3f7" opacity="0.15"/>
+    <text x="305" y="15" fill="#4fc3f7" font-size="10" font-weight="600" text-anchor="middle">auto-discovery</text>
+  </g>
+
+  <!-- backdrop -->
+  <rect x="30" y="100" width="1140" height="560" rx="18" fill="url(#registryStrip)" stroke="#bb86fc" stroke-width="1" stroke-opacity="0.14"/>
+  <text x="55" y="126" fill="#bb86fc" font-size="11" font-weight="600" opacity="0.7" letter-spacing="2">CATALOG MCP SERVERS &amp; SNAPSHOT THEIR TOOLS  (stored in the MLflow tracking server)</text>
+
+  <!-- Registry central node -->
+  <g filter="url(#softShadow)">
+    <rect x="450" y="150" width="300" height="100" rx="18" fill="url(#registryGrad)"/>
+  </g>
+  <g transform="translate(486, 200)">
+    <rect x="-16" y="-16" width="32" height="32" rx="6" fill="none" stroke="#fff" stroke-width="2" opacity="0.9"/>
+    <line x1="-16" y1="-6" x2="16" y2="-6" stroke="#fff" stroke-width="1.6" opacity="0.6"/>
+    <line x1="-16" y1="4" x2="16" y2="4" stroke="#fff" stroke-width="1.6" opacity="0.6"/>
+    <circle cx="-8" cy="-11" r="1.8" fill="#fff"/>
+    <circle cx="-8" cy="-1" r="1.8" fill="#fff"/>
+    <circle cx="-8" cy="9" r="1.8" fill="#fff"/>
+  </g>
+  <text x="520" y="192" fill="#fff" font-size="20" font-weight="700">MCP Registry</text>
+  <text x="520" y="216" fill="#e8dcff" font-size="12" opacity="0.85">register &#183; version &#183; discover &#183; alias</text>
+
+  <!-- Entity pills -->
+  <g transform="translate(360, 268)">
+    <rect x="0" y="0" width="150" height="26" rx="13" fill="#bb86fc" opacity="0.16" stroke="#bb86fc" stroke-width="1" stroke-opacity="0.3"/>
+    <text x="75" y="17" fill="#d7b8ff" font-size="11" font-weight="600" text-anchor="middle">MCPServer</text>
+    <rect x="165" y="0" width="220" height="26" rx="13" fill="#bb86fc" opacity="0.16" stroke="#bb86fc" stroke-width="1" stroke-opacity="0.3"/>
+    <text x="275" y="17" fill="#d7b8ff" font-size="11" font-weight="600" text-anchor="middle">MCPServerVersion (+ tools snapshot)</text>
+    <rect x="410" y="0" width="180" height="26" rx="13" fill="#bb86fc" opacity="0.16" stroke="#bb86fc" stroke-width="1" stroke-opacity="0.3"/>
+    <text x="500" y="17" fill="#d7b8ff" font-size="11" font-weight="600" text-anchor="middle">MCPAccessEndpoint</text>
+  </g>
+
+  <!-- Status lifecycle chip -->
+  <g transform="translate(430, 312)">
+    <rect x="0" y="0" width="340" height="26" rx="13" fill="#48c9b0" opacity="0.12" stroke="#48c9b0" stroke-width="1" stroke-opacity="0.3"/>
+    <text x="170" y="17" fill="#7ff0da" font-size="11" font-weight="600" text-anchor="middle">status:  draft  →  active  →  deprecated  →  deleted</text>
+  </g>
+
+  <!-- Arrow custom -> registry -->
+  <path d="M300 470 Q380 380 470 250" stroke="#4fc3f7" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <polygon points="471,248 469,262 459,255" fill="#4fc3f7" opacity="0.6"/>
+  <rect x="300" y="392" width="150" height="22" rx="11" fill="#4fc3f7" opacity="0.15"/>
+  <text x="375" y="407" fill="#9fdcff" font-size="11" font-weight="600" text-anchor="middle">register_mcp_server</text>
+
+  <!-- Arrow external -> registry -->
+  <path d="M900 470 Q820 380 730 250" stroke="#f5a623" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <polygon points="728,248 742,255 731,263" fill="#f5a623" opacity="0.6"/>
+  <rect x="748" y="392" width="160" height="22" rx="11" fill="#f5a623" opacity="0.15"/>
+  <text x="828" y="407" fill="#ffd591" font-size="11" font-weight="600" text-anchor="middle">register + auto-discover</text>
+
+  <!-- Custom MCP Server -->
+  <g filter="url(#softShadow)">
+    <rect x="80" y="470" width="320" height="160" rx="16" fill="url(#customGrad)"/>
+  </g>
+  <text x="108" y="502" fill="#fff" font-size="17" font-weight="700">Custom MCP Server</text>
+  <text x="108" y="522" fill="#9fdcff" font-size="11.5" font-family="'SFMono-Regular', Consolas, monospace">io.github.example/orders-analytics</text>
+  <text x="108" y="539" fill="#cfe8ff" font-size="10.5" opacity="0.8">SQLite orders &#183; query your data via SQL</text>
+  <g transform="translate(105, 550)">
+    <rect x="0" y="0" width="74" height="22" rx="11" fill="#fff" opacity="0.16"/>
+    <text x="37" y="15" fill="#fff" font-size="11" font-weight="600" text-anchor="middle">run_sql</text>
+    <rect x="82" y="0" width="104" height="22" rx="11" fill="#fff" opacity="0.16"/>
+    <text x="134" y="15" fill="#fff" font-size="11" font-weight="600" text-anchor="middle">top_products</text>
+  </g>
+  <g transform="translate(105, 582)">
+    <rect x="0" y="0" width="52" height="20" rx="10" fill="#2ecc71" opacity="0.25"/>
+    <text x="26" y="14" fill="#7fe8b0" font-size="10" font-weight="600" text-anchor="middle">v1.0.0</text>
+    <rect x="60" y="0" width="52" height="20" rx="10" fill="#2ecc71" opacity="0.25"/>
+    <text x="86" y="14" fill="#7fe8b0" font-size="10" font-weight="600" text-anchor="middle">v1.1.0</text>
+    <rect x="120" y="0" width="118" height="20" rx="10" fill="#f5a623" opacity="0.22"/>
+    <text x="179" y="14" fill="#ffd591" font-size="10" font-weight="600" text-anchor="middle">alias: production</text>
+  </g>
+
+  <!-- External MCP Server -->
+  <g filter="url(#softShadow)">
+    <rect x="800" y="470" width="320" height="160" rx="16" fill="url(#externalGrad)"/>
+  </g>
+  <text x="828" y="502" fill="#fff" font-size="17" font-weight="700">External MCP Server</text>
+  <text x="828" y="522" fill="#3b2600" font-size="11.5" font-weight="600" font-family="'SFMono-Regular', Consolas, monospace">com.deepwiki/mcp</text>
+  <text x="828" y="539" fill="#3b2600" font-size="10.5" font-weight="500" opacity="0.85">public remote &#183; ask about GitHub repos</text>
+  <g transform="translate(825, 550)">
+    <rect x="0" y="0" width="98" height="22" rx="11" fill="#fff" opacity="0.28"/>
+    <text x="49" y="15" fill="#3b2600" font-size="11" font-weight="600" text-anchor="middle">ask_question</text>
+    <rect x="106" y="0" width="118" height="22" rx="11" fill="#fff" opacity="0.28"/>
+    <text x="165" y="15" fill="#3b2600" font-size="11" font-weight="600" text-anchor="middle">read_wiki_contents</text>
+  </g>
+  <text x="828" y="600" fill="#3b2600" font-size="10.5" font-weight="500" opacity="0.85">remote: https://mcp.deepwiki.com/mcp</text>
+</svg>
