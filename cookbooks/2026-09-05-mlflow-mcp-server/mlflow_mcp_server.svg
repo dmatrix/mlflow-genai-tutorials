@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="mlflowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e8449"/>
+      <stop offset="100%" style="stop-color:#27ae60"/>
+    </linearGradient>
+    <linearGradient id="clientGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#48c9b0"/>
+      <stop offset="100%" style="stop-color:#1abc9c"/>
+    </linearGradient>
+    <linearGradient id="storeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460"/>
+      <stop offset="100%" style="stop-color:#1a5276"/>
+    </linearGradient>
+    <linearGradient id="serverStrip" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:0.15"/>
+      <stop offset="50%" style="stop-color:#2ecc71;stop-opacity:0.05"/>
+      <stop offset="100%" style="stop-color:#2ecc71;stop-opacity:0.15"/>
+    </linearGradient>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="640" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.03">
+    <line x1="0" y1="120" x2="1200" y2="120" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="240" x2="1200" y2="240" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="360" x2="1200" y2="360" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="480" x2="1200" y2="480" stroke="#fff" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="640" stroke="#fff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="640" stroke="#fff" stroke-width="1"/>
+    <line x1="900" y1="0" x2="900" y2="640" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <!-- Decorative circles -->
+  <circle cx="80" cy="130" r="40" fill="#27ae60" opacity="0.06"/>
+  <circle cx="1120" cy="540" r="55" fill="#4fc3f7" opacity="0.06"/>
+  <circle cx="1050" cy="110" r="35" fill="#48c9b0" opacity="0.07"/>
+  <circle cx="300" cy="90" r="3" fill="#27ae60" opacity="0.15"/>
+  <circle cx="920" cy="600" r="3" fill="#4fc3f7" opacity="0.15"/>
+
+  <!-- Title -->
+  <text x="600" y="44" fill="#fff" font-size="13" font-weight="600" text-anchor="middle" opacity="0.35" letter-spacing="3">THE MLflow MCP SERVER</text>
+  <g transform="translate(400, 60)">
+    <rect x="0" y="0" width="100" height="22" rx="11" fill="#2ecc71" opacity="0.15"/>
+    <text x="50" y="15" fill="#2ecc71" font-size="10" font-weight="600" text-anchor="middle">MLflow 3.15</text>
+    <rect x="115" y="0" width="70" height="22" rx="11" fill="#bb86fc" opacity="0.15"/>
+    <text x="150" y="15" fill="#bb86fc" font-size="10" font-weight="600" text-anchor="middle">MCP</text>
+    <rect x="200" y="0" width="90" height="22" rx="11" fill="#4fc3f7" opacity="0.15"/>
+    <text x="245" y="15" fill="#4fc3f7" font-size="10" font-weight="600" text-anchor="middle">FastMCP</text>
+    <rect x="305" y="0" width="90" height="22" rx="11" fill="#f5a623" opacity="0.15"/>
+    <text x="350" y="15" fill="#f5a623" font-size="10" font-weight="600" text-anchor="middle">stdio</text>
+  </g>
+
+  <!-- backdrop strip -->
+  <rect x="30" y="100" width="1140" height="230" rx="18" fill="url(#serverStrip)" stroke="#2ecc71" stroke-width="1" stroke-opacity="0.12"/>
+  <text x="55" y="126" fill="#2ecc71" font-size="11" font-weight="600" opacity="0.6" letter-spacing="2">$ mlflow mcp run  —  MLflow OPERATIONS AS TOOLS FOR AI ASSISTANTS</text>
+
+  <!-- MCP Clients -->
+  <g filter="url(#softShadow)">
+    <rect x="70" y="158" width="270" height="152" rx="16" fill="url(#clientGrad)"/>
+  </g>
+  <g transform="translate(108, 196)">
+    <circle cx="0" cy="0" r="13" fill="none" stroke="#fff" stroke-width="2.5"/>
+    <circle cx="0" cy="-5" r="5" fill="#fff"/>
+    <path d="M-10 9 c0-5.5 4.5-9.5 10-9.5 s10 4 10 9.5" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <text x="135" y="200" fill="#fff" font-size="18" font-weight="700">MCP Clients</text>
+  <g transform="translate(95, 230)" fill="#fff">
+    <rect x="0" y="0" width="8" height="8" rx="2" opacity="0.6"/>
+    <text x="14" y="8" font-size="12" opacity="0.85">Claude Code / Desktop</text>
+    <rect x="0" y="24" width="8" height="8" rx="2" opacity="0.6"/>
+    <text x="14" y="32" font-size="12" opacity="0.85">VS Code &#183; Cursor</text>
+    <rect x="0" y="48" width="8" height="8" rx="2" opacity="0.6"/>
+    <text x="14" y="56" font-size="12" opacity="0.85">Programmatic (fastmcp)</text>
+  </g>
+
+  <!-- Arrow clients -> server -->
+  <line x1="340" y1="234" x2="458" y2="234" stroke="#48c9b0" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+  <polygon points="456,226 470,234 456,242" fill="#48c9b0" opacity="0.75"/>
+  <rect x="352" y="205" width="96" height="22" rx="11" fill="#48c9b0" opacity="0.15"/>
+  <text x="400" y="220" fill="#7ff0da" font-size="11" font-weight="600" text-anchor="middle">call tools</text>
+
+  <!-- MLflow MCP Server -->
+  <g filter="url(#softShadow)">
+    <rect x="470" y="158" width="360" height="152" rx="16" fill="url(#mlflowGrad)"/>
+  </g>
+  <text x="500" y="192" fill="#fff" font-size="19" font-weight="700">MLflow MCP Server</text>
+  <text x="500" y="213" fill="#eafaf1" font-size="12" font-weight="500" font-family="'SFMono-Regular', Consolas, monospace">mlflow mcp run</text>
+  <g transform="translate(492, 226)">
+    <rect x="0" y="0" width="104" height="22" rx="11" fill="#fff" opacity="0.18"/>
+    <text x="52" y="15" fill="#fff" font-size="11" font-weight="600" text-anchor="middle">search_traces</text>
+    <rect x="112" y="0" width="82" height="22" rx="11" fill="#fff" opacity="0.18"/>
+    <text x="153" y="15" fill="#fff" font-size="11" font-weight="600" text-anchor="middle">get_trace</text>
+    <rect x="210" y="0" width="118" height="22" rx="11" fill="#fff" opacity="0.18"/>
+    <text x="269" y="15" fill="#fff" font-size="11" font-weight="600" text-anchor="middle">log_trace_feedback</text>
+  </g>
+  <text x="500" y="276" fill="#eafaf1" font-size="11" opacity="0.85">MLFLOW_MCP_TOOLS = genai (26) &#124; ml (32) &#124; all (45)</text>
+  <text x="500" y="294" fill="#eafaf1" font-size="10.5" opacity="0.7">groups: traces &#183; scorers &#183; experiments &#183; runs &#183; models &#183; deployments</text>
+
+  <!-- Arrow server -> store -->
+  <line x1="830" y1="234" x2="948" y2="234" stroke="#4fc3f7" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <polygon points="946,226 960,234 946,242" fill="#4fc3f7" opacity="0.7"/>
+  <rect x="838" y="205" width="104" height="22" rx="11" fill="#4fc3f7" opacity="0.15"/>
+  <text x="890" y="220" fill="#9fdcff" font-size="11" font-weight="600" text-anchor="middle">read / write</text>
+
+  <!-- Tracking store -->
+  <g filter="url(#softShadow)">
+    <rect x="960" y="170" width="180" height="128" rx="14" fill="url(#storeGrad)"/>
+  </g>
+  <g transform="translate(1000, 208)">
+    <ellipse cx="0" cy="-9" rx="15" ry="6" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+    <path d="M-15 -9 L-15 9" stroke="#4fc3f7" stroke-width="2"/>
+    <path d="M15 -9 L15 9" stroke="#4fc3f7" stroke-width="2"/>
+    <ellipse cx="0" cy="9" rx="15" ry="6" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+    <line x1="-15" y1="0" x2="15" y2="0" stroke="#4fc3f7" stroke-width="1" opacity="0.4"/>
+  </g>
+  <text x="1028" y="206" fill="#fff" font-size="15" font-weight="700">MLflow</text>
+  <text x="1028" y="224" fill="#fff" font-size="15" font-weight="700">Tracking</text>
+  <text x="1050" y="262" fill="#9fdcff" font-size="11" text-anchor="middle" opacity="0.85">Traces</text>
+  <text x="1050" y="280" fill="#9fdcff" font-size="11" text-anchor="middle" opacity="0.85">Experiments &#183; Runs</text>
+
+  <!-- Capability chips (the 4 use cases) -->
+  <text x="55" y="392" fill="#fff" font-size="11" font-weight="600" opacity="0.4" letter-spacing="2">WHAT AN ASSISTANT CAN DO</text>
+  <g transform="translate(70, 410)">
+    <rect x="0" y="0" width="255" height="72" rx="14" fill="#e94560" opacity="0.12" stroke="#e94560" stroke-width="1" stroke-opacity="0.3"/>
+    <text x="20" y="30" fill="#ff6b81" font-size="14" font-weight="700">Debug failures</text>
+    <text x="20" y="52" fill="#fff" font-size="11" opacity="0.75">search_traces  status = 'ERROR'</text>
+
+    <rect x="278" y="0" width="255" height="72" rx="14" fill="#f39c12" opacity="0.12" stroke="#f39c12" stroke-width="1" stroke-opacity="0.3"/>
+    <text x="298" y="30" fill="#ffbe5c" font-size="14" font-weight="700">Analyze latency</text>
+    <text x="298" y="52" fill="#fff" font-size="11" opacity="0.75">search_traces  execution_time_ms &gt; N</text>
+
+    <rect x="556" y="0" width="255" height="72" rx="14" fill="#2ecc71" opacity="0.12" stroke="#2ecc71" stroke-width="1" stroke-opacity="0.3"/>
+    <text x="576" y="30" fill="#5fe0a0" font-size="14" font-weight="700">Log quality feedback</text>
+    <text x="576" y="52" fill="#fff" font-size="11" opacity="0.75">log_trace_feedback  +  get_trace</text>
+
+    <rect x="834" y="0" width="255" height="72" rx="14" fill="#bb86fc" opacity="0.12" stroke="#bb86fc" stroke-width="1" stroke-opacity="0.3"/>
+    <text x="854" y="30" fill="#d7b8ff" font-size="14" font-weight="700">Clean up data</text>
+    <text x="854" y="52" fill="#fff" font-size="11" opacity="0.75">delete_traces  by id / timestamp</text>
+  </g>
+
+  <!-- extract_fields note -->
+  <text x="600" y="530" fill="#fff" font-size="12" text-anchor="middle" opacity="0.55">search_traces &amp; get_trace support <tspan font-family="'SFMono-Regular', Consolas, monospace" fill="#9fdcff" opacity="0.9">extract_fields</tspan> to return only the fields you need</text>
+</svg>
