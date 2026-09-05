@@ -53,9 +53,9 @@ The notebook only *consumes* endpoints; it never creates or changes one. The ope
 
    The gateway is served under the same process. Open `http://localhost:5000`.
 
-2. **Add an LLM Connection** at `http://localhost:5000/#/settings` → **LLM Connections**. Create a **Databricks** connection (workspace host + token, from `DATABRICKS_HOST` / `DATABRICKS_TOKEN`) — it serves all three model endpoints below. Credentials are stored server-side and reused by endpoints. (To route to OpenAI/Anthropic/Google directly, create those connections here instead.)
+2. **Add an AI Gatewway Endpoint** at `http://localhost:5000/#/settings` → **LLM Connections**. Create a **Databricks** connection (workspace host + token, from `DATABRICKS_HOST` / `DATABRICKS_TOKEN`) — it serves all three model endpoints below. Credentials are stored server-side and reused by endpoints. (To route to OpenAI/Anthropic/Google directly, create those connections here instead.)
 
-   ![Create an LLM connection](./images/llm_connection.png)
+   Create an MLflow Unity Endpoint as shown in the [documentation](https://mlflow.org/docs/latest/genai/governance/ai-gateway/quickstart/)
 
 3. **Create the three endpoints** at `http://localhost:5000/#/gateway` → **Create Endpoint**:
 
