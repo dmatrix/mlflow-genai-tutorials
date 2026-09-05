@@ -32,15 +32,6 @@ Agent-to-endpoint routing: **Cursor** and **Claude Code** use `dbx-claude-endpoi
 
 Every trace is tagged with `agent`, `provider`, and `endpoint`, which is what makes per-agent and per-provider attribution possible.
 
-## How the open-source gateway differs from the Databricks one
-
-If you know the Databricks Unity AI Gateway demo, a few things are different here:
-
-- **The endpoint is the unit.** There is no `catalog.schema.service` and no separate routing key — you call a named gateway endpoint (e.g. `dbx-codex-endpoint`) directly, and its guardrails/budget apply.
-- **A guardrail block is HTTP 400**, not HTTP 200 with a policy object. The rejection reason (the judge's rationale) is in the error body. `gateway_agents.py` catches `openai.BadRequestError` and reports it as `blocked`.
-- **Cost control is a budget policy** (USD threshold → HTTP 429), not a QPM/TPM rate limit. The open-source gateway has no per-minute call or token ceiling.
-- **The audit trail is MLflow traces**, not Delta inference tables — so there is no Genie step. You read the traces in the MLflow UI.
-
 ## Prerequisites
 
 - MLflow **3.x** (`mlflow[genai]`) — this tutorial series pins **3.15.1**.
@@ -48,7 +39,7 @@ If you know the Databricks Unity AI Gateway demo, a few things are different her
   (both already in the repo's root `.env`). The three endpoints route to Databricks-hosted
   foundation models. To use OpenAI/Anthropic/Google directly instead, create those connections
   and point the endpoints at them.
-- The MLflow server running locally with the three gateway endpoints configured (below).
+- The MLflow server is running locally with the three gateway endpoints configured (below).
 
 ## Configure the gateway in the MLflow UI
 
