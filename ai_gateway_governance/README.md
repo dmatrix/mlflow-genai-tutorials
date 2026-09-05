@@ -2,108 +2,84 @@
 
 ![AI Gateway Architecture](./images/ai_gateway_architecture.png)
 
-**The problem:** your developers use Cursor, Claude Code, Codex CLI, Gemini CLI, and Pi, spread across different model providers. Each agent calls an LLM with its own API key. Nobody knows who is spending what, nothing stops a prompt carrying customer data, and there is no audit trail.
+Five coding agents (Cursor, Claude Code, Codex CLI, Gemini CLI, Pi) call LLMs through **one MLflow AI Gateway** instead of each holding its own API key. The gateway enforces guardrails, caps spend with budget policies, and traces every request — one place for policy, cost control, and an audit trail.
 
-**The solution:** route every agent through **one MLflow AI Gateway** to a named **model endpoint** per provider. Each endpoint carries its own guardrails and usage tracking; a budget policy caps spend. Every request goes through the gateway, and the gateway is where governance lives — no per-tool configuration, no scattered API keys.
+The gateway ships inside `mlflow server` (MLflow 3.15.1) and runs locally. This build routes to Databricks-hosted models via a Databricks connection; any provider connection (OpenAI, Anthropic, Google) works the same. It's the open-source counterpart of the Databricks "Unity AI Gateway" demo.
 
-The MLflow AI Gateway is **open source** and ships inside `mlflow server` (MLflow 3.x) — the gateway, guardrails, budget policies, and tracing all run locally. In this build the three endpoints route to **Databricks-hosted foundation models** through a Databricks LLM connection, but any provider connection (OpenAI, Anthropic, Google, …) works exactly the same way.
+## 1. Prerequisites
 
-| Pillar | What it does |
-|--------|--------------|
-| Security & auditability | Per-endpoint guardrails (PII detection, Safety); every request logged as an MLflow trace |
-| Cost management | Budget policies (USD thresholds, Alert or Reject), unified billing, one place to rotate keys |
-| Observability | Traces with token usage per request, per-provider metrics, and the built-in Usage Dashboard |
+- MLflow 3.15.1 — `uv sync` at the repo root (or `pip install 'mlflow[genai]==3.15.1'`).
+- A Databricks connection: `DATABRICKS_HOST` and `DATABRICKS_TOKEN` in the repo's root `.env`.
 
-> **Reference:** this demo is the open-source counterpart of the Databricks "Governing Coding Agent Sprawl with Unity AI Gateway" demo.
+## 2. Configure the gateway (MLflow UI, once)
 
-## What the demo covers
+The notebook only *uses* endpoints — create them first. See the [AI Gateway quickstart](https://mlflow.org/docs/latest/genai/governance/ai-gateway/quickstart/).
 
-Five sequential acts:
-
-| Act | What it shows |
-|-----|---------------|
-| 1. Verify the gateway | Pings each endpoint (`dbx-codex-endpoint`, `dbx-claude-endpoint`, `dbx-gemini-endpoint`) and prints what is reachable and configured. Fails fast if an endpoint is missing. |
-| 2. Simulate the agent swarm | Five agents, each with its own persona prompt, each routed to its provider's endpoint. Clean coding requests, issued round-robin so the provider rotates on every call. |
-| 3. Guardrails in action | PII, jailbreak, and unsafe-content requests denied by the endpoint's guardrails (HTTP 400 + the judge's rationale). Unsafe content also shows defense in depth: what the gateway allows through, the model still refuses. |
-| 4. Budget policies | The open-source cost control. With a low budget policy set to **Reject**, a burst of requests spends past the cap and later requests get **HTTP 429**. |
-| 5. MLflow tracing | Every request — allowed or denied — is captured as a trace, tagged with agent / provider / endpoint, with **token usage on each individual trace**. Browse them in the MLflow UI or verify with `mlflow.search_traces`. |
-
-Agent-to-endpoint routing: **Cursor** and **Claude Code** use `dbx-claude-endpoint`; **Codex CLI** uses `dbx-codex-endpoint`; **Gemini CLI** and **Pi** use `dbx-gemini-endpoint`.
-
-Every trace is tagged with `agent`, `provider`, and `endpoint`, which is what makes per-agent and per-provider attribution possible.
-
-## Prerequisites
-
-- MLflow **3.x** (`mlflow[genai]`) — this tutorial series pins **3.15.1**.
-- A **Databricks connection** for the model backend: `DATABRICKS_HOST` and `DATABRICKS_TOKEN`
-  (both already in the repo's root `.env`). The three endpoints route to Databricks-hosted
-  foundation models. To use OpenAI/Anthropic/Google directly instead, create those connections
-  and point the endpoints at them.
-- The MLflow server is running locally with the three gateway endpoints configured (below).
-
-## Configure the gateway in the MLflow UI
-
-The notebook only *consumes* endpoints; it never creates or changes one. The open-source gateway is configured through the MLflow UI. Do this once before running the notebook.
-
-1. **Start the server** from the repo root:
+1. Start the server from the repo root, then open `http://localhost:5000`:
 
    ```bash
    uv run mlflow server --port 5000
    ```
 
-   The gateway is served under the same process. Open `http://localhost:5000`.
+2. **Settings → LLM Connections**: add a **Databricks** connection (`DATABRICKS_HOST` / `DATABRICKS_TOKEN`). It backs all three endpoints. (For OpenAI/Anthropic/Google, add those connections instead.)
 
-2. **Add an AI Gatewway Endpoint** at `http://localhost:5000/#/settings` → **LLM Connections**. Create a **Databricks** connection (workspace host + token, from `DATABRICKS_HOST` / `DATABRICKS_TOKEN`) — it serves all three model endpoints below. Credentials are stored server-side and reused by endpoints. (To route to OpenAI/Anthropic/Google directly, create those connections here instead.)
+3. **Gateway → Create Endpoint**: create three, using chat-completions-capable models:
 
-   Create an MLflow Unity Endpoint as shown in the [documentation](https://mlflow.org/docs/latest/genai/governance/ai-gateway/quickstart/)
+   | Endpoint | Model | Agents |
+   |----------|-------|--------|
+   | `dbx-codex-endpoint` | `databricks-gpt-5-5` | Codex CLI |
+   | `dbx-claude-endpoint` | `databricks-claude-haiku-4-5` | Cursor, Claude Code |
+   | `dbx-gemini-endpoint` | `databricks-gemini-3-5-flash` | Gemini CLI, Pi |
 
-3. **Create the three endpoints** at `http://localhost:5000/#/gateway` → **Create Endpoint**:
+   The endpoint name is the `model` value the notebook sends. If you rename them, update `ENDPOINTS` in the notebook's setup cell.
 
-   | Endpoint name | Provider | Model | Agents |
-   |---------------|----------|-------|--------|
-   | `dbx-codex-endpoint` | Databricks | `databricks-gpt-5-5` | Codex CLI |
-   | `dbx-claude-endpoint` | Databricks | `databricks-claude-haiku-4-5` | Cursor, Claude Code |
-   | `dbx-gemini-endpoint` | Databricks | `databricks-gemini-3-5-flash` | Gemini CLI, Pi |
+4. Add two guardrails per endpoint: **PII detection** (Pre-LLM, Block) and **Safety** (Post-LLM, Block). Point the judge at one of your endpoints. (Act 3)
 
-   The endpoint **name** is what the notebook sends as the request's `model` field. If you use different names, update `ENDPOINTS` in the notebook's setup cell.
+5. Enable **usage tracking** per endpoint — it feeds the Usage Dashboard.
 
-   ![Create a gateway endpoint](./images/create_endpoint.png)
-
-4. **Turn on guardrails** for each endpoint. Add a **PII detection** guardrail (Pre-LLM, action **Block**) and a **Safety** guardrail (Post-LLM, action **Block**). Guardrails run an LLM judge, so point them at one of your endpoints as the judge model. Act 3 exercises both.
-
-   ![Configure guardrails](./images/guardrails.png)
-
-5. **Enable usage tracking** on each endpoint so requests are logged and token/cost metrics populate the Usage Dashboard.
-
-6. **Create a budget policy** (for Act 4 only) at **AI Gateway → Budgets → Create budget policy**: a small USD amount (e.g. **$0.05**), a **Daily** reset, and action **Reject**. To see the rejection promptly, lower the refresh interval when you start the server:
+6. For Act 4 only: **AI Gateway → Budgets** → a Reject policy, ~**$0.05/day**. Restart with a short refresh so it triggers quickly:
 
    ```bash
    MLFLOW_GATEWAY_BUDGET_REFRESH_INTERVAL=30 uv run mlflow server --port 5000
    ```
 
-   ![Create a budget policy](./images/budget_policy.png)
+   That cap will also reject Acts 2–3, so enable it only for Act 4.
 
-   > **Enable the tight budget only for Act 4.** A $0.05 cap will also reject Acts 2–3. Run Acts 1–3 and 5 with the budget disabled (or set high), then enable the low Reject budget just before Act 4.
+## 3. Run
 
-## How agents reach the gateway
+```bash
+uv run mlflow server --port 5000        # after the UI setup above
+uv run jupyter notebook ai_gateway_governance/mlflow_ai_gateway_governance.ipynb
+```
 
-The API is OpenAI-compatible, so pointing any agent at the gateway is a `base_url` change and the endpoint name as the model:
+Run the cells top to bottom. Do Acts 1–3 and 5 with no budget (or a high one); enable the Reject budget just before Act 4.
+
+## What the notebook does — 5 acts
+
+| Act | Shows |
+|-----|-------|
+| 1. Verify | Pings each endpoint; fails fast if one is missing. |
+| 2. Agent swarm | Five agents send clean coding requests, round-robin across the three endpoints. |
+| 3. Guardrails | PII / jailbreak / unsafe requests are blocked — **HTTP 400** with the judge's reason. |
+| 4. Budget policy | A Reject budget caps spend; requests over the cap get **HTTP 429**. |
+| 5. Tracing | Every request is a trace tagged `agent` / `provider` / `endpoint`, with token usage per trace. |
+
+Routing: Cursor + Claude Code → `dbx-claude-endpoint`, Codex CLI → `dbx-codex-endpoint`, Gemini CLI + Pi → `dbx-gemini-endpoint`.
+
+## Reference
+
+**Calling the gateway** — it's OpenAI-compatible: point `base_url` at it and use the endpoint name as the model.
 
 ```python
 from openai import OpenAI
 
-client = OpenAI(
-    base_url="http://localhost:5000/gateway/mlflow/v1",
-    api_key="not-needed",   # the gateway holds the real provider key
-)
+client = OpenAI(base_url="http://localhost:5000/gateway/mlflow/v1", api_key="not-needed")
 client.chat.completions.create(
-    model="dbx-codex-endpoint",    # the gateway endpoint name
+    model="dbx-codex-endpoint",
     messages=[{"role": "user", "content": "What is MLflow?"}],
     max_tokens=1024,
 )
 ```
-
-Or with plain HTTP:
 
 ```bash
 curl -X POST http://localhost:5000/gateway/dbx-codex-endpoint/mlflow/invocations \
@@ -111,46 +87,21 @@ curl -X POST http://localhost:5000/gateway/dbx-codex-endpoint/mlflow/invocations
   -d '{"messages": [{"role": "user", "content": "What is MLflow?"}]}'
 ```
 
-## Reading a guardrail block
+**Response codes**
 
-A blocked request returns **HTTP 400**. With the OpenAI SDK that surfaces as `openai.BadRequestError`, and the judge's rationale is in the error body:
+- **200** — allowed.
+- **400** (`openai.BadRequestError`) — guardrail block; the reason is in `e.body`. `send_request` in `gateway_agents.py` catches it and sets `blocked=True`.
+- **429** (`openai.RateLimitError`) — budget exceeded.
 
-```python
-try:
-    client.chat.completions.create(model="dbx-codex-endpoint", messages=messages)
-except openai.BadRequestError as e:
-    print(e.body)   # {"detail": "... blocked by PII guardrail: contains an SSN ..."}
-```
+A Post-LLM guardrail can block a *clean* prompt for what the model wrote back (e.g. a generated config containing an email). Ask for artifacts without those fields, or run PII Pre-LLM only.
 
-`detect`-style logic lives in `gateway_agents.py` (`send_request` catches the 400 and returns `blocked=True` with the reason). A **budget** rejection instead returns **HTTP 429** (`openai.RateLimitError`).
-
-> A trap worth knowing: because a Safety/PII guardrail can run **Post-LLM**, a harmless prompt can be blocked for what the *model wrote back* — e.g. a request for a `pyproject.toml` gets blocked when the model fills in an author email. Ask for artifacts without those fields, or run PII Pre-LLM only.
-
-## Running
-
-```bash
-# 1. Start the server and configure the gateway in the UI (see above).
-uv run mlflow server --port 5000
-
-# 2. From the repo root, launch the notebook.
-uv run jupyter notebook ai_gateway_governance/mlflow_ai_gateway_governance.ipynb
-```
-
-Run Acts 1–3 and 5 with no (or a high) budget. Enable the low Reject budget just before Act 4.
-
-## File structure
+**Files**
 
 ```
 ai_gateway_governance/
-├── mlflow_ai_gateway_governance.ipynb   # the demo notebook (acts 1–5)
-├── gateway_agents.py                    # SimulatedAgent, gateway client, send_request, printers
+├── mlflow_ai_gateway_governance.ipynb   # the demo (acts 1–5)
+├── gateway_agents.py                    # gateway client, send_request, printers
 ├── scenarios.py                         # PII / injection / unsafe / clean scenarios + budget burst
-├── prompts.py                           # system prompt per agent persona
-├── images/                              # architecture diagram + UI screenshots
-└── README.md
+├── prompts.py                           # agent persona prompts
+└── images/ai_gateway_architecture.png   # + editable .svg
 ```
-
-> `images/ai_gateway_architecture.png` (with its editable `.svg` source) ships with the demo.
-> The UI-step screenshots referenced above (`llm_connection.png`, `create_endpoint.png`,
-> `guardrails.png`, `budget_policy.png`) are placeholders — drop in real captures from your own
-> MLflow UI.
