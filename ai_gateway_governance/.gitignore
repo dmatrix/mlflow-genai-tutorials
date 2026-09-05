@@ -1,0 +1,4 @@
+# Local environment and caches — never commit
+.env
+__pycache__/
+*.pyc
