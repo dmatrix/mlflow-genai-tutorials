@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1180" viewBox="0 0 1600 1180">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a0f1c"/><stop offset="1" stop-color="#0e1a2e"/></linearGradient>
+<marker id="ah-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a97ab"/></marker>
+<marker id="ah-coral" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e5836b"/></marker>
+<marker id="ah-gem" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c9bf5"/></marker>
+<marker id="ah-gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e0a43b"/></marker>
+<marker id="ah-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#34d399"/></marker>
+</defs>
+<rect width="1600" height="1180" fill="url(#bg)"/>
+<circle cx="150" cy="180" r="3" fill="#8a97ab" opacity="0.18"/>
+<circle cx="1470" cy="230" r="3" fill="#8a97ab" opacity="0.18"/>
+<circle cx="110" cy="700" r="3" fill="#8a97ab" opacity="0.18"/>
+<circle cx="1510" cy="760" r="3" fill="#8a97ab" opacity="0.18"/>
+<circle cx="800" cy="56" r="3" fill="#8a97ab" opacity="0.18"/>
+<text x="800" y="58" font-family="Helvetica Neue, Arial, sans-serif" font-size="38" font-weight="700" fill="#f3f6fb" text-anchor="middle">Jev Returns Decisions, Not Words</text>
+<text x="800" y="92" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="400" fill="#8a97ab" text-anchor="middle">state + typed questions  ·  one call  ·  values your program can branch on</text>
+<line x1="380" y1="114" x2="1220" y2="114" stroke="#e0a43b" stroke-width="2" opacity="0.55"/>
+<text x="60" y="162" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#6f7f96" letter-spacing="2.5">THE SAME TICKET · TWO KINDS OF ANSWER</text>
+<text x="60" y="194" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13.5" font-weight="400" fill="#9fb2cc">"I was charged twice and the refund you promised last week still has not arrived."</text>
+<rect x="60" y="216" width="740" height="330" rx="20" ry="20" fill="#0f1c30" stroke="#e5836b" stroke-width="2"/>
+<path d="M60,286 L60,236 Q60,216 80,216 L780,216 Q800,216 800,236 L800,286 Z" fill="#e5836b" opacity="0.14"/>
+<text x="88" y="248" font-family="Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="700" fill="#f3f6fb">A generative model</text>
+<text x="88" y="272" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#8a97ab">returns prose · you parse it and hope</text>
+<rect x="88" y="304" width="684" height="104" rx="10" ry="10" fill="#0a1424" stroke="#26364f" stroke-width="1"/>
+<text x="104.0" y="324" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13.5" font-weight="400" fill="#e7b3a6">"Based on the message, I believe this should</text>
+<text x="112.1" y="350" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13.5" font-weight="400" fill="#e7b3a6">probably be routed to the billing team, and</text>
+<text x="112.1" y="376" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13.5" font-weight="400" fill="#e7b3a6">it does seem fairly urgent."</text>
+<text x="88" y="422" font-family="Helvetica Neue, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#8a97ab">No label. No number. No distribution. Nothing to threshold,</text>
+<text x="88" y="444" font-family="Helvetica Neue, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#8a97ab">so there is nowhere principled to put human review, and no</text>
+<text x="88" y="466" font-family="Helvetica Neue, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#8a97ab">way for code to tell a near-certainty from a guess.</text>
+<rect x="88" y="494" width="684" height="34" rx="17.0" ry="17.0" fill="#2a1417" stroke="#e5836b" stroke-width="1.4"/>
+<text x="430.0" y="515.5" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#e5836b" text-anchor="middle">re.search(...) plus a prompt you keep tuning</text>
+<rect x="820" y="216" width="740" height="330" rx="20" ry="20" fill="#0f1c30" stroke="#7c9bf5" stroke-width="2"/>
+<path d="M820,286 L820,236 Q820,216 840,216 L1540,216 Q1560,216 1560,236 L1560,286 Z" fill="#7c9bf5" opacity="0.14"/>
+<text x="848" y="248" font-family="Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="700" fill="#f3f6fb">Jev · System One</text>
+<text x="848" y="272" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#8a97ab">returns typed decisions · you branch on them</text>
+<rect x="848" y="304" width="684" height="104" rx="10" ry="10" fill="#0a1424" stroke="#26364f" stroke-width="1"/>
+<text x="892" y="326" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#9fb2cc">department</text>
+<text x="1058" y="326" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#f3f6fb">billing</text>
+<text x="1238" y="326" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#6f7f96">confidence 0.95</text>
+<text x="892" y="352" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#9fb2cc">urgency</text>
+<text x="1058" y="352" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#f3f6fb">2.6 of 3</text>
+<text x="1238" y="352" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#6f7f96">confidence 0.81</text>
+<text x="892" y="378" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#9fb2cc">needs_human</text>
+<text x="1058" y="378" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#f3f6fb">p = 0.88</text>
+<text x="1238" y="378" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#6f7f96"></text>
+<text x="848" y="422" font-family="Helvetica Neue, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#8a97ab">Three answers, three types, one request. Each carries a</text>
+<text x="848" y="444" font-family="Helvetica Neue, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#8a97ab">calibrated probability, so the uncertainty is a number your</text>
+<text x="848" y="466" font-family="Helvetica Neue, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#8a97ab">program can act on rather than a hedge in a sentence.</text>
+<rect x="848" y="494" width="684" height="34" rx="17.0" ry="17.0" fill="#102a1f" stroke="#34d399" stroke-width="1.4"/>
+<text x="1190.0" y="515.5" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#34d399" text-anchor="middle">if needs_human.noul &gt; 0.75: escalate()</text>
+<text x="60" y="598" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#6f7f96" letter-spacing="2.5">THE THREE PRIMITIVES · ASK ANY MIX OF THEM IN ONE CALL</text>
+<rect x="60" y="624" width="470" height="340" rx="20" ry="20" fill="#0f1c30" stroke="#34d399" stroke-width="2"/>
+<path d="M60,694 L60,644 Q60,624 80,624 L510,624 Q530,624 530,644 L530,694 Z" fill="#34d399" opacity="0.14"/>
+<text x="88" y="656" font-family="Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="700" fill="#f3f6fb">Noul</text>
+<text x="88" y="680" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#8a97ab">does this proposition hold?</text>
+<rect x="88" y="712" width="414" height="84" rx="10" ry="10" fill="#0a1424" stroke="#26364f" stroke-width="1"/>
+<text x="104.0" y="730" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">Noul(instructions=</text>
+<text x="119.0" y="750" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">"The customer needs</text>
+<text x="126.5" y="770" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">an answer today")</text>
+<rect x="88" y="816" width="414" height="34" rx="9" ry="9" fill="#16233c" stroke="#34d399" stroke-width="1.2" opacity="0.9"/>
+<text x="104" y="837.5" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#9fb2cc">noul = 0.91</text>
+<text x="88" y="882" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">One probability, 0.0 to 1.0.</text>
+<text x="88" y="903" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">No label and no verdict. The</text>
+<text x="88" y="924" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">threshold is yours to pick.</text>
+<rect x="565" y="624" width="470" height="340" rx="20" ry="20" fill="#0f1c30" stroke="#7c9bf5" stroke-width="2"/>
+<path d="M565,694 L565,644 Q565,624 585,624 L1015,624 Q1035,624 1035,644 L1035,694 Z" fill="#7c9bf5" opacity="0.14"/>
+<text x="593" y="656" font-family="Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="700" fill="#f3f6fb">Choice</text>
+<text x="593" y="680" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#8a97ab">which one of these?</text>
+<rect x="593" y="712" width="414" height="84" rx="10" ry="10" fill="#0a1424" stroke="#26364f" stroke-width="1"/>
+<text x="609.0" y="730" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">Choice(criteria={</text>
+<text x="624.0" y="750" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">"billing": "refunds...",</text>
+<text x="624.0" y="770" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">"shipping": "tracking..."})</text>
+<rect x="593" y="816" width="414" height="34" rx="9" ry="9" fill="#16233c" stroke="#7c9bf5" stroke-width="1.2" opacity="0.9"/>
+<text x="609" y="837.5" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#9fb2cc">choice = "billing"  conf 0.95</text>
+<text x="593" y="882" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">A label you defined, plus the</text>
+<text x="593" y="903" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">distribution over all of them.</text>
+<text x="593" y="924" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">Low confidence = ambiguous.</text>
+<rect x="1070" y="624" width="470" height="340" rx="20" ry="20" fill="#0f1c30" stroke="#e0a43b" stroke-width="2"/>
+<path d="M1070,694 L1070,644 Q1070,624 1090,624 L1520,624 Q1540,624 1540,644 L1540,694 Z" fill="#e0a43b" opacity="0.14"/>
+<text x="1098" y="656" font-family="Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="700" fill="#f3f6fb">Score</text>
+<text x="1098" y="680" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#8a97ab">how much, on your rubric?</text>
+<rect x="1098" y="712" width="414" height="84" rx="10" ry="10" fill="#0a1424" stroke="#26364f" stroke-width="1"/>
+<text x="1114.0" y="730" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">Score(criteria=[</text>
+<text x="1129.0" y="750" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">"No rush", "Normal",</text>
+<text x="1129.0" y="770" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">"Soon", "Today"])</text>
+<rect x="1098" y="816" width="414" height="34" rx="9" ry="9" fill="#16233c" stroke="#e0a43b" stroke-width="1.2" opacity="0.9"/>
+<text x="1114" y="837.5" font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400" fill="#9fb2cc">score = 2.6  conf 0.81</text>
+<text x="1098" y="882" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">A position on your scale. It</text>
+<text x="1098" y="903" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">can land between levels, so</text>
+<text x="1098" y="924" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">it sorts, which is ideal for ranking.</text>
+<text x="60" y="1016" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#6f7f96" letter-spacing="2.5">WHAT THIS BUYS YOU</text>
+<rect x="60" y="1036" width="738" height="106" rx="16" ry="16" fill="#15233a" stroke="#7c9bf5" stroke-width="1.6" opacity="0.95"/>
+<rect x="60" y="1036" width="6" height="106" rx="3" fill="#7c9bf5" opacity="0.9"/>
+<text x="92" y="1070" font-family="Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="700" fill="#f3f6fb">One call, many questions</text>
+<text x="92" y="1096" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">Batch every judgement about one state, with no round trip per question.</text>
+<text x="92" y="1122" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#aebff5">ask(ticket, {"department": Choice(...), "urgency": Score(...)})</text>
+<rect x="822" y="1036" width="738" height="106" rx="16" ry="16" fill="#15233a" stroke="#e0a43b" stroke-width="1.6" opacity="0.95"/>
+<rect x="822" y="1036" width="6" height="106" rx="3" fill="#e0a43b" opacity="0.9"/>
+<text x="854" y="1070" font-family="Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="700" fill="#f3f6fb">Evidence in, policy out</text>
+<text x="854" y="1096" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">Jev never routes, approves, or escalates. Your thresholds decide, in code.</text>
+<text x="854" y="1122" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#e6c98a">if department.confidence &lt; CONFIDENT_ENOUGH: queue = "triage"</text>
+</svg>
