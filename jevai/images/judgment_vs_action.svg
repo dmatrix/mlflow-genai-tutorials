@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a0f1c"/><stop offset="1" stop-color="#0e1a2e"/></linearGradient>
+<marker id="ah-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a97ab"/></marker>
+<marker id="ah-coral" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e5836b"/></marker>
+<marker id="ah-gem" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c9bf5"/></marker>
+<marker id="ah-gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e0a43b"/></marker>
+<marker id="ah-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#34d399"/></marker>
+</defs>
+<rect width="1600" height="980" fill="url(#bg)"/>
+<circle cx="150" cy="180" r="3" fill="#8a97ab" opacity="0.18"/>
+<circle cx="1470" cy="230" r="3" fill="#8a97ab" opacity="0.18"/>
+<circle cx="110" cy="700" r="3" fill="#8a97ab" opacity="0.18"/>
+<circle cx="1510" cy="760" r="3" fill="#8a97ab" opacity="0.18"/>
+<circle cx="800" cy="56" r="3" fill="#8a97ab" opacity="0.18"/>
+<text x="800" y="58" font-family="Helvetica Neue, Arial, sans-serif" font-size="38" font-weight="700" fill="#f3f6fb" text-anchor="middle">Separate Judgment From Action</text>
+<text x="800" y="92" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="400" fill="#8a97ab" text-anchor="middle">Jev interprets the situation  ·  your program decides what happens</text>
+<line x1="430" y1="114" x2="1170" y2="114" stroke="#e0a43b" stroke-width="2" opacity="0.55"/>
+<text x="60" y="168" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#6f7f96" letter-spacing="2.5">THE INPUT</text>
+<rect x="60" y="190" width="300" height="196" rx="16" ry="16" fill="#15233a" stroke="#8a97ab" stroke-width="1.6" opacity="0.95"/>
+<rect x="60" y="190" width="6" height="196" rx="3" fill="#8a97ab" opacity="0.9"/>
+<text x="92" y="222" font-family="Helvetica Neue, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#6f7f96" letter-spacing="1.6">CUSTOMER WRITES</text>
+<text x="92" y="250" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">"I canceled my subscription</text>
+<text x="98" y="274" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">last week, but you charged</text>
+<text x="98" y="298" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">my credit card again today.</text>
+<text x="98" y="322" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">Please fix this</text>
+<text x="98" y="346" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">immediately."</text>
+<rect x="60" y="414" width="300" height="146" rx="16" ry="16" fill="#15233a" stroke="#e5836b" stroke-width="1.6" opacity="0.95"/>
+<rect x="60" y="414" width="6" height="146" rx="3" fill="#e5836b" opacity="0.9"/>
+<text x="92" y="448" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#f3f6fb">Why AI at all?</text>
+<text x="92" y="476" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">Human language is messy.</text>
+<text x="92" y="497" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">No regex tells you this is a</text>
+<text x="92" y="518" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">billing problem, or that the</text>
+<text x="92" y="539" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">customer is out of patience.</text>
+<line x1="368" y1="300" x2="396" y2="300" stroke="#8a97ab" stroke-width="2" opacity="0.85" marker-end="url(#ah-gray)"/>
+<text x="400" y="168" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#6f7f96" letter-spacing="2.5">WORK A · UNDERSTAND THE SITUATION</text>
+<rect x="400" y="190" width="520" height="570" rx="20" ry="20" fill="#0f1c30" stroke="#7c9bf5" stroke-width="2"/>
+<path d="M400,260 L400,210 Q400,190 420,190 L900,190 Q920,190 920,210 L920,260 Z" fill="#7c9bf5" opacity="0.14"/>
+<text x="428" y="222" font-family="Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="700" fill="#f3f6fb">Jev</text>
+<text x="428" y="246" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#8a97ab">returns typed judgments · no policy</text>
+<text x="428" y="300" font-family="Helvetica Neue, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#6f7f96" letter-spacing="1.6">THREE QUESTIONS, ONE CALL</text>
+<rect x="428" y="314" width="464" height="104" rx="10" ry="10" fill="#0a1424" stroke="#26364f" stroke-width="1"/>
+<text x="444.0" y="332" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">questions={</text>
+<text x="459.0" y="352" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">"department":  Choice(...),</text>
+<text x="459.0" y="372" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">"urgency":     Score(...),</text>
+<text x="459.0" y="392" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">"needs_human": Noul(...)}</text>
+<text x="428" y="448" font-family="Helvetica Neue, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#6f7f96" letter-spacing="1.6">THREE TYPED ANSWERS</text>
+<rect x="428" y="462" width="464" height="40" rx="9" ry="9" fill="#16233c" stroke="#7c9bf5" stroke-width="1.2" opacity="0.9"/>
+<text x="448" y="487" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">department</text>
+<text x="592" y="487" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#f3f6fb">"billing"   confidence 0.95</text>
+<rect x="428" y="510" width="464" height="40" rx="9" ry="9" fill="#16233c" stroke="#e0a43b" stroke-width="1.2" opacity="0.9"/>
+<text x="448" y="535" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">urgency</text>
+<text x="592" y="535" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#f3f6fb">2.8 of 3    confidence 0.78</text>
+<rect x="428" y="558" width="464" height="40" rx="9" ry="9" fill="#16233c" stroke="#34d399" stroke-width="1.2" opacity="0.9"/>
+<text x="448" y="583" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#9fb2cc">needs_human</text>
+<text x="592" y="583" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#f3f6fb">p = 0.91</text>
+<text x="428" y="630" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">Questions about meaning, answered as</text>
+<text x="428" y="651" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">values: a label, a level, a probability.</text>
+<text x="428" y="672" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">Jev does not know what a queue is.</text>
+<rect x="428" y="708" width="464" height="32" rx="16.0" ry="16.0" fill="#141f3a" stroke="#7c9bf5" stroke-width="1.4"/>
+<text x="660.0" y="728.5" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#7c9bf5" text-anchor="middle">evidence</text>
+<line x1="924" y1="450" x2="952" y2="450" stroke="#7c9bf5" stroke-width="2" opacity="0.85" marker-end="url(#ah-gem)"/>
+<text x="956" y="168" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#6f7f96" letter-spacing="2.5">WORK B · APPLY THE BUSINESS POLICY</text>
+<rect x="956" y="190" width="584" height="570" rx="20" ry="20" fill="#0f1c30" stroke="#e0a43b" stroke-width="2"/>
+<path d="M956,260 L956,210 Q956,190 976,190 L1520,190 Q1540,190 1540,210 L1540,260 Z" fill="#e0a43b" opacity="0.14"/>
+<text x="984" y="222" font-family="Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="700" fill="#f3f6fb">Your program</text>
+<text x="984" y="246" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#8a97ab">plain Python · no AI, no prompt</text>
+<text x="984" y="300" font-family="Helvetica Neue, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#6f7f96" letter-spacing="1.6">THE RULES YOU WROTE · decide()</text>
+<rect x="984" y="314" width="528" height="144" rx="10" ry="10" fill="#0a1424" stroke="#26364f" stroke-width="1"/>
+<text x="1000.0" y="332" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#e6c98a">priority = urgency.score &gt;= 2.5</text>
+<text x="1000.0" y="352" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#e6c98a">if department.confidence &lt; 0.60:</text>
+<text x="1030.0" y="372" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#e6c98a">return "triage", priority</text>
+<text x="1000.0" y="392" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#e6c98a">if needs_human.noul &gt; 0.75:</text>
+<text x="1030.0" y="412" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#e6c98a">return f"{dept}-human", priority</text>
+<text x="1000.0" y="432" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12.5" font-weight="400" fill="#e6c98a">return f"{dept}-auto", priority</text>
+<text x="984" y="494" font-family="Helvetica Neue, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#6f7f96" letter-spacing="1.6">ONE OF THESE HAPPENS</text>
+<rect x="984" y="508" width="528" height="36" rx="18.0" ry="18.0" fill="#2a1417" stroke="#e5836b" stroke-width="1.4"/>
+<text x="1248.0" y="530.5" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#e5836b" text-anchor="middle">TRIAGE · DEPARTMENT UNCLEAR</text>
+<rect x="984" y="552" width="528" height="36" rx="18.0" ry="18.0" fill="#2a2410" stroke="#e0a43b" stroke-width="1.4"/>
+<text x="1248.0" y="574.5" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#e0a43b" text-anchor="middle">BILLING · HUMAN</text>
+<rect x="984" y="596" width="528" height="36" rx="18.0" ry="18.0" fill="#102a1f" stroke="#34d399" stroke-width="1.4"/>
+<text x="1248.0" y="618.5" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#34d399" text-anchor="middle">BILLING · AUTO</text>
+<text x="984" y="668" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">Priority rides along on any of them, set by</text>
+<text x="984" y="689" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">urgency alone. Deterministic, testable code.</text>
+<rect x="984" y="708" width="528" height="32" rx="16.0" ry="16.0" fill="#2a2410" stroke="#e0a43b" stroke-width="1.4"/>
+<text x="1248.0" y="728.5" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#e0a43b" text-anchor="middle">decision</text>
+<text x="60" y="816" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#6f7f96" letter-spacing="2.5">WHY THE SPLIT IS WORTH IT</text>
+<rect x="60" y="836" width="738" height="116" rx="16" ry="16" fill="#15233a" stroke="#7c9bf5" stroke-width="1.6" opacity="0.95"/>
+<rect x="60" y="836" width="6" height="116" rx="3" fill="#7c9bf5" opacity="0.9"/>
+<text x="92" y="870" font-family="Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#f3f6fb">Change the policy without changing the questions</text>
+<text x="92" y="898" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">Tomorrow you also escalate every suspected duplicate charge. That is a new</text>
+<text x="92" y="919" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">line of Python, not a new prompt and not a re-evaluation of the model.</text>
+<rect x="822" y="836" width="718" height="116" rx="16" ry="16" fill="#15233a" stroke="#e0a43b" stroke-width="1.6" opacity="0.95"/>
+<rect x="822" y="836" width="6" height="116" rx="3" fill="#e0a43b" opacity="0.9"/>
+<text x="854" y="870" font-family="Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#f3f6fb">The rules stay reviewable</text>
+<text x="854" y="898" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">A threshold is a number someone can argue with, test against labelled data,</text>
+<text x="854" y="919" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#8a97ab">and put in version control. A prompt asking the model to behave is neither.</text>
+</svg>

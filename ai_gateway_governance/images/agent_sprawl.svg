@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a0f1c"/><stop offset="1" stop-color="#0e1a2e"/></linearGradient>
+</defs>
+<rect width="1600" height="1040" fill="url(#bg)"/>
+
+<!-- corner decorative dots (match architecture image) -->
+<circle cx="150" cy="200" r="3" fill="#8a97ab" opacity="0.18"/>
+<circle cx="1450" cy="260" r="3" fill="#8a97ab" opacity="0.18"/>
+<circle cx="120" cy="760" r="3" fill="#8a97ab" opacity="0.18"/>
+<circle cx="1500" cy="820" r="3" fill="#8a97ab" opacity="0.18"/>
+<circle cx="800" cy="60" r="3" fill="#8a97ab" opacity="0.18"/>
+
+<!-- left section label -->
+<text x="60" y="120" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" fill="#6f7f96" letter-spacing="2.5">UNGOVERNED SPRAWL</text>
+<text x="60" y="146" font-family="Helvetica Neue, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#8a97ab">every agent holds its own key, bills its own account, answers to no shared policy</text>
+
+<!-- ============ tangled wiring (drawn first, nodes sit on top) ============ -->
+<g fill="none" stroke="#e5836b" stroke-linecap="round">
+<path d="M178,282 C300,360 260,560 300,662" stroke-width="1.6" opacity="0.42" stroke-dasharray="8 7"/>
+<path d="M400,238 C360,380 340,520 322,660" stroke-width="1.6" opacity="0.42" stroke-dasharray="8 7"/>
+<path d="M672,252 C600,300 540,340 480,364" stroke-width="1.6" opacity="0.45"/>
+<path d="M778,492 C720,540 700,600 674,636" stroke-width="1.6" opacity="0.45" stroke-dasharray="8 7"/>
+<path d="M210,502 C360,540 520,610 624,650" stroke-width="1.6" opacity="0.4" stroke-dasharray="3 7"/>
+<path d="M178,272 C280,300 380,340 424,362" stroke-width="1.6" opacity="0.38"/>
+<path d="M188,506 C240,560 280,606 308,662" stroke-width="1.6" opacity="0.4" stroke-dasharray="8 7"/>
+<path d="M702,268 C692,420 664,560 654,632" stroke-width="1.6" opacity="0.36" stroke-dasharray="3 7"/>
+<path d="M410,238 C432,300 442,340 452,360" stroke-width="1.6" opacity="0.38"/>
+<path d="M772,470 C640,430 540,402 480,380" stroke-width="1.6" opacity="0.34" stroke-dasharray="3 7"/>
+<path d="M180,256 C262,222 342,212 384,210" stroke-width="1.6" opacity="0.3" stroke-dasharray="2 7"/>
+<path d="M716,268 C762,340 792,412 800,444" stroke-width="1.6" opacity="0.3" stroke-dasharray="2 7"/>
+<path d="M438,398 C420,500 380,580 336,662" stroke-width="1.6" opacity="0.3" stroke-dasharray="3 7"/>
+</g>
+
+<!-- floating "new questions" chips scattered in the tangle -->
+<g font-family="SF Mono, Menlo, Consolas, monospace" font-size="13" font-weight="400">
+<rect x="512" y="288" width="96" height="26" rx="13" fill="#16233c" stroke="#b0525e" stroke-width="1.1" opacity="0.95"/>
+<text x="560" y="305" fill="#e7b3a6" text-anchor="middle">PII = ?</text>
+<rect x="214" y="336" width="118" height="26" rx="13" fill="#16233c" stroke="#e0a43b" stroke-width="1.1" opacity="0.95"/>
+<text x="273" y="353" fill="#e6c98a" text-anchor="middle">owner = ?</text>
+<rect x="500" y="500" width="120" height="26" rx="13" fill="#16233c" stroke="#e0a43b" stroke-width="1.1" opacity="0.95"/>
+<text x="560" y="517" fill="#e6c98a" text-anchor="middle">spend = ?</text>
+<rect x="392" y="560" width="112" height="26" rx="13" fill="#16233c" stroke="#b0525e" stroke-width="1.1" opacity="0.95"/>
+<text x="448" y="577" fill="#e7b3a6" text-anchor="middle">audit = ?</text>
+</g>
+
+<!-- ============ provider blobs (the models each agent calls on its own) ============ -->
+<!-- OpenAI -->
+<circle cx="450" cy="370" r="30" fill="#0f1c30" stroke="#4a5b74" stroke-width="1.4"/>
+<circle cx="450" cy="370" r="12" fill="none" stroke="#8a97ab" stroke-width="2"/>
+<text x="450" y="418" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#8a97ab" text-anchor="middle">OpenAI</text>
+<!-- Anthropic -->
+<circle cx="320" cy="690" r="30" fill="#0f1c30" stroke="#4a5b74" stroke-width="1.4"/>
+<path d="M312,704 L320,678 L328,704 M316,696 L324,696" fill="none" stroke="#8a97ab" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="320" y="738" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#8a97ab" text-anchor="middle">Anthropic</text>
+<!-- Gemini -->
+<circle cx="650" cy="660" r="30" fill="#0f1c30" stroke="#4a5b74" stroke-width="1.4"/>
+<path d="M650,646 L657,660 L650,674 L643,660 z" fill="none" stroke="#8a97ab" stroke-width="2"/>
+<text x="650" y="708" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#8a97ab" text-anchor="middle">Gemini</text>
+
+<!-- ============ agent nodes (the blog's five coding agents) ============ -->
+<!-- Cursor -->
+<circle cx="150" cy="260" r="28" fill="#15233a" stroke="#e5836b" stroke-width="1.8"/>
+<rect x="138" y="251" width="24" height="18" rx="2" fill="none" stroke="#e5836b" stroke-width="2"/>
+<line x1="138" y1="258" x2="162" y2="258" stroke="#e5836b" stroke-width="2"/>
+<text x="190" y="254" font-family="Helvetica Neue, Arial, sans-serif" font-size="21" font-weight="700" fill="#f3f6fb">Cursor</text>
+<rect x="190" y="266" width="80" height="22" rx="11" fill="#16233c" stroke="#b0525e" stroke-width="1.1"/>
+<text x="202" y="281" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12" fill="#e7b3a6">key: ?</text>
+
+<!-- Claude Code -->
+<circle cx="410" cy="210" r="28" fill="#15233a" stroke="#e5836b" stroke-width="1.8"/>
+<rect x="398" y="201" width="24" height="18" rx="2" fill="none" stroke="#e5836b" stroke-width="2"/>
+<path d="M403,206 L409,210 L403,214" fill="none" stroke="#e5836b" stroke-width="2" stroke-linecap="round"/>
+<text x="450" y="204" font-family="Helvetica Neue, Arial, sans-serif" font-size="21" font-weight="700" fill="#f3f6fb">Claude Code</text>
+<rect x="450" y="216" width="96" height="22" rx="11" fill="#16233c" stroke="#b0525e" stroke-width="1.1"/>
+<text x="462" y="231" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12" fill="#e7b3a6">policy: ?</text>
+
+<!-- Codex CLI -->
+<circle cx="700" cy="240" r="28" fill="#15233a" stroke="#34d399" stroke-width="1.8"/>
+<path d="M691,232 L683,240 L691,248 M709,232 L717,240 L709,248" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="740" y="234" font-family="Helvetica Neue, Arial, sans-serif" font-size="21" font-weight="700" fill="#f3f6fb">Codex CLI</text>
+<rect x="740" y="246" width="84" height="22" rx="11" fill="#16233c" stroke="#e0a43b" stroke-width="1.1"/>
+<text x="752" y="261" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12" fill="#e6c98a">cost: ?</text>
+
+<!-- Gemini CLI -->
+<circle cx="800" cy="470" r="28" fill="#15233a" stroke="#7c9bf5" stroke-width="1.8"/>
+<path d="M800,456 L811,470 L800,484 L789,470 z" fill="none" stroke="#7c9bf5" stroke-width="2"/>
+<text x="762" y="524" font-family="Helvetica Neue, Arial, sans-serif" font-size="21" font-weight="700" fill="#f3f6fb" text-anchor="middle">Gemini CLI</text>
+<rect x="716" y="536" width="96" height="22" rx="11" fill="#16233c" stroke="#b0525e" stroke-width="1.1"/>
+<text x="764" y="551" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12" fill="#e7b3a6" text-anchor="middle">PII: ?</text>
+
+<!-- Pi -->
+<circle cx="180" cy="480" r="28" fill="#15233a" stroke="#7c9bf5" stroke-width="1.8"/>
+<text x="180" y="490" font-family="Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="700" fill="#7c9bf5" text-anchor="middle">&#960;</text>
+<text x="220" y="474" font-family="Helvetica Neue, Arial, sans-serif" font-size="21" font-weight="700" fill="#f3f6fb">Pi</text>
+<rect x="220" y="486" width="92" height="22" rx="11" fill="#16233c" stroke="#e0a43b" stroke-width="1.1"/>
+<text x="232" y="501" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12" fill="#e6c98a">trace: ?</text>
+
+<!-- ============ right column: title + subtitle ============ -->
+<text x="980" y="188" font-family="Helvetica Neue, Arial, sans-serif" font-size="78" font-weight="800" fill="#e5836b" letter-spacing="-1">Agent Sprawl</text>
+<text x="982" y="238" font-family="Helvetica Neue, Arial, sans-serif" font-size="20" font-style="italic" font-weight="400" fill="#c7d3e2">Every new agent adds another API key, another bill,</text>
+<text x="982" y="266" font-family="Helvetica Neue, Arial, sans-serif" font-size="20" font-style="italic" font-weight="400" fill="#c7d3e2">and another question nobody can answer.</text>
+
+<!-- ============ stakeholder question bubbles ============ -->
+<!-- B1 coral · Security -->
+<g>
+<path d="M998,318 L972,352 L998,352 z" fill="#c25a49"/>
+<rect x="998" y="312" width="372" height="96" rx="14" fill="#c25a49"/>
+<text x="1020" y="348" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-style="italic" font-weight="600" fill="#fbeee9">Which agents can send PII to a</text>
+<text x="1020" y="373" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-style="italic" font-weight="600" fill="#fbeee9">third-party model?</text>
+<text x="1352" y="397" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#f7d9d0" text-anchor="end">&#8212; Security</text>
+</g>
+<!-- B2 gold · Finance -->
+<g>
+<path d="M1188,466 L1162,500 L1188,500 z" fill="#d9a441"/>
+<rect x="1188" y="460" width="384" height="96" rx="14" fill="#d9a441"/>
+<text x="1210" y="496" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-style="italic" font-weight="600" fill="#241a08">What did we spend on tokens, and</text>
+<text x="1210" y="521" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-style="italic" font-weight="600" fill="#241a08">who owns each key?</text>
+<text x="1554" y="545" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#5c4715" text-anchor="end">&#8212; Finance</text>
+</g>
+<!-- B3 coral · Developer -->
+<g>
+<path d="M998,626 L972,660 L998,660 z" fill="#c25a49"/>
+<rect x="998" y="620" width="336" height="72" rx="14" fill="#c25a49"/>
+<text x="1020" y="656" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-style="italic" font-weight="600" fill="#fbeee9">Why was this request blocked?</text>
+<text x="1316" y="681" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#f7d9d0" text-anchor="end">&#8212; Developer</text>
+</g>
+<!-- B4 gold · Platform -->
+<g>
+<path d="M1188,746 L1162,780 L1188,780 z" fill="#d9a441"/>
+<rect x="1188" y="740" width="384" height="96" rx="14" fill="#d9a441"/>
+<text x="1210" y="776" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-style="italic" font-weight="600" fill="#241a08">Who approved this agent, and</text>
+<text x="1210" y="801" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-style="italic" font-weight="600" fill="#241a08">who governs it?</text>
+<text x="1554" y="825" font-family="Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#5c4715" text-anchor="end">&#8212; Platform</text>
+</g>
+
+<!-- ============ footer bridge to the architecture image ============ -->
+<line x1="60" y1="946" x2="1540" y2="946" stroke="#20304a" stroke-width="1.2"/>
+<text x="60" y="984" font-family="Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="400" fill="#8a97ab">Five coding agents, five API keys, zero oversight.</text>
+<text x="1540" y="984" font-family="Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="600" fill="#e0a43b" text-anchor="end">One MLflow AI Gateway governs all five &#8594;</text>
+</svg>

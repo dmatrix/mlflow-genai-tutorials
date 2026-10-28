@@ -17,4 +17,8 @@ AI_GATEWAY_BASE_URL=<YOUR_AI_GATEWAY_BASE_URL>
 USE_DATABRICKS_CLIENT=<YOUR_USE_DATABRICKS_CLIENT>
 USE_DATABRICKS_AI_GATEWAY=False
 AI_GATEWAY_MODELS="comma-separated-list-of-models"
+# Jev System One, served via the Unity AI Gateway (jevai/ tutorials).
+# This is the Unity Catalog endpoint path, NOT an OpenAI-compatible base
+# URL like AI_GATEWAY_BASE_URL above - Jev uses a different gateway route.
+JEV_MODEL=<YOUR_CATALOG>.<YOUR_SCHEMA>.<YOUR_JEV_ENDPOINT>
 AI_GATEWAY_EMBED_MODEL=<YOUR_AI_GATEWAY_EMBED_MODEL>
