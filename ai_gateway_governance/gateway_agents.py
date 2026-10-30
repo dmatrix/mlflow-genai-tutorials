@@ -38,7 +38,12 @@ class SimulatedAgent:
     provider: str  # display label, e.g. "openai" / "anthropic"
 
 
-def create_gateway_client(tracking_uri: str = "http://localhost:5000") -> OpenAI:
+def create_gateway_client(
+    tracking_uri: str = "http://localhost:5000",
+    *,
+    timeout: float = 60.0,
+    max_retries: int = 0,
+) -> OpenAI:
     """Create an OpenAI client pointing at the MLflow AI Gateway.
 
     The gateway configures provider credentials server-side, so no API key is
@@ -47,7 +52,17 @@ def create_gateway_client(tracking_uri: str = "http://localhost:5000") -> OpenAI
     """
     base_url = f"{tracking_uri.rstrip('/')}/gateway/mlflow/v1"
     # api_key is unused by the gateway but the SDK requires a non-empty string.
-    return OpenAI(base_url=base_url, api_key="not-needed")
+    #
+    # timeout/max_retries are set explicitly. The SDK defaults are a 600s read
+    # timeout with 2 retries, so a gateway that accepts the connection and then
+    # never answers costs 30 minutes per endpoint and 90 minutes for Act 1's
+    # three pings, which reads as a hang rather than a failure.
+    return OpenAI(
+        base_url=base_url,
+        api_key="not-needed",
+        timeout=timeout,
+        max_retries=max_retries,
+    )
 
 
 def _extract_error_detail(err: Exception) -> str:

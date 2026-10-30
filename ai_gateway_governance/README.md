@@ -16,39 +16,31 @@ The gateway ships inside `mlflow server` (MLflow 3.15.1) and runs locally. This 
 The notebook only *uses* endpoints — create them first. See the [AI Gateway quickstart](https://mlflow.org/docs/latest/genai/governance/ai-gateway/quickstart/).
 
 1. Start the server from the repo root, then open `http://localhost:5000`:
-
    ```bash
-   uv run mlflow server --port 5000
+    uv run mlflow server --port 5000
    ```
-
 2. **Settings → LLM Connections**: add a **Databricks** connection (`DATABRICKS_HOST` / `DATABRICKS_TOKEN`). It backs all three endpoints. (For OpenAI/Anthropic/Google, add those connections instead.)
-
 3. **Gateway → Create Endpoint**: create three, using chat-completions-capable models:
-
    | Endpoint | Model | Agents |
-   |----------|-------|--------|
-   | `dbx-codex-endpoint` | `databricks-gpt-5-5` | Codex CLI |
-   | `dbx-claude-endpoint` | `databricks-claude-haiku-4-5` | Cursor, Claude Code |
-   | `dbx-gemini-endpoint` | `databricks-gemini-3-5-flash` | Gemini CLI, Pi |
+    |----------|-------|--------|
+    | `dbx-codex-endpoint` | `databricks-gpt-5-5` | Codex CLI |
+    | `dbx-claude-endpoint` | `databricks-claude-haiku-4-5` | Cursor, Claude Code |
+    | `dbx-gemini-endpoint` | `databricks-gemini-3-5-flash` | Gemini CLI, Pi |
 
-   The endpoint name is the `model` value the notebook sends. If you rename them, update `ENDPOINTS` in the notebook's setup cell.
-
+    The endpoint name is the `model` value the notebook sends. If you rename them, update `ENDPOINTS` in the notebook's setup cell.
 4. Add two guardrails per endpoint: **PII detection** (Pre-LLM, Block) and **Safety** (Post-LLM, Block). Point the judge at one of your endpoints. (Act 3)
-
 5. Enable **usage tracking** per endpoint — it feeds the Usage Dashboard.
-
 6. For Act 4 only: **AI Gateway → Budgets** → a Reject policy, ~**$0.05/day**. Restart with a short refresh so it triggers quickly:
-
    ```bash
-   MLFLOW_GATEWAY_BUDGET_REFRESH_INTERVAL=30 uv run mlflow server --port 5000
+    MLFLOW_GATEWAY_BUDGET_REFRESH_INTERVAL=30 uv run mlflow server --port 5000
    ```
 
-   That cap will also reject Acts 2–3, so enable it only for Act 4.
+    That cap will also reject Acts 2–3, so enable it only for Act 4.
 
 ## 3. Run
 
 ```bash
-uv run mlflow server --port 5000        # after the UI setup above
+uv run MLFLOW_GATEWAY_URI="http://localhost:5000" mlflow server --port 5000        # after the UI setup above
 uv run jupyter notebook ai_gateway_governance/mlflow_ai_gateway_governance.ipynb
 ```
 
